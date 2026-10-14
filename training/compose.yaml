@@ -1,0 +1,49 @@
+services:
+  trainer:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: aecopd-training:v1
+    working_dir: /workspace
+    volumes:
+      - ../:/workspace
+    environment:
+      PYTHONPATH: /workspace/training:/workspace/model_loader
+      MPLCONFIGDIR: /tmp/matplotlib
+    gpus: all
+    shm_size: 8gb
+    ports:
+      - "6006:6006"
+    stdin_open: true
+    tty: true
+  baselines:
+    build:
+      context: .
+      dockerfile: Dockerfile.baselines
+    image: aecopd-baselines:v1
+    working_dir: /workspace
+    volumes:
+      - ../:/workspace
+    environment:
+      PYTHONPATH: /workspace/training:/workspace/model_loader
+      MPLCONFIGDIR: /tmp/matplotlib
+    gpus: all
+    shm_size: 8gb
+    stdin_open: true
+    tty: true
+  embedder:
+    build:
+      context: .
+      dockerfile: Dockerfile.embedding
+    image: aecopd-embedding:v1
+    working_dir: /workspace
+    volumes:
+      - ../:/workspace
+      - ./model_cache:/model-cache
+    environment:
+      PYTHONPATH: /workspace/training:/workspace/model_loader
+      HF_HOME: /model-cache/huggingface
+    gpus: all
+    shm_size: 8gb
+    stdin_open: true
+    tty: true
