@@ -83,3 +83,7 @@ node_modules/
 !/work/prepare_public_snapshot.py
 !/config/clinical_feature_contract.csv
 !/config/clinical_feature_contract_v2_diagnosis.csv
+
+# Reviewed aggregate-only V7 figures, not patient images or record-level outputs.
+!/docs/figures/v7_first_experiment_2026-10-15.png
+!/docs/figures/v7_loss_comparison_2026-10-15.png
