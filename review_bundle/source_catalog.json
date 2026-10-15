@@ -1,5 +1,5 @@
 {
-  "base_public_commit": "f7b37800a73f43eef08b73e2d97c5b826b1314ed",
+  "base_public_commit": "d5588409fac2492ee023a0161a825f7457db2508",
   "sources": [
     {
       "path": ".gitignore",
@@ -1417,9 +1417,9 @@
     },
     {
       "path": "tools/build_markdown_review.py",
-      "bytes": 9259,
-      "lines": 148,
-      "sha256": "550b8551e7ffeb095d557d0da8df07924caf4eedddb12b7912685ab41fdc9739",
+      "bytes": 10980,
+      "lines": 181,
+      "sha256": "ac7b826a00e991a7a8566787fc3bb7d6006ceac0dd1e153c61f60d54f22f6819",
       "group": "12_TOOLS_AND_CONFIGURATION"
     },
     {
