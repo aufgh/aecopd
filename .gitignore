@@ -87,3 +87,4 @@ node_modules/
 # Reviewed aggregate-only V7 figures, not patient images or record-level outputs.
 !/docs/figures/v7_first_experiment_2026-10-15.png
 !/docs/figures/v7_loss_comparison_2026-10-15.png
+!/docs/figures/v7_sequential_research_2026-10-15.png
