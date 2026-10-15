@@ -2,6 +2,8 @@
 
 本文件在公开快照映射为`docs/README.md`；本地详细历史导航不覆盖。
 
+- [追加：强V6冻结＋端到端V7＋H34训练集去重](V7_PROJECTED_STRONG_RESULTS_2026-10-15.md)与[合同](V7_PROJECTED_STRONG_PROTOCOL_2026-10-15.md)：seed42实际16轮，F1低于不去重匹配对照、IBS略低；独立映射/概率重放0，未追加种子，默认保留。
+
 - [最新：V7现有研究线索顺序实验结果](V7_SEQUENTIAL_RESEARCH_RESULTS_2026-10-15.md)及[总合同](V7_SEQUENTIAL_RESEARCH_PRD_2026-10-15.md)：56次新拟合、519神经epoch，强V6冻结修正、固定投影、物理检验、药物动态、损失/Query/衰减及两折OOF逐项完成；默认保留。
 - [外部具体数学与工程设计核对](V7_EXTERNAL_MATH_ENGINEERING_REVIEW_2026-10-15.md)：文献支持范围、公式边界及本项目修正；其“尚未做”描述为当时审查时点，最新状态以上方结果为准。
 

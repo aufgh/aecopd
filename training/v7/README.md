@@ -1,5 +1,9 @@
 # 最新：现有研究线索顺序实验（2026-10-15）
 
+追加组合实验已完成：[完整V6冻结＋端到端V7＋H34训练集去重](../../docs/V7_PROJECTED_STRONG_RESULTS_2026-10-15.md)，[合同](../../docs/V7_PROJECTED_STRONG_PROTOCOL_2026-10-15.md)。seed42实际16轮、best10，F1 .578879，低于同种子不去重的.581683；再入院IBS .099701，略低于.099908。未满足事前追加种子规则，停止此配方，不替换默认。映射仅用训练患者每轮更新，轮内/验证固定，best/last独立重估映射和每日概率均误差0。
+
+入口`python -m training.v7.projected_strong_experiment --mode train/verify --seed 42`；按旧离线GPU环境执行，已有目录拒绝覆盖。`projected_strong_diagnostics --seed 42`诊断已核验权重的中心化变异，第二次调用独立重算；`projected_strong_report`生成聚合报告。组合没有复用旧冻结V7表示的投影，不把两类实验混称。
+
 [完整结果与逐项决定](../../docs/V7_SEQUENTIAL_RESEARCH_RESULTS_2026-10-15.md)及[总合同](../../docs/V7_SEQUENTIAL_RESEARCH_PRD_2026-10-15.md)：56次新拟合/519实际神经epoch、两折OOF替代五折，所有批次独立重放0。完整强V6冻结后的端到端V7在两个种子有小幅F1提升；固定训练投影在三个读取器种子2胜1负；仍保留原默认。下方首轮说明保留当时的模型与状态，新实验没有改原入口或权重。
 
 |模块入口 `python -m training.v7.…`|合同与用途|
