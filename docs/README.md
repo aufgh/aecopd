@@ -2,6 +2,10 @@
 
 本文件在公开快照映射为`docs/README.md`；本地详细历史导航不覆盖。
 
+- [全部公开源码/结果/数据结构的Markdown分卷](../review_bundle/00_READ_FIRST.md)：替代旧TXT摘录，按完整源文件清单导出，支持逐字节还原核验。
+- [数据快照说明](PUBLIC_DATA_SNAPSHOT_2026-10-15.md)：19,401出院/5,351患者、四划分、17张原始表规模、66份派生数组结构；没有患者取值。
+- [最新关闭跨源Query结果](V7_STRONG_NO_CROSS_RESULTS_2026-10-15.md)和[固定比例融合结果](V7_FIXED_V6_COX_BLEND_RESULTS_2026-10-15.md)：已完成两个新训练与一次零重训融合，分别报告收益与权衡。
+
 - [追加：强V6冻结＋端到端V7＋H34训练集去重](V7_PROJECTED_STRONG_RESULTS_2026-10-15.md)与[合同](V7_PROJECTED_STRONG_PROTOCOL_2026-10-15.md)：seed42实际16轮，F1低于不去重匹配对照、IBS略低；独立映射/概率重放0，未追加种子，默认保留。
 
 - [最新：V7现有研究线索顺序实验结果](V7_SEQUENTIAL_RESEARCH_RESULTS_2026-10-15.md)及[总合同](V7_SEQUENTIAL_RESEARCH_PRD_2026-10-15.md)：56次新拟合、519神经epoch，强V6冻结修正、固定投影、物理检验、药物动态、损失/Query/衰减及两折OOF逐项完成；默认保留。

@@ -1,0 +1,5809 @@
+{
+  "base_public_commit": "f7b37800a73f43eef08b73e2d97c5b826b1314ed",
+  "sources": [
+    {
+      "path": ".gitignore",
+      "bytes": 1384,
+      "lines": 90,
+      "sha256": "0b228e7850e17b86534260fc63f07e24ee3d4b9ff01359b9d8e48775988f6861",
+      "group": "12_TOOLS_AND_CONFIGURATION"
+    },
+    {
+      "path": "cohort_pipeline/mimiciii_count.py",
+      "bytes": 6252,
+      "lines": 161,
+      "sha256": "85ccc395de79c5b9fb8fdc17bce73c0e9b18bfd2f748848274144c0c013bdbd6",
+      "group": "04_COHORT_SQL"
+    },
+    {
+      "path": "cohort_pipeline/official_mimiciii_postgres/postgres_add_indexes.sql",
+      "bytes": 36517,
+      "lines": 979,
+      "sha256": "ea9195af6befa877e5b64979a76565d6364e944ea251850322f7b08e9edbcd45",
+      "group": "04_COHORT_SQL"
+    },
+    {
+      "path": "cohort_pipeline/official_mimiciii_postgres/postgres_checks.sql",
+      "bytes": 4195,
+      "lines": 77,
+      "sha256": "541248b971f7617075466932136005f40c6a1ce4d7a3e6d8dd51f89cf19b64c4",
+      "group": "04_COHORT_SQL"
+    },
+    {
+      "path": "cohort_pipeline/official_mimiciii_postgres/postgres_create_tables.sql",
+      "bytes": 20688,
+      "lines": 672,
+      "sha256": "3fff0d431caaf75f990bde925cf412cede5db40a534dd5388fec4159b7539894",
+      "group": "04_COHORT_SQL"
+    },
+    {
+      "path": "cohort_pipeline/official_mimiciii_postgres/postgres_load_data.sql",
+      "bytes": 6897,
+      "lines": 181,
+      "sha256": "5c21241561fdb380fb87f79a92a2d154a8fc2277572ecf62df90a1519a26e394",
+      "group": "04_COHORT_SQL"
+    },
+    {
+      "path": "cohort_pipeline/run_pipeline.ps1",
+      "bytes": 3616,
+      "lines": 103,
+      "sha256": "e8c9d9d70f41ba4f3c2a3cf839d01c32658b543b354f0a7ac0713032706b01ae",
+      "group": "04_COHORT_SQL"
+    },
+    {
+      "path": "cohort_pipeline/SOURCE_SHA256SUMS.txt",
+      "bytes": 1038,
+      "lines": 12,
+      "sha256": "e7bc1258aedbb6970ef7b279ba5be184d85a9976d1a0f07854ece0b6abcdee3f",
+      "group": "04_COHORT_SQL"
+    },
+    {
+      "path": "cohort_pipeline/sql/00_inventory.sql",
+      "bytes": 2558,
+      "lines": 19,
+      "sha256": "f3033194bf8920ca17fc7b9289c8986f1f7d1f487e847cf7f701bbf5f551892d",
+      "group": "04_COHORT_SQL"
+    },
+    {
+      "path": "cohort_pipeline/sql/01_icd_phenotype_audit.sql",
+      "bytes": 4558,
+      "lines": 88,
+      "sha256": "ec5e67b579a16a5f1410fb6879fff48bfe20a326fe6f251ec39b989f12e174bd",
+      "group": "04_COHORT_SQL"
+    },
+    {
+      "path": "cohort_pipeline/sql/02_build_strict_aecopd.sql",
+      "bytes": 3957,
+      "lines": 77,
+      "sha256": "22e6b027abf0cf0bbdddf3c17dd5848d67d565652d3f538863067ac567ff8612",
+      "group": "04_COHORT_SQL"
+    },
+    {
+      "path": "cohort_pipeline/sql/03_longitudinal_history.sql",
+      "bytes": 4646,
+      "lines": 88,
+      "sha256": "77318659da0bd38e19b473e228bd226b9624eb7e78397b8ba93f5df1ba9a21ad",
+      "group": "04_COHORT_SQL"
+    },
+    {
+      "path": "cohort_pipeline/sql/04_note_coverage.sql",
+      "bytes": 7995,
+      "lines": 147,
+      "sha256": "7fd7800a4912296596dfbf9424b00f6524a83c1c4a7eda38914726b36cda2ed4",
+      "group": "04_COHORT_SQL"
+    },
+    {
+      "path": "cohort_pipeline/sql/05_structured_field_audit.sql",
+      "bytes": 18543,
+      "lines": 273,
+      "sha256": "5b763aca4f224631f7c251fd979e5e99da5ef9c34db0e56a0743e6255a94a792",
+      "group": "04_COHORT_SQL"
+    },
+    {
+      "path": "cohort_pipeline/sql/06_master_cohort.sql",
+      "bytes": 8914,
+      "lines": 123,
+      "sha256": "7e1cb1513b5e17693341380f8510fe050f783b6cf04ecc46f570753575443ce8",
+      "group": "04_COHORT_SQL"
+    },
+    {
+      "path": "cohort_pipeline/sql/07_two_landmark_availability_audit.sql",
+      "bytes": 31349,
+      "lines": 467,
+      "sha256": "2519f8521f093681b805f26cc2ef346ae151eb120406da619b5720fa9d0a12fd",
+      "group": "04_COHORT_SQL"
+    },
+    {
+      "path": "cohort_pipeline/sql/08_copd_longitudinal_v1_mimiciii.sql",
+      "bytes": 3097,
+      "lines": 66,
+      "sha256": "9bf77605b3619e4de1e58ae6b3a7e4d3f8003489676d4e644638a9e3f7e56ffd",
+      "group": "04_COHORT_SQL"
+    },
+    {
+      "path": "cohort_pipeline/sql/08_copd_longitudinal_v1_mimiciv.sql",
+      "bytes": 3671,
+      "lines": 75,
+      "sha256": "f2f2e8741cc3b170cc9058a5efd861ff6578c746be03f9234c0c196ed378c51c",
+      "group": "04_COHORT_SQL"
+    },
+    {
+      "path": "cohort_pipeline/sql/08b_copd_longitudinal_v2_mimiciii.sql",
+      "bytes": 1882,
+      "lines": 41,
+      "sha256": "bcb5781372557616ce735df444afa2e3ea2c4809a0a5aac1cbad3be73c13978c",
+      "group": "04_COHORT_SQL"
+    },
+    {
+      "path": "cohort_pipeline/sql/08b_copd_longitudinal_v2_mimiciv.sql",
+      "bytes": 2266,
+      "lines": 48,
+      "sha256": "f5c95e87f93d9af2185e0c0ebe8e310f2fef16701167be78b2c543c9fa3a4de5",
+      "group": "04_COHORT_SQL"
+    },
+    {
+      "path": "cohort_pipeline/sql/08c_copd_coded_admissions_mimiciii.sql",
+      "bytes": 2757,
+      "lines": 61,
+      "sha256": "9cf614988431f983b2c341d157004f3a1abea92976edfd1c459674dae798353f",
+      "group": "04_COHORT_SQL"
+    },
+    {
+      "path": "cohort_pipeline/sql/08c_copd_coded_admissions_mimiciv.sql",
+      "bytes": 2926,
+      "lines": 63,
+      "sha256": "89c77b255464deb3e80ac2be2fb937810b90adb1f50788f9f96f3cc3f7430e73",
+      "group": "04_COHORT_SQL"
+    },
+    {
+      "path": "cohort_pipeline/sql/08d_copd_coded_note_availability_mimiciii.sql",
+      "bytes": 1948,
+      "lines": 46,
+      "sha256": "d426e292fe8f415f4e03c58c42b1e3e59a822b2656b3b3a6608b744024c3fd05",
+      "group": "04_COHORT_SQL"
+    },
+    {
+      "path": "cohort_pipeline/sql/08d_copd_coded_note_availability_mimiciv.sql",
+      "bytes": 1628,
+      "lines": 43,
+      "sha256": "16734c798296328fa2545073bec5a84bbe0b0904f25993c1d82b0322bcdce7ad",
+      "group": "04_COHORT_SQL"
+    },
+    {
+      "path": "cohort_pipeline/sql/08e_copd_coded_dataset_manifest_mimiciii.sql",
+      "bytes": 2318,
+      "lines": 53,
+      "sha256": "616c50626637fa0475a848313dab6495639c1a78285cdbdec2e75efc0ac7e4f8",
+      "group": "04_COHORT_SQL"
+    },
+    {
+      "path": "cohort_pipeline/sql/08e_copd_coded_dataset_manifest_mimiciv.sql",
+      "bytes": 3067,
+      "lines": 64,
+      "sha256": "c6d7fd2073847827cfb4ce1127822f7ea37cfa35d805876a6d523f3411088807",
+      "group": "04_COHORT_SQL"
+    },
+    {
+      "path": "cohort_pipeline/sql/08f_copd_coded_timed_notes_mimiciii.sql",
+      "bytes": 769,
+      "lines": 18,
+      "sha256": "2995bf7180bc6a74beea74e5a746d2c8b73669d9ebb1150563cbd8da23dafc55",
+      "group": "04_COHORT_SQL"
+    },
+    {
+      "path": "cohort_pipeline/sql/08f_copd_coded_timed_notes_mimiciv.sql",
+      "bytes": 1108,
+      "lines": 27,
+      "sha256": "4db6403e95fa8aaeda147b2ca145bc1431d2cc08afb58ce5bc552fb9c534ee49",
+      "group": "04_COHORT_SQL"
+    },
+    {
+      "path": "cohort_pipeline/sql/08g_copd_coded_strict_index_labels_mimiciii.sql",
+      "bytes": 3885,
+      "lines": 89,
+      "sha256": "e8ded8bac0871d977d2c0192441467cf9f08e578c98955360171cca4e2e3e241",
+      "group": "04_COHORT_SQL"
+    },
+    {
+      "path": "cohort_pipeline/sql/08g_copd_coded_strict_index_labels_mimiciv.sql",
+      "bytes": 3905,
+      "lines": 89,
+      "sha256": "0a8fea3779b0a66a0f992e516e92a9b77c32477b2b2b4675bdeecce175161623",
+      "group": "04_COHORT_SQL"
+    },
+    {
+      "path": "cohort_pipeline/sql/08h_copd_coded_model_inputs_mimiciii.sql",
+      "bytes": 2835,
+      "lines": 58,
+      "sha256": "ac72fea12f398ae5f29f7d59892ad4a078bbecf7d5d3904c0b7ec141abd3f5c9",
+      "group": "04_COHORT_SQL"
+    },
+    {
+      "path": "cohort_pipeline/sql/08h_copd_coded_model_inputs_mimiciv.sql",
+      "bytes": 2946,
+      "lines": 59,
+      "sha256": "88d5ab4bee12c6adc0908739f579be5b848de602366afbd3607be0fb01ecf9cb",
+      "group": "04_COHORT_SQL"
+    },
+    {
+      "path": "cohort_pipeline/sql/08i_copd_coded_all_index_labels_mimiciii.sql",
+      "bytes": 4081,
+      "lines": 88,
+      "sha256": "3779e4da2c9be6ca54244798e7e18df204f370d8aea6fe865d9dfffe5921fc31",
+      "group": "04_COHORT_SQL"
+    },
+    {
+      "path": "cohort_pipeline/sql/08i_copd_coded_all_index_labels_mimiciv.sql",
+      "bytes": 4159,
+      "lines": 89,
+      "sha256": "f59e435f09a2d2f292ac02d956de862cb0be231806dfce06bc9a4e8db00a4ab9",
+      "group": "04_COHORT_SQL"
+    },
+    {
+      "path": "cohort_pipeline/sql/08j_copd_coded_first_index_labels_mimiciii.sql",
+      "bytes": 1185,
+      "lines": 28,
+      "sha256": "b30d170530ed205ee73c625d509ab06656640f1cdb2ba6f6771e1f9ee2a384f8",
+      "group": "04_COHORT_SQL"
+    },
+    {
+      "path": "cohort_pipeline/sql/08j_copd_coded_first_index_labels_mimiciv.sql",
+      "bytes": 1279,
+      "lines": 29,
+      "sha256": "6db348b0b24e5e38a6d369e1ffd61092dcf0a255fa6eed69081d26b81cfed995",
+      "group": "04_COHORT_SQL"
+    },
+    {
+      "path": "cohort_pipeline/sql/99_verify.sql",
+      "bytes": 3288,
+      "lines": 47,
+      "sha256": "24c74abc423961bdd2785c02f88f6541042e7abc913dc5f391c2c0bee1bb0dc6",
+      "group": "04_COHORT_SQL"
+    },
+    {
+      "path": "cohort_pipeline/sql/copd_broad_readmission_labels_mimiciv.sql",
+      "bytes": 4270,
+      "lines": 91,
+      "sha256": "344ff26217fd3845e13f90a3da568222c3b9a3d6c3c487be826ffc0219f6acca",
+      "group": "04_COHORT_SQL"
+    },
+    {
+      "path": "cohort_pipeline/sql/copd_qualified_readmission_labels_mimiciv.sql",
+      "bytes": 4532,
+      "lines": 93,
+      "sha256": "e216ad04b0fc995fb2d2fda231df60b12a363f7c1a09b1be95840618f75b46ea",
+      "group": "04_COHORT_SQL"
+    },
+    {
+      "path": "cohort_pipeline/sql/diagnostics/d1_followup_window_diagnosis.sql",
+      "bytes": 6475,
+      "lines": 122,
+      "sha256": "8a34a05836d291514447514a596ea3267b1dd366aeb6490dc19c26a28dd91b75",
+      "group": "04_COHORT_SQL"
+    },
+    {
+      "path": "cohort_pipeline/sql/diagnostics/d2_principal_diagnosis_purity.sql",
+      "bytes": 4076,
+      "lines": 78,
+      "sha256": "383a87a95c691a102409c98af0d4ef3d7c4491937ebd18907ba0fa2115f8028e",
+      "group": "04_COHORT_SQL"
+    },
+    {
+      "path": "cohort_pipeline/sql/diagnostics/d3_short_interval_readmission.sql",
+      "bytes": 4033,
+      "lines": 52,
+      "sha256": "b0ac218ff9d7573b0995e1c472754c37106803b5e2f3a1eb1587689a78129bbf",
+      "group": "04_COHORT_SQL"
+    },
+    {
+      "path": "cohort_pipeline/sql/mimiciii_cohort_audit.sql",
+      "bytes": 3626,
+      "lines": 81,
+      "sha256": "5a09eb2252bfe9f03975bd08c03d56c2838c36881ed69d3d9a9282130d59445e",
+      "group": "04_COHORT_SQL"
+    },
+    {
+      "path": "cohort_pipeline/sql/mimiciii_index_core_features_for_coded_cohort.sql",
+      "bytes": 787,
+      "lines": 16,
+      "sha256": "d806bbe7808bd7d9786d5a98d84766fa5e7c486a7896d8f68b8c64e2d60ec113",
+      "group": "04_COHORT_SQL"
+    },
+    {
+      "path": "cohort_pipeline/sql/mimiciii_load_core_features_for_coded_cohort.sql",
+      "bytes": 1950,
+      "lines": 28,
+      "sha256": "ca2e5a4f97e0fa35e9df2e48a5f725328ba66b33092ba0987a305ecd9c20a33e",
+      "group": "04_COHORT_SQL"
+    },
+    {
+      "path": "cohort_pipeline/sql/mimiciii_note_audit.sql",
+      "bytes": 1704,
+      "lines": 34,
+      "sha256": "02d650e125d312748f4906103d8966cfe51ca254b16645e007ca141e8ab4b654",
+      "group": "04_COHORT_SQL"
+    },
+    {
+      "path": "config/clinical_feature_contract.csv",
+      "bytes": 12642,
+      "lines": 111,
+      "sha256": "b4942c2196077b5d5fd6007d4389a6ee47c28a54f519037e3c25a7a6bef59940",
+      "group": "06_LOADER_AND_CONTRACTS"
+    },
+    {
+      "path": "config/clinical_feature_contract_v2_diagnosis.csv",
+      "bytes": 13311,
+      "lines": 111,
+      "sha256": "dd7403d81071e7a22f202d2ebee3b64788572840af6fad647344d8d781ad023d",
+      "group": "06_LOADER_AND_CONTRACTS"
+    },
+    {
+      "path": "docs/COPD_PREDICTION_PRIMARY_STUDIES_REVIEW_2026-10-14.md",
+      "bytes": 18313,
+      "lines": 218,
+      "sha256": "25b76dc88bd57a333d37f89feb62025a559ac202fc1fb3cf5f8f7a8ebda48fd9",
+      "group": "03_PROTOCOLS_AND_REPORTS"
+    },
+    {
+      "path": "docs/PUBLIC_DATA_SNAPSHOT_2026-10-15.md",
+      "bytes": 2952,
+      "lines": 23,
+      "sha256": "ea6fa6ee3fb78bef0d74084780b74be6358ea14a0452b077f2ccbee8dae0f4a0",
+      "group": "01_DATA_SNAPSHOT"
+    },
+    {
+      "path": "docs/PUBLIC_GITIGNORE.txt",
+      "bytes": 1384,
+      "lines": 90,
+      "sha256": "0b228e7850e17b86534260fc63f07e24ee3d4b9ff01359b9d8e48775988f6861",
+      "group": "03_PROTOCOLS_AND_REPORTS"
+    },
+    {
+      "path": "docs/PUBLIC_NAVIGATION.md",
+      "bytes": 3135,
+      "lines": 24,
+      "sha256": "bfb7d34cede08035407a1035362b8bd92c9c3603067a60edb041a57cd423ce51",
+      "group": "03_PROTOCOLS_AND_REPORTS"
+    },
+    {
+      "path": "docs/PUBLIC_README.md",
+      "bytes": 8032,
+      "lines": 80,
+      "sha256": "b555cf35890530f9f583839b85e3e18553cc83a4f46c78465a08c655849804ae",
+      "group": "03_PROTOCOLS_AND_REPORTS"
+    },
+    {
+      "path": "docs/public_snapshot/AGGREGATE_RESULTS.json",
+      "bytes": 6586827,
+      "lines": 80013,
+      "sha256": "57be18fd89e51e11a467e9f655843a19219c70c8e834a8d8234800c1e109bffa",
+      "group": "02_AGGREGATE_RESULTS"
+    },
+    {
+      "path": "docs/public_snapshot/DATA_SNAPSHOT.json",
+      "bytes": 133713,
+      "lines": 5332,
+      "sha256": "218ec2b7db8f4cb43d7b42cf74ae932e935e79dd60e3126cd91e370b4fcda9c7",
+      "group": "01_DATA_SNAPSHOT"
+    },
+    {
+      "path": "docs/PUBLICATION_BOUNDARY_2026-10-14.md",
+      "bytes": 3822,
+      "lines": 36,
+      "sha256": "d692b9fb3bd8d45f1078b0d74edbde2dbfdef657652132521b7a19971cd1bdfe",
+      "group": "03_PROTOCOLS_AND_REPORTS"
+    },
+    {
+      "path": "docs/README.md",
+      "bytes": 3135,
+      "lines": 24,
+      "sha256": "bfb7d34cede08035407a1035362b8bd92c9c3603067a60edb041a57cd423ce51",
+      "group": "03_PROTOCOLS_AND_REPORTS"
+    },
+    {
+      "path": "docs/V6_CURRENT_INPUT_CATALOG_2026-10-11.md",
+      "bytes": 19683,
+      "lines": 246,
+      "sha256": "faf3246ec1c01b97a57361d0256b921fa96d8131638230b32900705f3bb4990d",
+      "group": "03_PROTOCOLS_AND_REPORTS"
+    },
+    {
+      "path": "docs/V6_EVALUATION_PROTOCOL.md",
+      "bytes": 5466,
+      "lines": 51,
+      "sha256": "23e6de086a3e40790616a0fad07e4208af7598c750316df17cd2f8e533b1205a",
+      "group": "03_PROTOCOLS_AND_REPORTS"
+    },
+    {
+      "path": "docs/V6_FAST_SCREENING_POLICY_2026-10-14.md",
+      "bytes": 1366,
+      "lines": 9,
+      "sha256": "e859de8818fb1a1082b9ee6f3ec4410ec899764eb4df5a7baeb56593f3d6a5e9",
+      "group": "03_PROTOCOLS_AND_REPORTS"
+    },
+    {
+      "path": "docs/V6_HISTORY_AND_ALERT_EXPLAINED_2026-10-14.md",
+      "bytes": 7669,
+      "lines": 64,
+      "sha256": "5c706f0f9b0ace7f260f65b5dbfde7108aa2daa3e7c3b971ececa43b56eb04bc",
+      "group": "03_PROTOCOLS_AND_REPORTS"
+    },
+    {
+      "path": "docs/V6_MULTIHORIZON_READOUT_PROTOCOL_2026-10-14.md",
+      "bytes": 2074,
+      "lines": 15,
+      "sha256": "66f01b6b47dfa9380de0f3068728adfe538d95da1ad8f87dc16defc5be48922c",
+      "group": "03_PROTOCOLS_AND_REPORTS"
+    },
+    {
+      "path": "docs/V6_MULTIHORIZON_READOUT_RESULTS_2026-10-14.md",
+      "bytes": 6993,
+      "lines": 76,
+      "sha256": "a225dc7f7aaaf62665c96532113ffa72d1638689a6f9c293200595034c906230",
+      "group": "03_PROTOCOLS_AND_REPORTS"
+    },
+    {
+      "path": "docs/V6_SYMMETRIC_CONTEXT_PROTOCOL_2026-10-14.md",
+      "bytes": 2437,
+      "lines": 13,
+      "sha256": "c475b59d6ef80da61c5042316715a9b83c470d07e08a4b5ccd1f159fa67e4bea",
+      "group": "03_PROTOCOLS_AND_REPORTS"
+    },
+    {
+      "path": "docs/V6_SYMMETRIC_CONTEXT_RESULTS_2026-10-14.md",
+      "bytes": 4846,
+      "lines": 59,
+      "sha256": "bec8bd6f2f397935c0fd227e2d1a25466302ae1dd5b2fd4102d625f4400cb500",
+      "group": "03_PROTOCOLS_AND_REPORTS"
+    },
+    {
+      "path": "docs/V6_TASK_OPTIMIZATION_RESULTS_2026-10-13.md",
+      "bytes": 1782,
+      "lines": 17,
+      "sha256": "5ee022cfd4aec97f74791e41e4089f637f979e4a8fc14aa42962b6fc17404768",
+      "group": "03_PROTOCOLS_AND_REPORTS"
+    },
+    {
+      "path": "docs/V6_UNIFIED_LONGITUDINAL_F1_PRD_2026-10-14.md",
+      "bytes": 5976,
+      "lines": 37,
+      "sha256": "48a6cce3bd35cec3584fbe3412a8645540737adf8b918fe86922227bf0123404",
+      "group": "03_PROTOCOLS_AND_REPORTS"
+    },
+    {
+      "path": "docs/V6_UNIFIED_LONGITUDINAL_F1_RESULTS_2026-10-14.md",
+      "bytes": 10028,
+      "lines": 97,
+      "sha256": "92d0e1a07c959a44b25fc8a3a49c520e51e3feb6850e0850931cb3f19449c597",
+      "group": "03_PROTOCOLS_AND_REPORTS"
+    },
+    {
+      "path": "docs/V7_CACHED_FOLLOWUP_PROTOCOL_2026-10-15.md",
+      "bytes": 764,
+      "lines": 5,
+      "sha256": "b26824165196772277d96f02ef79aeb2e6fcaf480a468bfc3907939e82bc8f02",
+      "group": "03_PROTOCOLS_AND_REPORTS"
+    },
+    {
+      "path": "docs/V7_CACHED_RESEARCH_PROTOCOL_2026-10-15.md",
+      "bytes": 2134,
+      "lines": 11,
+      "sha256": "d5cb54885d78f5ab49cdd810e7e86d22bec27e05ab5fd18bca8fb3e22852f0e9",
+      "group": "03_PROTOCOLS_AND_REPORTS"
+    },
+    {
+      "path": "docs/V7_DRUG_CONTEXT_PROTOCOL_2026-10-15.md",
+      "bytes": 1648,
+      "lines": 9,
+      "sha256": "1291d7bf7f1fc38300874e8efd7315f0698f887bab297326163e5b130944d145",
+      "group": "03_PROTOCOLS_AND_REPORTS"
+    },
+    {
+      "path": "docs/V7_ENSEMBLE_FULL_REFIT_PROTOCOL_2026-10-15.md",
+      "bytes": 827,
+      "lines": 5,
+      "sha256": "949faf8c568550b884b49383ba0fae691edeff95bd5b8f529fa4d34ec6fc4f67",
+      "group": "03_PROTOCOLS_AND_REPORTS"
+    },
+    {
+      "path": "docs/V7_EXTERNAL_MATH_ENGINEERING_REVIEW_2026-10-15.md",
+      "bytes": 22958,
+      "lines": 158,
+      "sha256": "6b10e1e5705bff804bdaa5b54a12029fb685b9bc518510dc8453f06356d604eb",
+      "group": "03_PROTOCOLS_AND_REPORTS"
+    },
+    {
+      "path": "docs/V7_FIRST_EXPERIMENT_PRD_2026-10-15.md",
+      "bytes": 6088,
+      "lines": 49,
+      "sha256": "06487676c15bc9c4fc84a6b40d501994e9af69c29c1c2bbb43167497fcecfee5",
+      "group": "03_PROTOCOLS_AND_REPORTS"
+    },
+    {
+      "path": "docs/V7_FIRST_EXPERIMENT_RESULTS_2026-10-15.md",
+      "bytes": 9612,
+      "lines": 97,
+      "sha256": "a62ac6f1d37d8fc2ea6be94fd1fa32e0b65931c0621203395c7f8a85c42e6690",
+      "group": "03_PROTOCOLS_AND_REPORTS"
+    },
+    {
+      "path": "docs/V7_FIXED_V6_COX_BLEND_PROTOCOL_2026-10-15.md",
+      "bytes": 1358,
+      "lines": 11,
+      "sha256": "135ec6774bfa54d146cb0205ef0626af6afa39f61e612bbad39b72c933e5afee",
+      "group": "03_PROTOCOLS_AND_REPORTS"
+    },
+    {
+      "path": "docs/V7_FIXED_V6_COX_BLEND_RESULTS_2026-10-15.md",
+      "bytes": 2973,
+      "lines": 33,
+      "sha256": "6a4d5aaa1e6cab0b5a5fb97983cbd2176d8dfc7d2b2d285a952e2c966fb3b797",
+      "group": "03_PROTOCOLS_AND_REPORTS"
+    },
+    {
+      "path": "docs/V7_GEMINI_FOLLOWUP_REVIEW_2026-10-15.md",
+      "bytes": 11487,
+      "lines": 100,
+      "sha256": "5998cedd369bd730a3ae4db0a7d1b98177d0188f9cb5edcd1379c951a7ce8ab3",
+      "group": "03_PROTOCOLS_AND_REPORTS"
+    },
+    {
+      "path": "docs/V7_GEMINI_SOURCE_REVIEW_2026-10-15.md",
+      "bytes": 24406,
+      "lines": 187,
+      "sha256": "1bb0a7abe707168b42288d1a48aa30b2be4e0c019e1fc0b873ba962a92fd5622",
+      "group": "03_PROTOCOLS_AND_REPORTS"
+    },
+    {
+      "path": "docs/V7_LAB_AWARE_DESIGN_AND_STATUS_2026-10-15.md",
+      "bytes": 9799,
+      "lines": 88,
+      "sha256": "a62c24017e2a2eb679b5b982d7a05ac6357195708ed8beffdd9de5db22d57c00",
+      "group": "03_PROTOCOLS_AND_REPORTS"
+    },
+    {
+      "path": "docs/V7_LOSS_COMPARISON_PRD_2026-10-15.md",
+      "bytes": 3805,
+      "lines": 40,
+      "sha256": "7ea929ac7f0369168ea7e44e4e1ddeccb2f68cdbd4d1091eb6ba378fd9103d0a",
+      "group": "03_PROTOCOLS_AND_REPORTS"
+    },
+    {
+      "path": "docs/V7_LOSS_COMPARISON_RESULTS_2026-10-15.md",
+      "bytes": 9037,
+      "lines": 92,
+      "sha256": "7f5481b8a007a5bc85e8cb743133df0b3baa9e52dae89e5222359886a2dd175d",
+      "group": "03_PROTOCOLS_AND_REPORTS"
+    },
+    {
+      "path": "docs/V7_PROJECTED_STRONG_PROTOCOL_2026-10-15.md",
+      "bytes": 3117,
+      "lines": 21,
+      "sha256": "41703d882aa95608251fc3f425ed35e580e47ddb218ec27460a21a66e3a58d30",
+      "group": "03_PROTOCOLS_AND_REPORTS"
+    },
+    {
+      "path": "docs/V7_PROJECTED_STRONG_RESULTS_2026-10-15.md",
+      "bytes": 4736,
+      "lines": 46,
+      "sha256": "2200d3b2c243c7052e9d110a7dd8bfa91f298bfb4c72fff793bf57162df74191",
+      "group": "03_PROTOCOLS_AND_REPORTS"
+    },
+    {
+      "path": "docs/V7_QUERY_REPLICATION_PROTOCOL_2026-10-15.md",
+      "bytes": 728,
+      "lines": 5,
+      "sha256": "60621e4ab45c72f3ceb1e94b637e8420da1644a75bf42d53207fb707382f39b8",
+      "group": "03_PROTOCOLS_AND_REPORTS"
+    },
+    {
+      "path": "docs/V7_RESIDUAL_CONTROLS_PROTOCOL_2026-10-15.md",
+      "bytes": 931,
+      "lines": 5,
+      "sha256": "8324101534371a1332bd859db986d0c38beb5ae246e6074a803903d723132b00",
+      "group": "03_PROTOCOLS_AND_REPORTS"
+    },
+    {
+      "path": "docs/V7_RESIDUAL_FOLLOWUP_PROTOCOL_2026-10-15.md",
+      "bytes": 930,
+      "lines": 7,
+      "sha256": "2dc24dc5e6f3a9cae9e618b26bc7cbd888922b434c1bad00194bb26b038b23d5",
+      "group": "03_PROTOCOLS_AND_REPORTS"
+    },
+    {
+      "path": "docs/V7_SEQUENTIAL_RESEARCH_PRD_2026-10-15.md",
+      "bytes": 4136,
+      "lines": 36,
+      "sha256": "f9771fe7f63d633b99761672c1cbeebfeb0587c35df47abe9afe9110b17405ba",
+      "group": "03_PROTOCOLS_AND_REPORTS"
+    },
+    {
+      "path": "docs/V7_SEQUENTIAL_RESEARCH_RESULTS_2026-10-15.md",
+      "bytes": 21418,
+      "lines": 222,
+      "sha256": "b93f3aa79e68720f011a85d59a7152ee950be4a7883f98817bcac98c817955f3",
+      "group": "03_PROTOCOLS_AND_REPORTS"
+    },
+    {
+      "path": "docs/V7_STRONG_ANCHOR_PROTOCOL_2026-10-15.md",
+      "bytes": 1105,
+      "lines": 7,
+      "sha256": "20cf40d2b8a1163d4ef046295e1baf6e65d1fd6881dcf7e738a8be3b35fa1b88",
+      "group": "03_PROTOCOLS_AND_REPORTS"
+    },
+    {
+      "path": "docs/V7_STRONG_NO_CROSS_PROTOCOL_2026-10-15.md",
+      "bytes": 2638,
+      "lines": 17,
+      "sha256": "f6a9f45ecb5fb18dd9d3e43c01639f48bcd2731d6f509b53444d1c82a957369d",
+      "group": "03_PROTOCOLS_AND_REPORTS"
+    },
+    {
+      "path": "docs/V7_STRONG_NO_CROSS_RESULTS_2026-10-15.md",
+      "bytes": 5870,
+      "lines": 74,
+      "sha256": "c52246ee69c680276d8b01bc3f01116f87fc4d519cad1f5d7264681d8c89403f",
+      "group": "03_PROTOCOLS_AND_REPORTS"
+    },
+    {
+      "path": "docs/V7_STRONG_REPLICATION_PROTOCOL_2026-10-15.md",
+      "bytes": 661,
+      "lines": 5,
+      "sha256": "dae2f37d2bc3db5640cdeed466a3531a7d6c223945138833f79aa4d530a9d542",
+      "group": "03_PROTOCOLS_AND_REPORTS"
+    },
+    {
+      "path": "docs/V7_TWO_FOLD_ENSEMBLE_PROTOCOL_2026-10-15.md",
+      "bytes": 2218,
+      "lines": 11,
+      "sha256": "8af0e2699c324e81208373a181068dceb4dc262beaa407e1f38778b96549fb4c",
+      "group": "03_PROTOCOLS_AND_REPORTS"
+    },
+    {
+      "path": "model_loader/aecopd_loader.py",
+      "bytes": 33991,
+      "lines": 771,
+      "sha256": "a85b53d92a6f2d3d33a87eaf52d2bfcd99f7962bd6bd8ee079d5c1fcd1ce1ac5",
+      "group": "06_LOADER_AND_CONTRACTS"
+    },
+    {
+      "path": "model_loader/audit_gpu_environment.py",
+      "bytes": 1812,
+      "lines": 54,
+      "sha256": "c615c8bc7bfac2e7566d8749fa084c976ec5c6201326237434c9349c1d5aff31",
+      "group": "06_LOADER_AND_CONTRACTS"
+    },
+    {
+      "path": "model_loader/clinical_feature_contract.py",
+      "bytes": 6497,
+      "lines": 177,
+      "sha256": "b0c5f53aca2d236b1bde32c1836f6fc4f04d68c939eb503941fbd4ca5725cc37",
+      "group": "06_LOADER_AND_CONTRACTS"
+    },
+    {
+      "path": "model_loader/tests/test_aecopd_loader.py",
+      "bytes": 18543,
+      "lines": 324,
+      "sha256": "4f736c5f4692e97a2a481a079cbc30e89628ad48d2efe209e14462453850c59e",
+      "group": "11_TESTS"
+    },
+    {
+      "path": "model_loader/tests/test_clinical_feature_contract.py",
+      "bytes": 4877,
+      "lines": 122,
+      "sha256": "0d0432edc2e3f1db5ca1f8f0a496dc2f0ce3043268e92bc03ceabf44f3f65366",
+      "group": "11_TESTS"
+    },
+    {
+      "path": "model_loader/tests/test_timeline_collator.py",
+      "bytes": 18767,
+      "lines": 461,
+      "sha256": "160614d93780662684d9b2e1d724056f0380a4385ea51c78fd6277f36ead16ca",
+      "group": "11_TESTS"
+    },
+    {
+      "path": "model_loader/timeline_collator.py",
+      "bytes": 31448,
+      "lines": 712,
+      "sha256": "75c879842936a2a5f81c26c80a8df6b7c9681d742c0f8ce46090ed9420342d7b",
+      "group": "06_LOADER_AND_CONTRACTS"
+    },
+    {
+      "path": "model_loader/validate_loader.py",
+      "bytes": 7192,
+      "lines": 139,
+      "sha256": "a06f1c823fa5cb36de2d1990037babf87a136e0eaae6ce1c0a42b76466f5b79f",
+      "group": "06_LOADER_AND_CONTRACTS"
+    },
+    {
+      "path": "model_loader/validate_timeline_collator.py",
+      "bytes": 10441,
+      "lines": 224,
+      "sha256": "f549ff5ae85123a44744fec38fd17e017a40fa16a4192d5da0198cadf23ae70d",
+      "group": "06_LOADER_AND_CONTRACTS"
+    },
+    {
+      "path": "patient_data/align_saved_sections.py",
+      "bytes": 9815,
+      "lines": 155,
+      "sha256": "b84646f33384fe8b0be6c37b07e3118ad64f451241f50f07a7aa4414c2a6e19b",
+      "group": "05_PATIENT_DATA_CODE"
+    },
+    {
+      "path": "patient_data/audit_cxr_labels.py",
+      "bytes": 4137,
+      "lines": 65,
+      "sha256": "d56750c66a6d1d00f2521d3845fbb120e243f82bcf601eeeb76107524833bca0",
+      "group": "05_PATIENT_DATA_CODE"
+    },
+    {
+      "path": "patient_data/audit_feature_candidates.py",
+      "bytes": 21821,
+      "lines": 367,
+      "sha256": "4fd4b332ade0f88d662e73c31267bc8185ad18f28cb2961bbee341d48d4bb9c7",
+      "group": "05_PATIENT_DATA_CODE"
+    },
+    {
+      "path": "patient_data/audit_lab_abnormality_feasibility.py",
+      "bytes": 3055,
+      "lines": 76,
+      "sha256": "4c85df3f96b781b6d5929f8ab6ff53e5e8a725d19ee2aabf346ab6a66de3206a",
+      "group": "05_PATIENT_DATA_CODE"
+    },
+    {
+      "path": "patient_data/audit_medication_effect_mapping.py",
+      "bytes": 3790,
+      "lines": 76,
+      "sha256": "c2b9659080e5ce453fa327d29fd4423a604f844b1f8c78b28fd2b824508234cb",
+      "group": "05_PATIENT_DATA_CODE"
+    },
+    {
+      "path": "patient_data/audit_medication_formulations.py",
+      "bytes": 2046,
+      "lines": 46,
+      "sha256": "8118c48c5e264bfaa036dc35bb46f482f4af43a3bec438e68b671c23a1b866b5",
+      "group": "05_PATIENT_DATA_CODE"
+    },
+    {
+      "path": "patient_data/audit_saved_data.py",
+      "bytes": 2409,
+      "lines": 49,
+      "sha256": "b79d0d99364a125ca922798d2f430541e6788a2ee94af9437a6a9e9117cc7da0",
+      "group": "05_PATIENT_DATA_CODE"
+    },
+    {
+      "path": "patient_data/audit_saved_text_assets.py",
+      "bytes": 2280,
+      "lines": 39,
+      "sha256": "245ec180c4251dbc3d317306bcde7ca407fd016358bb344a0f56401df629839e",
+      "group": "05_PATIENT_DATA_CODE"
+    },
+    {
+      "path": "patient_data/audit_v6_input_candidates.py",
+      "bytes": 11187,
+      "lines": 237,
+      "sha256": "81ece27498740fe5f96d6011f269fff8f4281faa4d395571cbc31eebee49ad96",
+      "group": "05_PATIENT_DATA_CODE"
+    },
+    {
+      "path": "patient_data/build_feature_catalog.py",
+      "bytes": 5523,
+      "lines": 100,
+      "sha256": "e01de9752699ba657bc18a3003158f9265eddbb75c56f4393e377f0a93bb3fa1",
+      "group": "05_PATIENT_DATA_CODE"
+    },
+    {
+      "path": "patient_data/clinical_combinations.py",
+      "bytes": 8475,
+      "lines": 133,
+      "sha256": "8714f65bf5a01ebf2807f6669a3422e9c3948c4d83e88f2e7279e566ab38016b",
+      "group": "05_PATIENT_DATA_CODE"
+    },
+    {
+      "path": "patient_data/clinical_facts/__init__.py",
+      "bytes": 73,
+      "lines": 1,
+      "sha256": "72c755eaedee989d8f463f1c06ed999e18ab51106c4e99d88a805b2d942babdf",
+      "group": "05_PATIENT_DATA_CODE"
+    },
+    {
+      "path": "patient_data/clinical_facts/audit.py",
+      "bytes": 6523,
+      "lines": 96,
+      "sha256": "cdd66ad75bc8f86391a749564d6d5519365d6afee51b74dcbbe885973c9140cf",
+      "group": "05_PATIENT_DATA_CODE"
+    },
+    {
+      "path": "patient_data/clinical_facts/audit_radiology_comparison.py",
+      "bytes": 6219,
+      "lines": 79,
+      "sha256": "9b163613b25bbc3227643c9f5271cba5465a7d3e961ea5e8a0d453e5dc4c517b",
+      "group": "05_PATIENT_DATA_CODE"
+    },
+    {
+      "path": "patient_data/clinical_facts/audit_radiology_repetition.py",
+      "bytes": 3189,
+      "lines": 48,
+      "sha256": "a2107f32598f8bac2d274fdb17b37043d8e80381b2ee09cc4a5a8a96d6c0bb9d",
+      "group": "05_PATIENT_DATA_CODE"
+    },
+    {
+      "path": "patient_data/clinical_facts/audit_sentence_screen.py",
+      "bytes": 4452,
+      "lines": 73,
+      "sha256": "067df668c168f9f213d3e491f675765b969510de665ab55881a158dc65554aa7",
+      "group": "05_PATIENT_DATA_CODE"
+    },
+    {
+      "path": "patient_data/clinical_facts/catalog.py",
+      "bytes": 6614,
+      "lines": 78,
+      "sha256": "77e54c839473f42e8438d170d7a554fb6e50e300093220aa29b1c8deccbb32f3",
+      "group": "05_PATIENT_DATA_CODE"
+    },
+    {
+      "path": "patient_data/clinical_facts/cxr_trajectory.py",
+      "bytes": 6981,
+      "lines": 108,
+      "sha256": "c00d8fe58b1b0b7822da41e54ec2bc269b9d613a57a7e6e2be6c7f0caff95b06",
+      "group": "05_PATIENT_DATA_CODE"
+    },
+    {
+      "path": "patient_data/clinical_facts/features.py",
+      "bytes": 7918,
+      "lines": 106,
+      "sha256": "57a2ac01f16eae50e620357fe8fde5215c96c9920aa817a5e91a3dbbc40348e3",
+      "group": "05_PATIENT_DATA_CODE"
+    },
+    {
+      "path": "patient_data/clinical_facts/guards.py",
+      "bytes": 6573,
+      "lines": 79,
+      "sha256": "c18f5ca13f7abbb1ff41f23f452de3191b31de29480aadfad7310cc2f96c3d2b",
+      "group": "05_PATIENT_DATA_CODE"
+    },
+    {
+      "path": "patient_data/clinical_facts/imaging.py",
+      "bytes": 7403,
+      "lines": 116,
+      "sha256": "dad4c512856fde8271340995e4dd56569e1eae8c9c031ac6315fe2dca72613c2",
+      "group": "05_PATIENT_DATA_CODE"
+    },
+    {
+      "path": "patient_data/clinical_facts/llm.py",
+      "bytes": 6235,
+      "lines": 106,
+      "sha256": "9655bd536573213cbd27ba20e1d95f508cf7992e3e4178f22c83b2a299e4dffd",
+      "group": "05_PATIENT_DATA_CODE"
+    },
+    {
+      "path": "patient_data/clinical_facts/radiology_compare.py",
+      "bytes": 15658,
+      "lines": 242,
+      "sha256": "b4e67ea67d0b1e1db3c74104b8f0f76df53b0f6bcd72bbc58d335f433b4115c6",
+      "group": "05_PATIENT_DATA_CODE"
+    },
+    {
+      "path": "patient_data/clinical_facts/refine_sentence_screen.py",
+      "bytes": 5230,
+      "lines": 74,
+      "sha256": "4a3d5ab6e5cf0a498d1b9b43bb71dfa75b772fa1efe6d4b31c5ad9ef37f8bc8e",
+      "group": "05_PATIENT_DATA_CODE"
+    },
+    {
+      "path": "patient_data/clinical_facts/runner.py",
+      "bytes": 7576,
+      "lines": 117,
+      "sha256": "4c1318b2fc7b9449464b41d82258f955e9e24b27905a5800d0266cc69e122b9a",
+      "group": "05_PATIENT_DATA_CODE"
+    },
+    {
+      "path": "patient_data/clinical_facts/sanitize_radgraph.py",
+      "bytes": 4539,
+      "lines": 66,
+      "sha256": "136aa93f92018f486cacbd3ea1e9098892a1fc1aad0999af22a16da994b95adc",
+      "group": "05_PATIENT_DATA_CODE"
+    },
+    {
+      "path": "patient_data/clinical_facts/sentence_rules.py",
+      "bytes": 8521,
+      "lines": 86,
+      "sha256": "74fdb09cd35738b64d80a5857a6587fa3dd953d0997c0bdd942943c415c3b3b0",
+      "group": "05_PATIENT_DATA_CODE"
+    },
+    {
+      "path": "patient_data/clinical_facts/sentence_screen.py",
+      "bytes": 10419,
+      "lines": 172,
+      "sha256": "3dc4d9fccc7bbf0a7555f27b73d55f28815d2e6420156b04b1e10f8a249d16ac",
+      "group": "05_PATIENT_DATA_CODE"
+    },
+    {
+      "path": "patient_data/clinical_facts/short_topic_audit.py",
+      "bytes": 7729,
+      "lines": 105,
+      "sha256": "8933fbce4da44b16ac65d8902aba3008c7d433f4e777e912afe3c0c8b4c74ca7",
+      "group": "05_PATIENT_DATA_CODE"
+    },
+    {
+      "path": "patient_data/clinical_facts/short_topics.py",
+      "bytes": 5399,
+      "lines": 85,
+      "sha256": "61897e09a6754da1a7262d932759f4f3bb362aa2dee2e0083b976db950654ef0",
+      "group": "05_PATIENT_DATA_CODE"
+    },
+    {
+      "path": "patient_data/clinical_facts/tasks.py",
+      "bytes": 7032,
+      "lines": 108,
+      "sha256": "87909ba47e7e53226792205d3c2371451ae181fb8ea2110b81acfa9693c3f466",
+      "group": "05_PATIENT_DATA_CODE"
+    },
+    {
+      "path": "patient_data/compact_multisource.py",
+      "bytes": 20598,
+      "lines": 320,
+      "sha256": "27fa9091c831134b92dcccbd0660c0c204c09830dbd36ab8cb98190c8f62d8dc",
+      "group": "05_PATIENT_DATA_CODE"
+    },
+    {
+      "path": "patient_data/compare_saved_labs.py",
+      "bytes": 2629,
+      "lines": 54,
+      "sha256": "6712e38059860dc39344883472abc808bbdd7e0bfeb18f00b4f347ca4c7faa20",
+      "group": "05_PATIENT_DATA_CODE"
+    },
+    {
+      "path": "patient_data/core_lab_value_audit.py",
+      "bytes": 11815,
+      "lines": 171,
+      "sha256": "ae8fbf0d57f6d3621e772b6f2edd4203cd6d337cf640681a233d9a33790f23f7",
+      "group": "05_PATIENT_DATA_CODE"
+    },
+    {
+      "path": "patient_data/cxr_report_selection.py",
+      "bytes": 8899,
+      "lines": 146,
+      "sha256": "33017e630e5eeaab6f3445bdb223e4d426c5d8dc0382c7e2c5f47bff2169b0c2",
+      "group": "05_PATIENT_DATA_CODE"
+    },
+    {
+      "path": "patient_data/discharge_regimen_audit.py",
+      "bytes": 16098,
+      "lines": 233,
+      "sha256": "21921a64bab7a982c6f1c2ead25b700fab8e02bd6c023058e6e0532104b5fa00",
+      "group": "05_PATIENT_DATA_CODE"
+    },
+    {
+      "path": "patient_data/discharge_regimen_entries.py",
+      "bytes": 7438,
+      "lines": 112,
+      "sha256": "952bf2867cc23e0f23ffb224404da965c3078c115aec56611cbaa161ad425e10",
+      "group": "05_PATIENT_DATA_CODE"
+    },
+    {
+      "path": "patient_data/discharge_regimen_entries_checked.py",
+      "bytes": 1643,
+      "lines": 34,
+      "sha256": "6c5c4713ebad5bd9d8269322d745da9039d656b10b042d85995f4a712f8719cf",
+      "group": "05_PATIENT_DATA_CODE"
+    },
+    {
+      "path": "patient_data/discharge_regimen_entry_audit.py",
+      "bytes": 9420,
+      "lines": 145,
+      "sha256": "b577ca70fc3f365064532b1be6a3a2f7b76166bce7def486157035861946c649",
+      "group": "05_PATIENT_DATA_CODE"
+    },
+    {
+      "path": "patient_data/discharge_regimen_entry_checked_audit.py",
+      "bytes": 2938,
+      "lines": 58,
+      "sha256": "e844971beaa7f17c530992b347a734ec5e96dd3975e6f56ecd708baf0ee21ff6",
+      "group": "05_PATIENT_DATA_CODE"
+    },
+    {
+      "path": "patient_data/discharge_regimen_interface.py",
+      "bytes": 13150,
+      "lines": 202,
+      "sha256": "0e282c7f2c609c9885abef4b4c2fe83ee92199ca6d6ac8516cf39a642c36d824",
+      "group": "05_PATIENT_DATA_CODE"
+    },
+    {
+      "path": "patient_data/discharge_resp_fact_audit.py",
+      "bytes": 10259,
+      "lines": 142,
+      "sha256": "41ce7690aa89c2ef41123ec7dcbbd904f5d478c36c8de6d7d6ff3c8724d19ecb",
+      "group": "05_PATIENT_DATA_CODE"
+    },
+    {
+      "path": "patient_data/discharge_resp_fact_audit_r2.py",
+      "bytes": 11076,
+      "lines": 151,
+      "sha256": "be395eed42daa6033125894026e722a893ed5655f9c693cad9495640c876f24c",
+      "group": "05_PATIENT_DATA_CODE"
+    },
+    {
+      "path": "patient_data/discharge_resp_fact_review.py",
+      "bytes": 3670,
+      "lines": 45,
+      "sha256": "aabf8d8bd41bc1506ff2c324edc8fc49323e61630c23221fbe81606f529dd46b",
+      "group": "05_PATIENT_DATA_CODE"
+    },
+    {
+      "path": "patient_data/discharge_resp_r2_readout.py",
+      "bytes": 2613,
+      "lines": 39,
+      "sha256": "72f703c07f342a01c99a4b190332d56ac6a5ea8a06b0cc91c64f856320e331c0",
+      "group": "05_PATIENT_DATA_CODE"
+    },
+    {
+      "path": "patient_data/discharge_resp_rules.py",
+      "bytes": 6155,
+      "lines": 93,
+      "sha256": "c1022e35032129fa93522dfe25f747f2772d3ba4671faf277feea5e5b5c285e4",
+      "group": "05_PATIENT_DATA_CODE"
+    },
+    {
+      "path": "patient_data/discharge_resp_rules_r2.py",
+      "bytes": 5089,
+      "lines": 80,
+      "sha256": "085f28fc372604ff359bb622615eb875ab146f6e22aad695aefb814c7ef8ce7e",
+      "group": "05_PATIENT_DATA_CODE"
+    },
+    {
+      "path": "patient_data/disposition_audit.py",
+      "bytes": 4966,
+      "lines": 79,
+      "sha256": "3517ea03c9e09300aae2141c9784d787a3ceda3c0c6c5e837b7b2d0965cc1f03",
+      "group": "05_PATIENT_DATA_CODE"
+    },
+    {
+      "path": "patient_data/eos_med_context.py",
+      "bytes": 15130,
+      "lines": 243,
+      "sha256": "58803c3ddac466af653225e53f6c80564e3da42835b3aa2a1d26602873da602f",
+      "group": "05_PATIENT_DATA_CODE"
+    },
+    {
+      "path": "patient_data/expanded_abnormality_features.py",
+      "bytes": 8744,
+      "lines": 175,
+      "sha256": "7eaf8ed5ca73debfb99abd6c1dddbb97831d48dbad93177061e534c4895befba",
+      "group": "05_PATIENT_DATA_CODE"
+    },
+    {
+      "path": "patient_data/export_mimiciv.py",
+      "bytes": 11665,
+      "lines": 206,
+      "sha256": "a3824c1f12bfe3da98b8931734dcf70547f8eb18e73299969c8fca518cf489cb",
+      "group": "05_PATIENT_DATA_CODE"
+    },
+    {
+      "path": "patient_data/extend_lab_candidate_audit.py",
+      "bytes": 2987,
+      "lines": 68,
+      "sha256": "26d9f00363e840a581c6cb64b6d7149dad6be234b1b9201fb37447763f94f290",
+      "group": "05_PATIENT_DATA_CODE"
+    },
+    {
+      "path": "patient_data/lab_recovery_features.py",
+      "bytes": 9326,
+      "lines": 182,
+      "sha256": "8c930369ea3022214495ec9fe386e74375b5d8f5aa530faacecfe89f0dfa5435",
+      "group": "05_PATIENT_DATA_CODE"
+    },
+    {
+      "path": "patient_data/local_text_interface.py",
+      "bytes": 13930,
+      "lines": 188,
+      "sha256": "48b0b08eeaa3a868e185bf81d155169d54e4bacc86326894219125ff25b59a30",
+      "group": "05_PATIENT_DATA_CODE"
+    },
+    {
+      "path": "patient_data/medication_identity.py",
+      "bytes": 11129,
+      "lines": 174,
+      "sha256": "e98c409646975f9fcc06b01db898af112013b8507da390bd4dbef2856c5e7ec3",
+      "group": "05_PATIENT_DATA_CODE"
+    },
+    {
+      "path": "patient_data/oxygen_device.py",
+      "bytes": 12542,
+      "lines": 185,
+      "sha256": "68515ea9852a7b474476c9a88dba60dd4970e2009d8ef286c1971429c78ab6d6",
+      "group": "05_PATIENT_DATA_CODE"
+    },
+    {
+      "path": "patient_data/pft_evidence.py",
+      "bytes": 11790,
+      "lines": 174,
+      "sha256": "4a986c1f71259849e951f75a8d98b6761e11c847ebb3f86882f736d62ff3e3ce",
+      "group": "05_PATIENT_DATA_CODE"
+    },
+    {
+      "path": "patient_data/pft_evidence_report.py",
+      "bytes": 2712,
+      "lines": 51,
+      "sha256": "939a0330e9615b48aa9a70b271fab3517732d71d9c30d03f5f0a087f1d77aa9d",
+      "group": "05_PATIENT_DATA_CODE"
+    },
+    {
+      "path": "patient_data/pft_fact_ledger.py",
+      "bytes": 7234,
+      "lines": 115,
+      "sha256": "ac803b3362d77de95ef761bb928cb0ddfa06f7de995e44d9fa3c730ddc06fb50",
+      "group": "05_PATIENT_DATA_CODE"
+    },
+    {
+      "path": "patient_data/pft_inventory.py",
+      "bytes": 8068,
+      "lines": 135,
+      "sha256": "3f667a82ea92da79955014cceef98c04815523c8f4b55a576353f3141a383d04",
+      "group": "05_PATIENT_DATA_CODE"
+    },
+    {
+      "path": "patient_data/pft_layout_probe.py",
+      "bytes": 3349,
+      "lines": 58,
+      "sha256": "e2e98b72fea1cc3f0fe46b5aed15b0438bb7db6aae39f3b29d72ccc8f6bdcf77",
+      "group": "05_PATIENT_DATA_CODE"
+    },
+    {
+      "path": "patient_data/pft_set_interface.py",
+      "bytes": 11695,
+      "lines": 164,
+      "sha256": "bbbfbf5547ee22c11abfcae19ba861bd81d71e0c85aced3358b7438fbaa0c0ae",
+      "group": "05_PATIENT_DATA_CODE"
+    },
+    {
+      "path": "patient_data/pft_table_binding.py",
+      "bytes": 8605,
+      "lines": 138,
+      "sha256": "c6bb645eef6f5424fd4009042f5b8f1b4db5c5d18b1735d41ff73488663a4c6b",
+      "group": "05_PATIENT_DATA_CODE"
+    },
+    {
+      "path": "patient_data/preprocess_events.py",
+      "bytes": 26371,
+      "lines": 473,
+      "sha256": "b390d7f1c205a28b0ed297708f5e52691a66927a9055e1a1d427f3caf0f95dfe",
+      "group": "05_PATIENT_DATA_CODE"
+    },
+    {
+      "path": "patient_data/resp_fact_set_interface.py",
+      "bytes": 13928,
+      "lines": 186,
+      "sha256": "382a75045f961878ce177080a2219d33b22c4713356ccd9b97a2b515bbb2bbd3",
+      "group": "05_PATIENT_DATA_CODE"
+    },
+    {
+      "path": "patient_data/resp_micro_context.py",
+      "bytes": 18996,
+      "lines": 290,
+      "sha256": "8eb5bdd9d468486cd2abb5529fe724a786ff1eb36664c95e1b0b83143fadf813",
+      "group": "05_PATIENT_DATA_CODE"
+    },
+    {
+      "path": "patient_data/respiratory_anchor_sampling_audit.py",
+      "bytes": 2090,
+      "lines": 35,
+      "sha256": "472ddc33ad199ad4cd1f3e37888fbebbb3397ae393f6fa97436e428a9666e5f0",
+      "group": "05_PATIENT_DATA_CODE"
+    },
+    {
+      "path": "patient_data/respiratory_device_feasibility.py",
+      "bytes": 3138,
+      "lines": 52,
+      "sha256": "93554ce9719a2e0ca94bb3b7116338cefadea64f56da055b611501ef1dc532b8",
+      "group": "05_PATIENT_DATA_CODE"
+    },
+    {
+      "path": "patient_data/respiratory_transition.py",
+      "bytes": 12942,
+      "lines": 194,
+      "sha256": "1133411673cc4e75d70d95335f22f9fe6cc8f32793c690f36a4ecf6541f10003",
+      "group": "05_PATIENT_DATA_CODE"
+    },
+    {
+      "path": "patient_data/review_cxr_samples.py",
+      "bytes": 3289,
+      "lines": 48,
+      "sha256": "3c3af50ed621262ca677d7896ff8b7df2223d5b5388781feabd53b377b09c537",
+      "group": "05_PATIENT_DATA_CODE"
+    },
+    {
+      "path": "patient_data/same_specimen_audit.py",
+      "bytes": 15202,
+      "lines": 239,
+      "sha256": "e1fec3d4cd7e466ae38caa83488fcacea7ef3b85e18ccc39eff3e28191a79585",
+      "group": "05_PATIENT_DATA_CODE"
+    },
+    {
+      "path": "patient_data/supplemental_sources.py",
+      "bytes": 11447,
+      "lines": 175,
+      "sha256": "eee0ba3235f144c68cc1667057e69c61b81d96f9cd3c7aaa96eaa722bba5eb5f",
+      "group": "05_PATIENT_DATA_CODE"
+    },
+    {
+      "path": "patient_data/test_audit_v6_input_candidates.py",
+      "bytes": 1672,
+      "lines": 38,
+      "sha256": "d2ddf3863b8169cf9fe4f554af6a5f40e8c84edc1cf3c88fe9e92bdd6ead6560",
+      "group": "11_TESTS"
+    },
+    {
+      "path": "patient_data/test_clinical_facts.py",
+      "bytes": 4936,
+      "lines": 77,
+      "sha256": "799cae4725c6f0fdeb19590abede740ea53e247a92a35a7471ec2b623df99ee1",
+      "group": "11_TESTS"
+    },
+    {
+      "path": "patient_data/test_compact_multisource.py",
+      "bytes": 5505,
+      "lines": 87,
+      "sha256": "0343b7c1e5e41be96d61651893de49561430988f64a9a4e8ca7ac17eb68a3a99",
+      "group": "11_TESTS"
+    },
+    {
+      "path": "patient_data/test_cxr_report_selection.py",
+      "bytes": 2441,
+      "lines": 39,
+      "sha256": "3d02d8ecc4bc811488a8b62a895e6c06ffe20993e66f2ee38abd9f6b49f3d3b4",
+      "group": "11_TESTS"
+    },
+    {
+      "path": "patient_data/test_eos_med_context.py",
+      "bytes": 2153,
+      "lines": 40,
+      "sha256": "7faa603facc04c831a9775a2b94207ef161a13cee4b5478694253cf4d074c4cb",
+      "group": "11_TESTS"
+    },
+    {
+      "path": "patient_data/test_expanded_abnormality_features.py",
+      "bytes": 1063,
+      "lines": 24,
+      "sha256": "639d1db2bc2f46636d01c8f87d2cfc13a8f174668397e33430164ebc1ba2c8b8",
+      "group": "11_TESTS"
+    },
+    {
+      "path": "patient_data/test_export_mimiciv.py",
+      "bytes": 1783,
+      "lines": 42,
+      "sha256": "2b992881eabf6644b6d07c465f602d000c28758d952e2ee65a8227c512c66272",
+      "group": "11_TESTS"
+    },
+    {
+      "path": "patient_data/test_normalization_regression.py",
+      "bytes": 2252,
+      "lines": 52,
+      "sha256": "3f4d095a6b1e5bc90959fca5dead864093fa21cd5e211c30cdbfbe80c93b9f89",
+      "group": "11_TESTS"
+    },
+    {
+      "path": "patient_data/test_preprocess_events.py",
+      "bytes": 8151,
+      "lines": 122,
+      "sha256": "ffdb07e7ab0adca8b5875b8393b7de8e2caae2d1fdd00970f4b367865ed4e377",
+      "group": "11_TESTS"
+    },
+    {
+      "path": "patient_data/test_radiology_compare.py",
+      "bytes": 2610,
+      "lines": 46,
+      "sha256": "fb165fd05c0281caada27789047e50bc84cb628d4e2b0fd85e4f09a906d29858",
+      "group": "11_TESTS"
+    },
+    {
+      "path": "patient_data/test_resp_micro_context.py",
+      "bytes": 2865,
+      "lines": 46,
+      "sha256": "1bdcacd8307c71ffc416dd0c41cafdc32003207864149f526be52946256ebd75",
+      "group": "11_TESTS"
+    },
+    {
+      "path": "patient_data/test_sentence_screen.py",
+      "bytes": 5702,
+      "lines": 85,
+      "sha256": "73497b3fc86f3a98e0deccefc23d30a08066409473bd153a16ac9299e1bfcad0",
+      "group": "11_TESTS"
+    },
+    {
+      "path": "patient_data/test_v6_context.py",
+      "bytes": 2180,
+      "lines": 46,
+      "sha256": "36647f566078e464be87f5ac431ba4f6c6a34879d7d7ffed38bb069cfda953a1",
+      "group": "11_TESTS"
+    },
+    {
+      "path": "patient_data/test_v6_detail_extension.py",
+      "bytes": 1534,
+      "lines": 31,
+      "sha256": "edd2a437454d43e18827688584eb7c07898c8a45567b7021b24eb544d89f1bf7",
+      "group": "11_TESTS"
+    },
+    {
+      "path": "patient_data/test_v6_lab_state.py",
+      "bytes": 2567,
+      "lines": 64,
+      "sha256": "469ee10ba5433fe5cb153d42a784e4bf812c15b5131580dd88501c15363c6503",
+      "group": "11_TESTS"
+    },
+    {
+      "path": "patient_data/text_time_coverage.py",
+      "bytes": 15723,
+      "lines": 202,
+      "sha256": "0f92135bc572bdf31f2844b0e612a3937b213bff31a545caf766e35f74b57f58",
+      "group": "05_PATIENT_DATA_CODE"
+    },
+    {
+      "path": "patient_data/unassigned_lab_audit.py",
+      "bytes": 8523,
+      "lines": 128,
+      "sha256": "1476e72e970aa11b5075588b9161efa9f4bd85052d1d0c55f34926cf663780eb",
+      "group": "05_PATIENT_DATA_CODE"
+    },
+    {
+      "path": "patient_data/unassigned_lab_verify.py",
+      "bytes": 3055,
+      "lines": 51,
+      "sha256": "33d890ce69880ede7678f0ca901b1f3bc350e60d338c66ebd0ed748fccbad957",
+      "group": "05_PATIENT_DATA_CODE"
+    },
+    {
+      "path": "patient_data/unified_lab_state.py",
+      "bytes": 5713,
+      "lines": 91,
+      "sha256": "1a61905f575a4671ca4ea0410d29db82afed84b78e102ae9d4847a0c5945c489",
+      "group": "05_PATIENT_DATA_CODE"
+    },
+    {
+      "path": "patient_data/v6_audit_report.py",
+      "bytes": 10373,
+      "lines": 98,
+      "sha256": "5d6bc00054638cc689c170a304389f17b5232bf15fffc71fabb3360ba35962b9",
+      "group": "05_PATIENT_DATA_CODE"
+    },
+    {
+      "path": "patient_data/v6_detail_extension.py",
+      "bytes": 14524,
+      "lines": 246,
+      "sha256": "b11fa069b1c98f145f2b6b459204f1afa7ef021d8ee211183b2b7bd18356dbd3",
+      "group": "05_PATIENT_DATA_CODE"
+    },
+    {
+      "path": "patient_data/v6_expanded_candidates.py",
+      "bytes": 8935,
+      "lines": 143,
+      "sha256": "0808d5f412509cbdd45ad309e4a58ef777da7eb3cb5d3ec970546c0a67c83ee2",
+      "group": "05_PATIENT_DATA_CODE"
+    },
+    {
+      "path": "patient_data/v6_expanded_medication_fix.py",
+      "bytes": 3007,
+      "lines": 55,
+      "sha256": "ee971824acc5540b2b2cc91ce3dcb148f4dee857b25a7a1cb2fc0ee0600bb5ab",
+      "group": "05_PATIENT_DATA_CODE"
+    },
+    {
+      "path": "patient_data/v6_input_audit_compact.py",
+      "bytes": 17943,
+      "lines": 234,
+      "sha256": "d56ffe3869a866c018b4389444515527e7babb1a1125747bce7ae1d77ccf9a52",
+      "group": "05_PATIENT_DATA_CODE"
+    },
+    {
+      "path": "patient_data/v6_lab_state.py",
+      "bytes": 15749,
+      "lines": 280,
+      "sha256": "15c343dbe9f1d92221e972738d75a039f0192ad578e099d920f98683583a4c2d",
+      "group": "05_PATIENT_DATA_CODE"
+    },
+    {
+      "path": "patient_data/verify_medication_identity.py",
+      "bytes": 3748,
+      "lines": 50,
+      "sha256": "fb96c7d8d5bc403289abdba6701469f1239973a3376cd2669c2cea1b34c7004a",
+      "group": "05_PATIENT_DATA_CODE"
+    },
+    {
+      "path": "README.md",
+      "bytes": 7969,
+      "lines": 80,
+      "sha256": "aae2e275c49acce2b171eb86c4cb1e3799f34fd22e69b725879ffd0ac0733002",
+      "group": "03_PROTOCOLS_AND_REPORTS"
+    },
+    {
+      "path": "tools/build_markdown_review.py",
+      "bytes": 9259,
+      "lines": 148,
+      "sha256": "550b8551e7ffeb095d557d0da8df07924caf4eedddb12b7912685ab41fdc9739",
+      "group": "12_TOOLS_AND_CONFIGURATION"
+    },
+    {
+      "path": "training/.gitignore",
+      "bytes": 38,
+      "lines": 3,
+      "sha256": "f0593fa315020034de865147779b1ad79504bda0c3768c427e7128e137e26726",
+      "group": "07_BASELINES_AND_COMMON"
+    },
+    {
+      "path": "training/aecopd_training/__init__.py",
+      "bytes": 2153,
+      "lines": 59,
+      "sha256": "72a5b138e02e0190f82e245a4635bc08b7d8657a23f901e3efdd522886a0a22a",
+      "group": "07_BASELINES_AND_COMMON"
+    },
+    {
+      "path": "training/aecopd_training/aligned_model.py",
+      "bytes": 26003,
+      "lines": 568,
+      "sha256": "b88c98ccaf798f70d2da8eb0e27c1b891466c9167458d1a95c90ffe3f975d378",
+      "group": "07_BASELINES_AND_COMMON"
+    },
+    {
+      "path": "training/aecopd_training/batching.py",
+      "bytes": 5807,
+      "lines": 158,
+      "sha256": "bbad6b5712036b6251369da9a084af1a9c5c09ba5803edb307c4164f6e0f6d63",
+      "group": "07_BASELINES_AND_COMMON"
+    },
+    {
+      "path": "training/aecopd_training/clinicalbert_embeddings.py",
+      "bytes": 3015,
+      "lines": 85,
+      "sha256": "cfaa1d4bd4bb8fcef012f3db33aa8a76c40d7c5fbf779807ae4cb1b5a9e883e8",
+      "group": "07_BASELINES_AND_COMMON"
+    },
+    {
+      "path": "training/aecopd_training/conditional_losses.py",
+      "bytes": 4215,
+      "lines": 113,
+      "sha256": "97e7091aabf7eca0d8adbb10b3f685b0c08dc600bb84a84ce4009d4a0b599db6",
+      "group": "07_BASELINES_AND_COMMON"
+    },
+    {
+      "path": "training/aecopd_training/conditional_metrics.py",
+      "bytes": 4805,
+      "lines": 99,
+      "sha256": "0b11218913cfdd1f578975c115bb28f228ffb27c77796483f868d536f1222e93",
+      "group": "07_BASELINES_AND_COMMON"
+    },
+    {
+      "path": "training/aecopd_training/conditional_model.py",
+      "bytes": 4752,
+      "lines": 114,
+      "sha256": "9a99fb94dbbe455b80fde279385f1d2dffb811bb002d4f992ec01857d1d5175d",
+      "group": "07_BASELINES_AND_COMMON"
+    },
+    {
+      "path": "training/aecopd_training/conditional_outcomes.py",
+      "bytes": 5673,
+      "lines": 135,
+      "sha256": "9945f7bcb463865110e2d8b4911736c558aeff249333187d806c4177f5f85e58",
+      "group": "07_BASELINES_AND_COMMON"
+    },
+    {
+      "path": "training/aecopd_training/longitudinal_batching.py",
+      "bytes": 5168,
+      "lines": 132,
+      "sha256": "72a50e885a7847aef97bcb7505f9381269e2432af78beac081b75507cb2e70ad",
+      "group": "07_BASELINES_AND_COMMON"
+    },
+    {
+      "path": "training/aecopd_training/longitudinal_collator.py",
+      "bytes": 3802,
+      "lines": 96,
+      "sha256": "37d9bf2609081bdb75864116a9717e7d4f0123df211a2287d32f50a73513aa0a",
+      "group": "07_BASELINES_AND_COMMON"
+    },
+    {
+      "path": "training/aecopd_training/longitudinal_model.py",
+      "bytes": 7629,
+      "lines": 154,
+      "sha256": "bf5231bb0b8923decf6b1597b10643148134083c5e46e8b43fd21e3f60c46541",
+      "group": "07_BASELINES_AND_COMMON"
+    },
+    {
+      "path": "training/aecopd_training/losses.py",
+      "bytes": 3243,
+      "lines": 94,
+      "sha256": "17a757bb7556adcd2f66a2ae81f24d86ae2a766f8d32823efe8c50cff3000b2c",
+      "group": "07_BASELINES_AND_COMMON"
+    },
+    {
+      "path": "training/aecopd_training/metrics.py",
+      "bytes": 2755,
+      "lines": 77,
+      "sha256": "15338c736a22b88ad28b1fbea9c2e351f7e6ea78e74d4948fdff538fc967a23a",
+      "group": "07_BASELINES_AND_COMMON"
+    },
+    {
+      "path": "training/aecopd_training/model.py",
+      "bytes": 13998,
+      "lines": 337,
+      "sha256": "482cfcad1c553a0d1cf828064f1c7b727cd7b68629d890f6d4d9341f0f9a8716",
+      "group": "07_BASELINES_AND_COMMON"
+    },
+    {
+      "path": "training/aecopd_training/multimodal_collator.py",
+      "bytes": 15122,
+      "lines": 347,
+      "sha256": "0ff2bfd7ff0f9a2ae25ecea1ff59182528df9d194e2583b36759b107ff91dfb3",
+      "group": "07_BASELINES_AND_COMMON"
+    },
+    {
+      "path": "training/aecopd_training/patient_bootstrap.py",
+      "bytes": 7373,
+      "lines": 190,
+      "sha256": "83b3c4585ac2e12d66bcccb4b68f0293df9ddf86d952a59750c5885e05549513",
+      "group": "07_BASELINES_AND_COMMON"
+    },
+    {
+      "path": "training/aecopd_training/patient_sequence_cache.py",
+      "bytes": 9441,
+      "lines": 239,
+      "sha256": "3918dcf30431b0ee464350a5a0b5253dbdee65cc0cd34124843c35590f1df952",
+      "group": "07_BASELINES_AND_COMMON"
+    },
+    {
+      "path": "training/aecopd_training/patient_sequences.py",
+      "bytes": 6337,
+      "lines": 148,
+      "sha256": "2ed5bcd43188228119fb89dd4e4e5b4fd184354421016a0d119932895b30a581",
+      "group": "07_BASELINES_AND_COMMON"
+    },
+    {
+      "path": "training/aecopd_training/section_dataset.py",
+      "bytes": 6766,
+      "lines": 181,
+      "sha256": "6a942be5572e0cfbf1070ae00a4d6090baf0f8e20ebbdf8d39ab054f2b57d04e",
+      "group": "07_BASELINES_AND_COMMON"
+    },
+    {
+      "path": "training/aecopd_training/section_tokenization.py",
+      "bytes": 10189,
+      "lines": 274,
+      "sha256": "e94e8990a91d0852d078218715e2ea4673a045855a49f6ce36b17f59edeaad0c",
+      "group": "07_BASELINES_AND_COMMON"
+    },
+    {
+      "path": "training/aecopd_training/text_sections.py",
+      "bytes": 8896,
+      "lines": 260,
+      "sha256": "55ef95ba56f236f694e97546534d13be6cb2396ee3c327e423dbf2e3f1f7e112",
+      "group": "07_BASELINES_AND_COMMON"
+    },
+    {
+      "path": "training/analyze_clinical_text_gold.py",
+      "bytes": 4363,
+      "lines": 104,
+      "sha256": "e1e2b2e300a989c7cea4c86563b4cbfdbaf34188550ec6ac7cd8688f1c34d382",
+      "group": "07_BASELINES_AND_COMMON"
+    },
+    {
+      "path": "training/audit_broad_fragment_batch.py",
+      "bytes": 7246,
+      "lines": 126,
+      "sha256": "1bfce558d87c9c9ec8a32908fa76b46e2c6c12feb1413947725388bc21e1190e",
+      "group": "07_BASELINES_AND_COMMON"
+    },
+    {
+      "path": "training/audit_clinical_text_sources.py",
+      "bytes": 5611,
+      "lines": 100,
+      "sha256": "6affbf967606254b20c83049f2203854801ee14f1910beb415c337f18544afe8",
+      "group": "07_BASELINES_AND_COMMON"
+    },
+    {
+      "path": "training/audit_discharge_headings.py",
+      "bytes": 5880,
+      "lines": 129,
+      "sha256": "f00c47d317c85d48cc4cad00dcd116c1e0b67b527d73e253f13f0817851e5ed7",
+      "group": "07_BASELINES_AND_COMMON"
+    },
+    {
+      "path": "training/baselines/__init__.py",
+      "bytes": 357,
+      "lines": 10,
+      "sha256": "4ecb293b2a9aa0c06278d99ac0fd035078d037ac0902a5d3da32cda5e87c873c",
+      "group": "07_BASELINES_AND_COMMON"
+    },
+    {
+      "path": "training/baselines/b1_haim_xgboost.py",
+      "bytes": 14010,
+      "lines": 312,
+      "sha256": "fad254a57616b637e4874b9f0fa22cceaa0201738fe14102f586e3fd6f29bbe3",
+      "group": "07_BASELINES_AND_COMMON"
+    },
+    {
+      "path": "training/baselines/b2_cause_specific_cox.py",
+      "bytes": 25054,
+      "lines": 573,
+      "sha256": "a0b70f2ed040b63f1fb5e9a1f0d18d638e70ed202b62ba23b2cdc3ff36775e4c",
+      "group": "07_BASELINES_AND_COMMON"
+    },
+    {
+      "path": "training/baselines/b3_no_longitudinal_ablation.py",
+      "bytes": 3469,
+      "lines": 77,
+      "sha256": "24a6273d2f5dfe68a2290da20d42e67365a09a028d98dd04f4a608252f61c038",
+      "group": "07_BASELINES_AND_COMMON"
+    },
+    {
+      "path": "training/baselines/continuous_competing_cox.py",
+      "bytes": 10241,
+      "lines": 258,
+      "sha256": "0b20515df3e372a75b0e013d7f30f7e2b34d42578957d760a8293b81451c514f",
+      "group": "07_BASELINES_AND_COMMON"
+    },
+    {
+      "path": "training/baselines/dump_conditional_test_bootstrap.py",
+      "bytes": 8428,
+      "lines": 198,
+      "sha256": "612b372fb8f593c412e98ab67683639aa2136679b273f5dc32450755a63e7f05",
+      "group": "07_BASELINES_AND_COMMON"
+    },
+    {
+      "path": "training/baselines/incremental_evidence_chain.py",
+      "bytes": 42260,
+      "lines": 1098,
+      "sha256": "a868e5fbe999bca1468dc6a58de55f648ca348ea8aa48eb8d14ca1be41241930",
+      "group": "07_BASELINES_AND_COMMON"
+    },
+    {
+      "path": "training/baselines/legacy_training_utils.py",
+      "bytes": 1484,
+      "lines": 47,
+      "sha256": "f4a14cdd41169d56bfe8a1122e1896c87063d6e512ce7c21616d5c0aaf7c2cb8",
+      "group": "07_BASELINES_AND_COMMON"
+    },
+    {
+      "path": "training/baselines/rank_metrics.py",
+      "bytes": 893,
+      "lines": 21,
+      "sha256": "32ffc8a8c852699e539ed5611259870711310c741c1325cecad2a4a4d0721f4e",
+      "group": "07_BASELINES_AND_COMMON"
+    },
+    {
+      "path": "training/baselines/run_b1_validation.py",
+      "bytes": 3137,
+      "lines": 87,
+      "sha256": "14eb0472bf3bc5ed7db2f003b5bf50cd1e91d5caebf8cb21031ec55d789d0b25",
+      "group": "07_BASELINES_AND_COMMON"
+    },
+    {
+      "path": "training/baselines/run_incremental_evidence_chain.py",
+      "bytes": 6179,
+      "lines": 145,
+      "sha256": "2de0656195435614117b41bf41419a9ae0e41424135dade6c8a100c32c972eec",
+      "group": "07_BASELINES_AND_COMMON"
+    },
+    {
+      "path": "training/baselines/run_shallow_test_bootstrap.py",
+      "bytes": 4696,
+      "lines": 106,
+      "sha256": "362c96aaf21564815e915ee380369b27463c8b02e33fc19856c02179fa4d7338",
+      "group": "07_BASELINES_AND_COMMON"
+    },
+    {
+      "path": "training/baselines/shared_contract.py",
+      "bytes": 6784,
+      "lines": 174,
+      "sha256": "7f7ebd4b3590049a19c82a594033a8c6c68145e0a2f0b04978a1e1ee892c5c9c",
+      "group": "07_BASELINES_AND_COMMON"
+    },
+    {
+      "path": "training/benchmark_bonsai_sections.py",
+      "bytes": 10842,
+      "lines": 180,
+      "sha256": "e558c4e5ca14ea869648bb261991634ab2eb2590b2641939d57755cc953daa5e",
+      "group": "07_BASELINES_AND_COMMON"
+    },
+    {
+      "path": "training/benchmark_bonsai_targeted.py",
+      "bytes": 6628,
+      "lines": 110,
+      "sha256": "965f71d18896d8cfd30f8bf4602430d60e41b3141ac2ddc1e7de4fafd976549f",
+      "group": "07_BASELINES_AND_COMMON"
+    },
+    {
+      "path": "training/benchmark_bonsai_verbatim.py",
+      "bytes": 6524,
+      "lines": 110,
+      "sha256": "974746a4ac5749dd062f72b06bc288c7cf9afb0e9aae81288cf7ff35551e41db",
+      "group": "07_BASELINES_AND_COMMON"
+    },
+    {
+      "path": "training/bonsai_catalog16_guarded.py",
+      "bytes": 10167,
+      "lines": 147,
+      "sha256": "32b184098d1dacd942fea84379cff454a1b4cd16be7dde5ec44265f627ecbbf4",
+      "group": "07_BASELINES_AND_COMMON"
+    },
+    {
+      "path": "training/build_catalog16_guarded_review.py",
+      "bytes": 2090,
+      "lines": 32,
+      "sha256": "76bb6ace614841157cbe2391cec9adb1d0f22a588a8291a9409f25b4525fdb95",
+      "group": "07_BASELINES_AND_COMMON"
+    },
+    {
+      "path": "training/build_catalog16_review.py",
+      "bytes": 4399,
+      "lines": 62,
+      "sha256": "bbe6598d8923654fae939494127b9119fd2dd0a7f20d6cc1c4328f83cebea305",
+      "group": "07_BASELINES_AND_COMMON"
+    },
+    {
+      "path": "training/build_cv_manifest.py",
+      "bytes": 3906,
+      "lines": 103,
+      "sha256": "aeac8c720fd9b69dd656d57c13c1f1b8b6840550fc14e694e767edb94a47c225",
+      "group": "07_BASELINES_AND_COMMON"
+    },
+    {
+      "path": "training/build_embedding_index.py",
+      "bytes": 3047,
+      "lines": 91,
+      "sha256": "2c30e4afc1f0b7cd036b569232ef88a455d76c5771842a3db95d67ebe3d76dd4",
+      "group": "07_BASELINES_AND_COMMON"
+    },
+    {
+      "path": "training/build_length_index.py",
+      "bytes": 4611,
+      "lines": 128,
+      "sha256": "36693d59aeeae62a61c1f99cbb2458e3b08e7e777d08ff4a699b462a742c43d3",
+      "group": "07_BASELINES_AND_COMMON"
+    },
+    {
+      "path": "training/build_patient_sequence_cache.py",
+      "bytes": 1615,
+      "lines": 49,
+      "sha256": "20ccc65943bd9fb1ab0a9893bc3bada3a39e9c3ef87d428fa3739cf4b1bffb11",
+      "group": "07_BASELINES_AND_COMMON"
+    },
+    {
+      "path": "training/build_patient_sequence_index.py",
+      "bytes": 932,
+      "lines": 32,
+      "sha256": "a916567d00f4663151992c3e52b7e65330ebb15cf6ab6c0f84a7f3ee5ea36662",
+      "group": "07_BASELINES_AND_COMMON"
+    },
+    {
+      "path": "training/build_section_documents.py",
+      "bytes": 1074,
+      "lines": 34,
+      "sha256": "8ce5f7d7423213d944f573d68e3f1b26601b16c195f1cb240368283ba6db2464",
+      "group": "07_BASELINES_AND_COMMON"
+    },
+    {
+      "path": "training/cleanup_bonsai2_download_parts.ps1",
+      "bytes": 1648,
+      "lines": 42,
+      "sha256": "69823a444fd6e4d5ed4836c22a0c478a2d634949add0c1ea5bc98ce8b221399c",
+      "group": "07_BASELINES_AND_COMMON"
+    },
+    {
+      "path": "training/clinical_bonsai_quotes.py",
+      "bytes": 5700,
+      "lines": 118,
+      "sha256": "e741d089fe9ec7b19fd83edfa6b4b4764556b64c5967e4eff8100c977a37ba15",
+      "group": "07_BASELINES_AND_COMMON"
+    },
+    {
+      "path": "training/clinical_bonsai_spans.py",
+      "bytes": 6560,
+      "lines": 161,
+      "sha256": "7d32c8f15072004c0b1091869f6602ef8ffab4e7bbbc06b3cb874226a5dcc6d1",
+      "group": "07_BASELINES_AND_COMMON"
+    },
+    {
+      "path": "training/clinical_bonsai_summaries.py",
+      "bytes": 6789,
+      "lines": 124,
+      "sha256": "af4b6781d88e4645f43cb43a959b056a439ce2c4967602a16a347ab83d570c0d",
+      "group": "07_BASELINES_AND_COMMON"
+    },
+    {
+      "path": "training/clinical_discharge_rules_v2.py",
+      "bytes": 14415,
+      "lines": 293,
+      "sha256": "6a3ff5f74fe05555e450b086569744a73a5704e2c62049327542ef3f52fa52e4",
+      "group": "07_BASELINES_AND_COMMON"
+    },
+    {
+      "path": "training/clinical_discharge_sections.py",
+      "bytes": 4297,
+      "lines": 104,
+      "sha256": "e36272dd203e6f137f9ac9cfaaddf4b17e4e9b14999245a245527810c8f21c1b",
+      "group": "07_BASELINES_AND_COMMON"
+    },
+    {
+      "path": "training/clinical_evidence_checks.py",
+      "bytes": 6759,
+      "lines": 93,
+      "sha256": "1c4f5dee1aa377742e10e76d06a037198165afca6bb58a29afd889dd6726e3d6",
+      "group": "07_BASELINES_AND_COMMON"
+    },
+    {
+      "path": "training/clinical_text_catalog.py",
+      "bytes": 17949,
+      "lines": 161,
+      "sha256": "c33ecb0de357d980a4bd4092f54e148a3591f1938e52c307fef2baac9ad51c6c",
+      "group": "07_BASELINES_AND_COMMON"
+    },
+    {
+      "path": "training/clinical_text_rules.py",
+      "bytes": 6239,
+      "lines": 146,
+      "sha256": "df9f8f71f8aa7972402a719e1550e7ee308bb6f572b55f8e781e30dad6b57a34",
+      "group": "07_BASELINES_AND_COMMON"
+    },
+    {
+      "path": "training/compose.yaml",
+      "bytes": 1137,
+      "lines": 49,
+      "sha256": "6df7419646429485665e43affefba4af241ef7c8b43e201448b8442960523ba6",
+      "group": "07_BASELINES_AND_COMMON"
+    },
+    {
+      "path": "training/curate_bonsai2_evidence.py",
+      "bytes": 10672,
+      "lines": 212,
+      "sha256": "3cef5ffb307c179986900711f4b887489cdded21f7d3da0c4c6763ced7999092",
+      "group": "07_BASELINES_AND_COMMON"
+    },
+    {
+      "path": "training/Dockerfile",
+      "bytes": 432,
+      "lines": 14,
+      "sha256": "1f0772836bf6274c044a36aa33a4ff5fcfae90707217dc952440834a8db244b6",
+      "group": "07_BASELINES_AND_COMMON"
+    },
+    {
+      "path": "training/download_clinicalbert_model.py",
+      "bytes": 906,
+      "lines": 27,
+      "sha256": "2f69b9a5acf2ae506b82cef3b23612bc5cf5bd9866740d2b690389f91669b840",
+      "group": "07_BASELINES_AND_COMMON"
+    },
+    {
+      "path": "training/download_embedding_model.py",
+      "bytes": 1769,
+      "lines": 47,
+      "sha256": "57027cc10c62c40c1d321a6abd9a0344f51309bb199e0e60b9139fc0c85e88a3",
+      "group": "07_BASELINES_AND_COMMON"
+    },
+    {
+      "path": "training/encode_bonsai2_spans_bert.py",
+      "bytes": 4936,
+      "lines": 112,
+      "sha256": "ebd712777373229a528d9e34724c1d5ff7f75e829c6835c784b071c0289f29ea",
+      "group": "07_BASELINES_AND_COMMON"
+    },
+    {
+      "path": "training/encode_rule_text_bert.py",
+      "bytes": 4437,
+      "lines": 91,
+      "sha256": "8974f58a6e4439c420c117dc7650276d8ae947b8f000822dacf62897c0cfc946",
+      "group": "07_BASELINES_AND_COMMON"
+    },
+    {
+      "path": "training/export_coded_text_documents.py",
+      "bytes": 4434,
+      "lines": 100,
+      "sha256": "a1008e0caffd4e54e142701636772c34cd167c86c60290ad9dd6d380c161fe9b",
+      "group": "07_BASELINES_AND_COMMON"
+    },
+    {
+      "path": "training/export_first_coded_model_inputs.py",
+      "bytes": 4353,
+      "lines": 96,
+      "sha256": "2327caa93739546385cb1380867a22c1217cf69edff6002cd70792a425524c16",
+      "group": "07_BASELINES_AND_COMMON"
+    },
+    {
+      "path": "training/export_mimiciv_discharge_all.py",
+      "bytes": 4669,
+      "lines": 117,
+      "sha256": "ae26a0298eeb0431b4069888fcd2d062804ca1df44b7f9509e2f3611e2272921",
+      "group": "07_BASELINES_AND_COMMON"
+    },
+    {
+      "path": "training/extract_mimiciv_discharge_rules.py",
+      "bytes": 3201,
+      "lines": 79,
+      "sha256": "939bfe65868c427752c627989dde8e93dace42b372db965754d1c397f49b5809",
+      "group": "07_BASELINES_AND_COMMON"
+    },
+    {
+      "path": "training/extract_mimiciv_discharge_rules_v2.py",
+      "bytes": 5710,
+      "lines": 124,
+      "sha256": "a8d1890eb38b60806656288dc70590dfaeeb04071e54622a3856719dcc9cadde",
+      "group": "07_BASELINES_AND_COMMON"
+    },
+    {
+      "path": "training/fit_preprocessing_cli.py",
+      "bytes": 1545,
+      "lines": 40,
+      "sha256": "12644c3216fc5a480146438d5b14db3fc307857e507909919f33a4217940c122",
+      "group": "07_BASELINES_AND_COMMON"
+    },
+    {
+      "path": "training/gemini_field_catalog.py",
+      "bytes": 6923,
+      "lines": 111,
+      "sha256": "8a94a045901b384605dd37f9e96870b712cf79c474a5156d193e0ad3245f7d5f",
+      "group": "07_BASELINES_AND_COMMON"
+    },
+    {
+      "path": "training/gemini_mcp_batch.py",
+      "bytes": 10527,
+      "lines": 216,
+      "sha256": "e03e7a3d5fc9a12c1df51560897a9187489a8ceb73b7d720a3d0f10705acdc3e",
+      "group": "07_BASELINES_AND_COMMON"
+    },
+    {
+      "path": "training/generate_clinicalbert_embeddings.py",
+      "bytes": 9847,
+      "lines": 234,
+      "sha256": "98127ad8e1efa423eeed14cc0a9d726285de19244241417d6dd1a323bbf5b52a",
+      "group": "07_BASELINES_AND_COMMON"
+    },
+    {
+      "path": "training/generate_text_embeddings.py",
+      "bytes": 10998,
+      "lines": 262,
+      "sha256": "b43180097e336e90e12aa390e83ff7075fa3ab1bf421432dfdddb72c10dcef94",
+      "group": "07_BASELINES_AND_COMMON"
+    },
+    {
+      "path": "training/prepare_clinical_text_pilot.py",
+      "bytes": 4888,
+      "lines": 109,
+      "sha256": "be5a48130d5de6077940b6240e83ae40ff70ebe0fe14331ba956ed45129e1226",
+      "group": "07_BASELINES_AND_COMMON"
+    },
+    {
+      "path": "training/prepare_discharge_rule_review.py",
+      "bytes": 5701,
+      "lines": 125,
+      "sha256": "022276703ddf31e83bb733ddfa44f30fd55389b63c098498ca9c40c9c82fdb26",
+      "group": "07_BASELINES_AND_COMMON"
+    },
+    {
+      "path": "training/prepare_mimiciv_text_review.py",
+      "bytes": 7601,
+      "lines": 167,
+      "sha256": "a9fba22d9f412058d1a5ceafab803ef9b67fdea47aba014a2eb768915fe3152c",
+      "group": "07_BASELINES_AND_COMMON"
+    },
+    {
+      "path": "training/prepare_rule_text_encoding.py",
+      "bytes": 5795,
+      "lines": 122,
+      "sha256": "515d1dc95c97d8dda76bbc9d6e2f9b31013f364ee4858975c6d234b9377c304c",
+      "group": "07_BASELINES_AND_COMMON"
+    },
+    {
+      "path": "training/report_bonsai_catalog16.py",
+      "bytes": 6170,
+      "lines": 101,
+      "sha256": "9b6678dcd06e133d08e542f6eb5e1abf42110ad9d47ceea589520bc6c6feaf57",
+      "group": "07_BASELINES_AND_COMMON"
+    },
+    {
+      "path": "training/report_bonsai_catalog16_guarded.py",
+      "bytes": 3591,
+      "lines": 58,
+      "sha256": "85bb14583b9e176ea1edab52f6fc2891e2d7615555c1f4687ada8c3a7802b2cc",
+      "group": "07_BASELINES_AND_COMMON"
+    },
+    {
+      "path": "training/report_bonsai_sections.py",
+      "bytes": 3738,
+      "lines": 61,
+      "sha256": "49e8257d7ca2bca0be13bf5b0af52f0688fb1285bb1695e4fd4801430b21e37b",
+      "group": "07_BASELINES_AND_COMMON"
+    },
+    {
+      "path": "training/report_bonsai_simple.py",
+      "bytes": 4873,
+      "lines": 77,
+      "sha256": "d86e59e3dc58b454d9a5dd7f121513b07e1fd9f234dfff98230ce888bca8c3b7",
+      "group": "07_BASELINES_AND_COMMON"
+    },
+    {
+      "path": "training/report_bonsai_targeted.py",
+      "bytes": 5380,
+      "lines": 82,
+      "sha256": "541abd1cff5f2f998f89414b0e3c74c9b502668f894907ebb3adfe1a3d5e3457",
+      "group": "07_BASELINES_AND_COMMON"
+    },
+    {
+      "path": "training/report_bonsai_validation.py",
+      "bytes": 5764,
+      "lines": 97,
+      "sha256": "1175a927d62694dde5cfe839fa1fbcac9473cd8790ab26a7068ffe6631f9d1ea",
+      "group": "07_BASELINES_AND_COMMON"
+    },
+    {
+      "path": "training/reuse_coded_text_embeddings.py",
+      "bytes": 6097,
+      "lines": 137,
+      "sha256": "b3589ff406ccc4d80061a122d64feabe40eea779e5b97ca6fc3fd1b1e309408d",
+      "group": "07_BASELINES_AND_COMMON"
+    },
+    {
+      "path": "training/run_bonsai2_discharge_extract.py",
+      "bytes": 9991,
+      "lines": 229,
+      "sha256": "e7d340a2d2ab3903b1d1f5fa80db62645b04289cb4d0522e1b9f8ec9cfaba450",
+      "group": "07_BASELINES_AND_COMMON"
+    },
+    {
+      "path": "training/run_bonsai2_full_pipeline.py",
+      "bytes": 4266,
+      "lines": 92,
+      "sha256": "3a60f57d54c5a85129b305747c4c53b1e72f329c3e07e006c761d1a038641bb9",
+      "group": "07_BASELINES_AND_COMMON"
+    },
+    {
+      "path": "training/run_bonsai2_quote_pilot.py",
+      "bytes": 7758,
+      "lines": 157,
+      "sha256": "ea4e64eedd31f06f815eca3de2e2f04af2a6f5c410befb6181973eb505dfc430",
+      "group": "07_BASELINES_AND_COMMON"
+    },
+    {
+      "path": "training/run_bonsai2_semantic_pilot.py",
+      "bytes": 6771,
+      "lines": 152,
+      "sha256": "8345621e016f6093c634cb1f6fb7aa69b15df95062270d78cedd9c1f5523e236",
+      "group": "07_BASELINES_AND_COMMON"
+    },
+    {
+      "path": "training/run_broad_fragment_pipeline.py",
+      "bytes": 7846,
+      "lines": 129,
+      "sha256": "9146905d9be5b5a07734a3b6097b54a1239c6d4ae10dd9ad5b2a582f377d762b",
+      "group": "07_BASELINES_AND_COMMON"
+    },
+    {
+      "path": "training/run_clinical_evidence_regression.py",
+      "bytes": 2343,
+      "lines": 43,
+      "sha256": "945f01b54f0fbdf93abde899f020d600a6fe9bc4e06403eb7a67d2a8d4fd5f09",
+      "group": "07_BASELINES_AND_COMMON"
+    },
+    {
+      "path": "training/run_v6_three_channels.ps1",
+      "bytes": 4264,
+      "lines": 60,
+      "sha256": "ba142d32a5f2be6f5c9ff4bb92ee8cd29b8f386e9ebce87f8dea7557827a4eb6",
+      "group": "07_BASELINES_AND_COMMON"
+    },
+    {
+      "path": "training/runtime/public_tabular_requirements.txt",
+      "bytes": 70,
+      "lines": 3,
+      "sha256": "43392713462d5a6341fac305a792703f5b8818e86b25b562efc9de3a5d7d038d",
+      "group": "07_BASELINES_AND_COMMON"
+    },
+    {
+      "path": "training/smoke_test.py",
+      "bytes": 8055,
+      "lines": 216,
+      "sha256": "c8a63ad2caa77ab2840d18a1ec29b143cdfd23d1e469ede331a6a412b54adc69",
+      "group": "07_BASELINES_AND_COMMON"
+    },
+    {
+      "path": "training/start_bonsai2_local.ps1",
+      "bytes": 1472,
+      "lines": 31,
+      "sha256": "88b2aa07869bed9ecb32537c47da942bf7659f82e84bd0b4e6c4435135ada68e",
+      "group": "07_BASELINES_AND_COMMON"
+    },
+    {
+      "path": "training/test_audit_broad_fragment_batch.py",
+      "bytes": 4229,
+      "lines": 94,
+      "sha256": "873aa9fca58f74dc399ae84e26066fff634437e92c1edb1d690c9a10e832a4a4",
+      "group": "11_TESTS"
+    },
+    {
+      "path": "training/test_bonsai_benchmark.py",
+      "bytes": 1362,
+      "lines": 31,
+      "sha256": "85f0588c34f20d01209cded0634def6c93ec281bc704712affb50022434dfc01",
+      "group": "11_TESTS"
+    },
+    {
+      "path": "training/test_bonsai_broad_fragments.py",
+      "bytes": 5792,
+      "lines": 95,
+      "sha256": "e427a8f547007e824043e02269a32fe634621720655f75f275de475e6a8b99b1",
+      "group": "11_TESTS"
+    },
+    {
+      "path": "training/test_bonsai_catalog16.py",
+      "bytes": 2192,
+      "lines": 46,
+      "sha256": "2783fefb8a836c4effb63e286022343a1af1e02d901e46ace50420245312837f",
+      "group": "11_TESTS"
+    },
+    {
+      "path": "training/test_bonsai_catalog16_guarded.py",
+      "bytes": 2305,
+      "lines": 43,
+      "sha256": "47f604cbd6a00a4af9862e501c561e65a61ebdb7e4af5ae9af55bb61edaa9b40",
+      "group": "11_TESTS"
+    },
+    {
+      "path": "training/test_bonsai_sections.py",
+      "bytes": 2043,
+      "lines": 45,
+      "sha256": "739164b85546884280b846e821beefed068351b74e1f1594cc73d4822cff445f",
+      "group": "11_TESTS"
+    },
+    {
+      "path": "training/test_bonsai_simple_extraction.py",
+      "bytes": 3217,
+      "lines": 59,
+      "sha256": "2db186e562a1bf9a9ab05cc88ba0e2c4f8b4774657899666456f21e1c6585206",
+      "group": "11_TESTS"
+    },
+    {
+      "path": "training/test_bonsai_validation_report.py",
+      "bytes": 1958,
+      "lines": 34,
+      "sha256": "fd5d58b69c7b7ddb3ce4a7720b8ae69dcdcdf238cb03d921740e32532ef506b1",
+      "group": "11_TESTS"
+    },
+    {
+      "path": "training/test_clinical_evidence_checks.py",
+      "bytes": 1793,
+      "lines": 34,
+      "sha256": "fb536238d63fcb4b7b040152378c75052164986727baae876209461032a06a2d",
+      "group": "11_TESTS"
+    },
+    {
+      "path": "training/test_clinical_evidence_pilot.py",
+      "bytes": 3796,
+      "lines": 87,
+      "sha256": "3bf349b28fbdf1ed3e82b615c5e83e8ae191d79eeb48238d50c8003dfdc4e419",
+      "group": "11_TESTS"
+    },
+    {
+      "path": "training/test_gemini_semantic_extract.py",
+      "bytes": 3384,
+      "lines": 63,
+      "sha256": "0e76bccff6134b6a7d86a8eacf0f229268f3e590becf5ea53a9eebe2da7be9e0",
+      "group": "11_TESTS"
+    },
+    {
+      "path": "training/tests/test_aligned_model.py",
+      "bytes": 5076,
+      "lines": 122,
+      "sha256": "17079b1ae6d8cd072e7ec16f4052314f8562e76bf4cce8fdd57500cda545f481",
+      "group": "11_TESTS"
+    },
+    {
+      "path": "training/tests/test_audit_discharge_headings.py",
+      "bytes": 1593,
+      "lines": 38,
+      "sha256": "057522e7b5f03bb1589c0b397de53c48e2a3ad4b48dde55c238f5d3000030fc6",
+      "group": "11_TESTS"
+    },
+    {
+      "path": "training/tests/test_batching.py",
+      "bytes": 2619,
+      "lines": 68,
+      "sha256": "8ca686491fd6946172c22e6fb61ed3d8eefcab530e2acb7c00c1d9f656a760e2",
+      "group": "11_TESTS"
+    },
+    {
+      "path": "training/tests/test_build_embedding_index.py",
+      "bytes": 2398,
+      "lines": 66,
+      "sha256": "a9c3498e2a1d25d65903d2a0483170d7233bed2e84fb75307fa1cfb3d5ef3a5a",
+      "group": "11_TESTS"
+    },
+    {
+      "path": "training/tests/test_chexbert_adapter.py",
+      "bytes": 1722,
+      "lines": 36,
+      "sha256": "16fb24f59dffb3af8a7ac06aa16f5fdfe9329fa23d197f18040491e6af5d2a55",
+      "group": "11_TESTS"
+    },
+    {
+      "path": "training/tests/test_cleanup_shared_baselines.py",
+      "bytes": 2605,
+      "lines": 62,
+      "sha256": "9077c01cafd8cf56664143dfb5c354d330e75e0ee682022a08d7e49e7c65e3c4",
+      "group": "11_TESTS"
+    },
+    {
+      "path": "training/tests/test_clinical_bonsai_quotes.py",
+      "bytes": 3424,
+      "lines": 68,
+      "sha256": "d870d753dadeb350c84c1742f044be0a5f409115634c3cc321cde37517bbf350",
+      "group": "11_TESTS"
+    },
+    {
+      "path": "training/tests/test_clinical_bonsai_spans.py",
+      "bytes": 2100,
+      "lines": 47,
+      "sha256": "8195b794d484cfc97ba6242e0e23a7f9f144aefe46f4a3f91cac4b860b27a6bd",
+      "group": "11_TESTS"
+    },
+    {
+      "path": "training/tests/test_clinical_bonsai_summaries.py",
+      "bytes": 2074,
+      "lines": 46,
+      "sha256": "460fe252424b6142342ca7e8752af616615ceb35855fe9f49c0a2256efd14205",
+      "group": "11_TESTS"
+    },
+    {
+      "path": "training/tests/test_clinical_discharge_rules_v2.py",
+      "bytes": 4414,
+      "lines": 84,
+      "sha256": "78cc76a5874575d95ab33be258056f39f4454a2420565fc7ef95fe6bf6e03b92",
+      "group": "11_TESTS"
+    },
+    {
+      "path": "training/tests/test_clinical_text_rules.py",
+      "bytes": 6136,
+      "lines": 132,
+      "sha256": "bd23d37818d9316dc0d9206943e3aae9e8262336ad36961d3b6ef3253ba8960c",
+      "group": "11_TESTS"
+    },
+    {
+      "path": "training/tests/test_clinicalbert_embeddings.py",
+      "bytes": 3850,
+      "lines": 77,
+      "sha256": "2f0937ed44bf3348a0e09ad3514ec4087f9445ed92a8d538e8b27f8bb3d38fac",
+      "group": "11_TESTS"
+    },
+    {
+      "path": "training/tests/test_conditional_losses.py",
+      "bytes": 5121,
+      "lines": 140,
+      "sha256": "9828a8ee71cc18df5725806674fe7ed09fb7b6c133b6cc31f952e5e45501bc11",
+      "group": "11_TESTS"
+    },
+    {
+      "path": "training/tests/test_conditional_metrics.py",
+      "bytes": 1596,
+      "lines": 44,
+      "sha256": "d561a5d4ad4aa47dfcbc81ddce2f56622ebb13c84936a02e77322af79cdc31d7",
+      "group": "11_TESTS"
+    },
+    {
+      "path": "training/tests/test_conditional_model.py",
+      "bytes": 2958,
+      "lines": 83,
+      "sha256": "9a7656281a981937ba3fad41d278c744a87b9ae7db06377067d11e34e6693cd3",
+      "group": "11_TESTS"
+    },
+    {
+      "path": "training/tests/test_conditional_outcomes.py",
+      "bytes": 2035,
+      "lines": 51,
+      "sha256": "ea6d4f7bc0bf1f085d6671831407a5bc4ac00accd98d05e302e10ad111bda127",
+      "group": "11_TESTS"
+    },
+    {
+      "path": "training/tests/test_curate_bonsai2_evidence.py",
+      "bytes": 2177,
+      "lines": 47,
+      "sha256": "b1a4a705903d43abb45c6fd2c8799d8be992ccbd012179dcb1fe10bd5939c259",
+      "group": "11_TESTS"
+    },
+    {
+      "path": "training/tests/test_discharge_regimen_audit.py",
+      "bytes": 1969,
+      "lines": 40,
+      "sha256": "9c8773fa8a22fe2988263d774fd435f748696995ccdf03f8af9fee75cbb4ef1d",
+      "group": "11_TESTS"
+    },
+    {
+      "path": "training/tests/test_discharge_regimen_entries.py",
+      "bytes": 3952,
+      "lines": 79,
+      "sha256": "6d6e4533c551f2664de45d85dd0b65d8e2cd9eb8069a12ae3f9f393dd9806a42",
+      "group": "11_TESTS"
+    },
+    {
+      "path": "training/tests/test_discharge_regimen_entries_checked.py",
+      "bytes": 1111,
+      "lines": 23,
+      "sha256": "c9485a13617d40869bfeb63ef0635941beebbe2f29abcf417a593fd7984eb03c",
+      "group": "11_TESTS"
+    },
+    {
+      "path": "training/tests/test_discharge_regimen_interface.py",
+      "bytes": 2949,
+      "lines": 58,
+      "sha256": "a96e218240d73b9337e064cf0c4d4f8aa5348c14e037737df4eaa051323d0c55",
+      "group": "11_TESTS"
+    },
+    {
+      "path": "training/tests/test_extract_mimiciv_discharge_rules_v2.py",
+      "bytes": 2253,
+      "lines": 54,
+      "sha256": "6ca3351b36996df6a4ed2af46d6481fe5461567a9f4ac702ef24904edb46c748",
+      "group": "11_TESTS"
+    },
+    {
+      "path": "training/tests/test_incremental_evidence_chain.py",
+      "bytes": 9433,
+      "lines": 249,
+      "sha256": "9b3f16352b4898a88abf46bbbeb85533d388925eae88b6885d7fc27d1ce08e3e",
+      "group": "11_TESTS"
+    },
+    {
+      "path": "training/tests/test_longitudinal_batching.py",
+      "bytes": 2479,
+      "lines": 72,
+      "sha256": "c9e0bb13ddb0b4fca16de2d67b3597fc6ac964c297f791021b07169182298f35",
+      "group": "11_TESTS"
+    },
+    {
+      "path": "training/tests/test_longitudinal_collator.py",
+      "bytes": 2252,
+      "lines": 71,
+      "sha256": "72e71229fcfe34a507b5591f78727717b0a4014ce4af21000613aad5330be38a",
+      "group": "11_TESTS"
+    },
+    {
+      "path": "training/tests/test_longitudinal_model.py",
+      "bytes": 1375,
+      "lines": 41,
+      "sha256": "14bdd0bb10731041c7819b6af222d4be8d84d92a826869b3214361d28e19aa7c",
+      "group": "11_TESTS"
+    },
+    {
+      "path": "training/tests/test_losses.py",
+      "bytes": 1806,
+      "lines": 51,
+      "sha256": "e7d55e7780446da3c48721ef0ca7d30d287157ae7b13a417ab8c0c3b4751c14e",
+      "group": "11_TESTS"
+    },
+    {
+      "path": "training/tests/test_metrics.py",
+      "bytes": 1463,
+      "lines": 37,
+      "sha256": "0fbf067456bc91a787aff041cbd41328f5afa21b0cbd147dc0c48e48e91bd5d1",
+      "group": "11_TESTS"
+    },
+    {
+      "path": "training/tests/test_mimiciv_discharge_export.py",
+      "bytes": 2136,
+      "lines": 52,
+      "sha256": "05fdc63044f80eea3a0b06a9670098b8579ea52680a830183b6bcb33f8028c23",
+      "group": "11_TESTS"
+    },
+    {
+      "path": "training/tests/test_model.py",
+      "bytes": 5275,
+      "lines": 129,
+      "sha256": "bad01e1853d4033d774f3cbd4b3733b6777be35f62fedba8edc1c99bbb03367b",
+      "group": "11_TESTS"
+    },
+    {
+      "path": "training/tests/test_multimodal_collator.py",
+      "bytes": 8223,
+      "lines": 172,
+      "sha256": "ab711f555bc951ec326624234e26f74a9bde9195a93cf54baf5d797eeb57119a",
+      "group": "11_TESTS"
+    },
+    {
+      "path": "training/tests/test_patient_sequence_cache.py",
+      "bytes": 3672,
+      "lines": 84,
+      "sha256": "70c0977f6d11d622dfb773a72f04dc5ee74e1b95e05f94c59fd08fac76f09069",
+      "group": "11_TESTS"
+    },
+    {
+      "path": "training/tests/test_patient_sequences.py",
+      "bytes": 3915,
+      "lines": 86,
+      "sha256": "2853596ce40d965605443d3b2d9b54540e30a3e500791539927279802f4f6698",
+      "group": "11_TESTS"
+    },
+    {
+      "path": "training/tests/test_prepare_mimiciv_text_review.py",
+      "bytes": 1657,
+      "lines": 41,
+      "sha256": "ffae852c473b7dd8d137ac98e989a82e9f6bf72245a37d03ae7cce7ffe92b473",
+      "group": "11_TESTS"
+    },
+    {
+      "path": "training/tests/test_prepare_rule_text_encoding.py",
+      "bytes": 3659,
+      "lines": 68,
+      "sha256": "3f0d09b8e8798da64dceb1ab419effba932de41e2cb66fbc862870038cbc6bac",
+      "group": "11_TESTS"
+    },
+    {
+      "path": "training/tests/test_reuse_coded_text_embeddings.py",
+      "bytes": 2031,
+      "lines": 53,
+      "sha256": "2e6cd3471a8a97f16bb1aa7ed3aa7f2d9811ac643768e7eeb6fde957c0534299",
+      "group": "11_TESTS"
+    },
+    {
+      "path": "training/tests/test_same_specimen_audit.py",
+      "bytes": 3556,
+      "lines": 73,
+      "sha256": "1c7af9bbd47221ecfbbb6ac6ddeaa38663afadd57175518fc915e9321d0a2d81",
+      "group": "11_TESTS"
+    },
+    {
+      "path": "training/tests/test_section_dataset.py",
+      "bytes": 4007,
+      "lines": 96,
+      "sha256": "9ecab999c8449185ed301af2d72a7274db7a576d2ecd6ab2bd076e6c37be1bb9",
+      "group": "11_TESTS"
+    },
+    {
+      "path": "training/tests/test_section_tokenization.py",
+      "bytes": 4928,
+      "lines": 128,
+      "sha256": "2713d1ce6475e242f2deed4259cdba90f63cbf7ab7681d28b41f200b8e3216bc",
+      "group": "11_TESTS"
+    },
+    {
+      "path": "training/tests/test_text_embedding_batches.py",
+      "bytes": 2871,
+      "lines": 61,
+      "sha256": "f21d35e45e71ef1f94c0a91d34a7c1cafb0a80aec8096da1198a85ef8b81ddc3",
+      "group": "11_TESTS"
+    },
+    {
+      "path": "training/tests/test_text_sections.py",
+      "bytes": 6691,
+      "lines": 169,
+      "sha256": "7de8bc8000406c21743b4d84744283f97bf17c50fb3bcf6716c9eec0cd77c826",
+      "group": "11_TESTS"
+    },
+    {
+      "path": "training/tests/test_v5_abnormality_model.py",
+      "bytes": 7993,
+      "lines": 137,
+      "sha256": "57fb1ca970260326b44c420dd806e1cea443502b77cae2def0f0d0768a0bc65d",
+      "group": "11_TESTS"
+    },
+    {
+      "path": "training/tests/test_v5_active_text_fields.py",
+      "bytes": 2630,
+      "lines": 63,
+      "sha256": "49b9ec21f2039eb937d4f8d0b2860828fe361ce9327c5863eb67f919d76abdca",
+      "group": "11_TESTS"
+    },
+    {
+      "path": "training/tests/test_v5_broad_fragment_data.py",
+      "bytes": 8693,
+      "lines": 160,
+      "sha256": "c07bcf2b4f8bb659cdc90a58b206495e991506050270e52079119f8687765509",
+      "group": "11_TESTS"
+    },
+    {
+      "path": "training/tests/test_v5_competing_concordance.py",
+      "bytes": 1137,
+      "lines": 30,
+      "sha256": "3647a73f6572fb9e8fb621784120ef7e9eb9c0996f3de56e7bd90f452fab4514",
+      "group": "11_TESTS"
+    },
+    {
+      "path": "training/tests/test_v5_completed_evaluation.py",
+      "bytes": 2566,
+      "lines": 65,
+      "sha256": "8d72e87923d9c04e70f205b1379c5565a5a60732889c838af3a45bb36402ef65",
+      "group": "11_TESTS"
+    },
+    {
+      "path": "training/tests/test_v5_count_ablation.py",
+      "bytes": 2710,
+      "lines": 54,
+      "sha256": "2afd64385540afa99aa8a190e9f3538faea536b217bd02678750bc93877159a7",
+      "group": "11_TESTS"
+    },
+    {
+      "path": "training/tests/test_v5_event_model.py",
+      "bytes": 2062,
+      "lines": 50,
+      "sha256": "2b5c7444a3e29099dc37e909b9e227c1fafa2000abf6cadfb9be473547c9f880",
+      "group": "11_TESTS"
+    },
+    {
+      "path": "training/tests/test_v5_event_set_model.py",
+      "bytes": 4877,
+      "lines": 100,
+      "sha256": "1ec91e22eb9aad7e3c96f347a14b6451bd7b88208980f5eea6044979845486a1",
+      "group": "11_TESTS"
+    },
+    {
+      "path": "training/tests/test_v5_field_text_baseline.py",
+      "bytes": 1719,
+      "lines": 35,
+      "sha256": "6af7c9a5299ea6a3df52fcd87faa8c50f092af600cc8915a369c1160c2fceca4",
+      "group": "11_TESTS"
+    },
+    {
+      "path": "training/tests/test_v5_group_aggregation.py",
+      "bytes": 1692,
+      "lines": 41,
+      "sha256": "348d840bf08d3614c8bc93737435f5be6a82ce59b635a6f76f64d3d7aa4624e6",
+      "group": "11_TESTS"
+    },
+    {
+      "path": "training/tests/test_v5_history_evidence.py",
+      "bytes": 1427,
+      "lines": 31,
+      "sha256": "bd48f60933a4d21f9d68873858efd2aa9ae7da2de513d5c6294fdf89324c4960",
+      "group": "11_TESTS"
+    },
+    {
+      "path": "training/tests/test_v5_history_matched_text.py",
+      "bytes": 2583,
+      "lines": 56,
+      "sha256": "b88582b67b79fa125f5ea30f81295d2e34c6ad5baec6332ba2caa2b6953fbdfb",
+      "group": "11_TESTS"
+    },
+    {
+      "path": "training/tests/test_v5_incremental_ablations.py",
+      "bytes": 3159,
+      "lines": 64,
+      "sha256": "5bcd1fd47c3ce014caf336c07289943259983f048f9e443fcdf19a5576cbac0a",
+      "group": "11_TESTS"
+    },
+    {
+      "path": "training/tests/test_v5_independent_fusion.py",
+      "bytes": 4109,
+      "lines": 88,
+      "sha256": "8051d5ecf6c32c8734ca6f98d819f7464b2f0e86462a1e5fa213d820f272faa5",
+      "group": "11_TESTS"
+    },
+    {
+      "path": "training/tests/test_v5_lab_recovery_features.py",
+      "bytes": 3096,
+      "lines": 61,
+      "sha256": "9803151487f375200342194b65b52469a3d546ba48700f1c2ffbaed781b11ef7",
+      "group": "11_TESTS"
+    },
+    {
+      "path": "training/tests/test_v5_medication_effect.py",
+      "bytes": 8808,
+      "lines": 153,
+      "sha256": "b3592df0894fb9a87317a7ee0fa67303b5ceeca5ca7963efc05061599e10babb",
+      "group": "11_TESTS"
+    },
+    {
+      "path": "training/tests/test_v5_medication_mapping_screening.py",
+      "bytes": 3660,
+      "lines": 67,
+      "sha256": "8024c941c0475aa52b0aed0ba0df18166ba7eb01fe3f9da17b5ae2110105785b",
+      "group": "11_TESTS"
+    },
+    {
+      "path": "training/tests/test_v5_model.py",
+      "bytes": 5006,
+      "lines": 102,
+      "sha256": "8ba5c9daf6dbb29eb78593103df0fdd2af13d1c57d1de30a480d91d320424241",
+      "group": "11_TESTS"
+    },
+    {
+      "path": "training/tests/test_v5_processed_event_data.py",
+      "bytes": 2398,
+      "lines": 50,
+      "sha256": "9dfddc4bf76b494021ac5fd56766eed3c4adc5fb2ea2c60d75e5131acfb4c802",
+      "group": "11_TESTS"
+    },
+    {
+      "path": "training/tests/test_v5_section_alignment_data.py",
+      "bytes": 9120,
+      "lines": 154,
+      "sha256": "b8be25f6ba89ac1bdd3529569896f09de0a59de42b59eb03ca7d4fb1d678b048",
+      "group": "11_TESTS"
+    },
+    {
+      "path": "training/tests/test_v5_section_content_screen.py",
+      "bytes": 1792,
+      "lines": 35,
+      "sha256": "9420d497dfcf6d8f9ca21fb6dad98c88bfeffa17137e8cd85cebb66ab7c7a128",
+      "group": "11_TESTS"
+    },
+    {
+      "path": "training/tests/test_v5_section_inputs.py",
+      "bytes": 2888,
+      "lines": 58,
+      "sha256": "5b5b1bb16bf34736411008e242d0a858ece791aa99aef32cc3fd82bd2616afa5",
+      "group": "11_TESTS"
+    },
+    {
+      "path": "training/tests/test_v5_strict_candidate_validation.py",
+      "bytes": 2378,
+      "lines": 52,
+      "sha256": "08d940230e5301592178fb4204b3e2362e95cd074fecb197779c572382d33736",
+      "group": "11_TESTS"
+    },
+    {
+      "path": "training/tests/test_v5_strict_endpoint_labels.py",
+      "bytes": 3022,
+      "lines": 56,
+      "sha256": "ef4ff292a3398d0c3046c2a717744bbe6821062de6d2a0a8e12760f88371aca4",
+      "group": "11_TESTS"
+    },
+    {
+      "path": "training/tests/test_v5_text_content_permutation.py",
+      "bytes": 2678,
+      "lines": 63,
+      "sha256": "432c9eadb34b57955169ee38d04913c31d6d823d51672e614b12824269fe1092",
+      "group": "11_TESTS"
+    },
+    {
+      "path": "training/tests/test_v5_validate_vectors.py",
+      "bytes": 1885,
+      "lines": 45,
+      "sha256": "c836c5f7d5abc38bc887977fe9d738defa67a1802198763e8ae8e696cba7e1f2",
+      "group": "11_TESTS"
+    },
+    {
+      "path": "training/tests/test_v6_admission_context.py",
+      "bytes": 2888,
+      "lines": 38,
+      "sha256": "a0a68eee57bee399b4aaab71a058aaf12d861c9c6f1ed36e973260220a1ae717",
+      "group": "11_TESTS"
+    },
+    {
+      "path": "training/tests/test_v6_admission_cox.py",
+      "bytes": 3274,
+      "lines": 69,
+      "sha256": "a0835d3634e52f87977c53617454eb2555099681f1468246c9c4260ec2d3b08d",
+      "group": "11_TESTS"
+    },
+    {
+      "path": "training/tests/test_v6_anchored_clock.py",
+      "bytes": 2454,
+      "lines": 48,
+      "sha256": "676fafd319fbf9a5ccf3a47980a06e1673f2336bcc0e952c5acc54a43aec9ac1",
+      "group": "11_TESTS"
+    },
+    {
+      "path": "training/tests/test_v6_audited_model.py",
+      "bytes": 3720,
+      "lines": 76,
+      "sha256": "e203145bed57271b409e23c580b3e6ab4085acdeb8845f95fc3c9b170e8e8153",
+      "group": "11_TESTS"
+    },
+    {
+      "path": "training/tests/test_v6_clinical_facts.py",
+      "bytes": 4025,
+      "lines": 72,
+      "sha256": "cbc4db08d408e8e7e55c1beb2b6323266e4329361b77ab67f24d7c1458dc009d",
+      "group": "11_TESTS"
+    },
+    {
+      "path": "training/tests/test_v6_clinical_history_audit.py",
+      "bytes": 1481,
+      "lines": 26,
+      "sha256": "de1569576ba25413c03c52f655749a4e9105535296eea39ab9c1fe56dae1e9b7",
+      "group": "11_TESTS"
+    },
+    {
+      "path": "training/tests/test_v6_clinical_history_model.py",
+      "bytes": 1798,
+      "lines": 38,
+      "sha256": "d1c94675aa6dbc0106a65ba7a61a65ab366be1da56728960f9269a92f6d88b99",
+      "group": "11_TESTS"
+    },
+    {
+      "path": "training/tests/test_v6_clock_audit.py",
+      "bytes": 2128,
+      "lines": 44,
+      "sha256": "405dcded2d1443d058791e7657a3b48fd20181961a3cd73901bcfee2471db673",
+      "group": "11_TESTS"
+    },
+    {
+      "path": "training/tests/test_v6_compact_context.py",
+      "bytes": 4225,
+      "lines": 75,
+      "sha256": "bfbd56b334acec9e76b112f167445eaedb567021be310de388e14a0e56ce2db8",
+      "group": "11_TESTS"
+    },
+    {
+      "path": "training/tests/test_v6_compact_model.py",
+      "bytes": 6829,
+      "lines": 118,
+      "sha256": "8cd412f8cc4663ef76ef420cb538f1adf916c2fda0f3805e8d0d5a43d41d1f96",
+      "group": "11_TESTS"
+    },
+    {
+      "path": "training/tests/test_v6_contextual_pipeline.py",
+      "bytes": 3344,
+      "lines": 59,
+      "sha256": "281865958fca1b0ab91fef8b7035101fbd70a929c1dcd621ef9a5ec01f0e1966",
+      "group": "11_TESTS"
+    },
+    {
+      "path": "training/tests/test_v6_contextual_residual.py",
+      "bytes": 4174,
+      "lines": 75,
+      "sha256": "d4a702e90c5d7bb15296400fae75b078c24596d114137f9f4c924c2134a24173",
+      "group": "11_TESTS"
+    },
+    {
+      "path": "training/tests/test_v6_core.py",
+      "bytes": 6573,
+      "lines": 124,
+      "sha256": "86ca00aa87f7d8d6527c69c81347f65ad6cb258a0d2e9498385f6b28424c24ad",
+      "group": "11_TESTS"
+    },
+    {
+      "path": "training/tests/test_v6_core_lab_continuous.py",
+      "bytes": 1632,
+      "lines": 27,
+      "sha256": "3c66148ef2b792eb843bffcaba81b0c30177c0bae68896d8b70ebf2f6b0ba136",
+      "group": "11_TESTS"
+    },
+    {
+      "path": "training/tests/test_v6_core_lab_cox.py",
+      "bytes": 2125,
+      "lines": 49,
+      "sha256": "82eeb254608605854bc0f545bb79ed2c58474541669e01408b5139ef99a19d06",
+      "group": "11_TESTS"
+    },
+    {
+      "path": "training/tests/test_v6_core_lab_value_audit.py",
+      "bytes": 2118,
+      "lines": 35,
+      "sha256": "014f0a2fe8c56e70ac3475fab21b1aab21de131e1e4014a952b08186954d43e3",
+      "group": "11_TESTS"
+    },
+    {
+      "path": "training/tests/test_v6_curve_adaptation.py",
+      "bytes": 2832,
+      "lines": 53,
+      "sha256": "6ed607e18c02e987814de1fa248cd2accc455f29de16e04c57b2c859d921719e",
+      "group": "11_TESTS"
+    },
+    {
+      "path": "training/tests/test_v6_curve_score.py",
+      "bytes": 3258,
+      "lines": 59,
+      "sha256": "024ebf8ba2b679341fb5fc5a607b7bbabc55f15b6fdb3c3a8b4f560fa8890e63",
+      "group": "11_TESTS"
+    },
+    {
+      "path": "training/tests/test_v6_cxr_context.py",
+      "bytes": 6309,
+      "lines": 110,
+      "sha256": "e291da04b72c0edbfaf2167d4116672670a9b888623ba587bd4f23420b3af375",
+      "group": "11_TESTS"
+    },
+    {
+      "path": "training/tests/test_v6_data_geometry.py",
+      "bytes": 2012,
+      "lines": 43,
+      "sha256": "a7a3f83b5c57b6dbd064fdc5c0b780435aa1b45caa8d7c4ce7c78121f333c9eb",
+      "group": "11_TESTS"
+    },
+    {
+      "path": "training/tests/test_v6_data_geometry_metrics.py",
+      "bytes": 814,
+      "lines": 21,
+      "sha256": "e4e283c475bd57ba0d328adc609d82ee17bba7d7c9ab4e6ad5f510cc2ca3c1e7",
+      "group": "11_TESTS"
+    },
+    {
+      "path": "training/tests/test_v6_deep_interaction.py",
+      "bytes": 6805,
+      "lines": 135,
+      "sha256": "02b45e3c7a43897312ccf089d00214ff76d0663240a7236e813514841382df40",
+      "group": "11_TESTS"
+    },
+    {
+      "path": "training/tests/test_v6_detail_extension.py",
+      "bytes": 1128,
+      "lines": 31,
+      "sha256": "16c6b8ebb12199d76308f9b2f0ba3cb3fdc6c32f10ff629609fd56076ed1ada5",
+      "group": "11_TESTS"
+    },
+    {
+      "path": "training/tests/test_v6_discharge_regimen_cox.py",
+      "bytes": 3195,
+      "lines": 62,
+      "sha256": "f57700eca6c4589df49d07befb46cfadb3bfd6b8bcc3d6cbede12843979cfb10",
+      "group": "11_TESTS"
+    },
+    {
+      "path": "training/tests/test_v6_discharge_regimen_screen.py",
+      "bytes": 2188,
+      "lines": 44,
+      "sha256": "181d2468ef32e24afe2ba821609267cb0d19d507560a79af07b7004f48636053",
+      "group": "11_TESTS"
+    },
+    {
+      "path": "training/tests/test_v6_discharge_resp_rules.py",
+      "bytes": 4509,
+      "lines": 107,
+      "sha256": "b34afd8250831feada0235f105fce36f1979d080c9a3301087bc809b3b5f9e79",
+      "group": "11_TESTS"
+    },
+    {
+      "path": "training/tests/test_v6_discharge_resp_rules_r2.py",
+      "bytes": 4401,
+      "lines": 92,
+      "sha256": "73249dfe7d8493408db070e556772f4d212ed2d5776581e501817799438461c9",
+      "group": "11_TESTS"
+    },
+    {
+      "path": "training/tests/test_v6_disposition_context.py",
+      "bytes": 2310,
+      "lines": 35,
+      "sha256": "f0d452e2fe4f425f9489cccc0708e7e09d0d533b941cb4bfcc20b846cc38cf18",
+      "group": "11_TESTS"
+    },
+    {
+      "path": "training/tests/test_v6_evaluation.py",
+      "bytes": 4456,
+      "lines": 88,
+      "sha256": "de1e4ab315f314be8e997e90e2413388d91607f06d8d4d3d8f8c8a26690d4e4c",
+      "group": "11_TESTS"
+    },
+    {
+      "path": "training/tests/test_v6_exploration.py",
+      "bytes": 6477,
+      "lines": 112,
+      "sha256": "32f7370b6a46b1edacf3aadc876010e5a1121f3bf30539a00872cb2f037f0dfb",
+      "group": "11_TESTS"
+    },
+    {
+      "path": "training/tests/test_v6_fast_multiview.py",
+      "bytes": 3017,
+      "lines": 47,
+      "sha256": "b82a07071df34c62c8f727efa4dd2c6eea4badc1b472e5bb0da0c51ec90b69ac",
+      "group": "11_TESTS"
+    },
+    {
+      "path": "training/tests/test_v6_fixed_threshold_readout.py",
+      "bytes": 2694,
+      "lines": 61,
+      "sha256": "dff93e84bd9d13212444dd23750010efd53a5ae7bdb374b56b6bf47fddb9bb71",
+      "group": "11_TESTS"
+    },
+    {
+      "path": "training/tests/test_v6_frozen_augmentation.py",
+      "bytes": 1170,
+      "lines": 25,
+      "sha256": "7c869fa4c34d3356ec129727cb7a122ec9b4b04addf1aacc6b8b8d779d0fb03b",
+      "group": "11_TESTS"
+    },
+    {
+      "path": "training/tests/test_v6_generalization_direction.py",
+      "bytes": 2269,
+      "lines": 39,
+      "sha256": "e5e47a98af142a0fbc7ca7c0da8816b6418b1bb368a992bd3cbaba684e561d64",
+      "group": "11_TESTS"
+    },
+    {
+      "path": "training/tests/test_v6_gradient_calibration.py",
+      "bytes": 1436,
+      "lines": 26,
+      "sha256": "5ef782c58fa1c8bf46d3209da7932705a112591569b966fd893ea2a21253d3b8",
+      "group": "11_TESTS"
+    },
+    {
+      "path": "training/tests/test_v6_group_ablation.py",
+      "bytes": 2271,
+      "lines": 42,
+      "sha256": "ea5cd4481f3d856faa89ee8cd0b448ad750a37476f8003c85699b07c9a5b9294",
+      "group": "11_TESTS"
+    },
+    {
+      "path": "training/tests/test_v6_horizon_objective.py",
+      "bytes": 6460,
+      "lines": 116,
+      "sha256": "228b7a22474808c6a6654c092442a709080d4ab53a6c2343c29ac635cde290a4",
+      "group": "11_TESTS"
+    },
+    {
+      "path": "training/tests/test_v6_local_text_interface.py",
+      "bytes": 1556,
+      "lines": 35,
+      "sha256": "12178065219964a7cbc2f675136ba64e3212e6f824a6907eb54967096f47a35f",
+      "group": "11_TESTS"
+    },
+    {
+      "path": "training/tests/test_v6_local_text_model.py",
+      "bytes": 2461,
+      "lines": 43,
+      "sha256": "5cc73ca0da80a1a6610e5145dd6c4f75df8bf8df526cb3d825448130d56f9d12",
+      "group": "11_TESTS"
+    },
+    {
+      "path": "training/tests/test_v6_module_surgery.py",
+      "bytes": 7384,
+      "lines": 135,
+      "sha256": "74e5e9a07e15d64c258bf62f1e05f1131f5c6a2b387740ed85f9bf23da91b8e9",
+      "group": "11_TESTS"
+    },
+    {
+      "path": "training/tests/test_v6_mortality_evidence.py",
+      "bytes": 638,
+      "lines": 15,
+      "sha256": "a996a0553da882782f676bcb6b2ab0d87cdc0e7b5dd526086a9fc8453b87989d",
+      "group": "11_TESTS"
+    },
+    {
+      "path": "training/tests/test_v6_multihorizon_readout.py",
+      "bytes": 2431,
+      "lines": 58,
+      "sha256": "d9a51983e0606b50121fe4e1aed8024aae70fc401dafa9d062d6d7c6abb7cdd8",
+      "group": "11_TESTS"
+    },
+    {
+      "path": "training/tests/test_v6_oof_baseline.py",
+      "bytes": 2491,
+      "lines": 50,
+      "sha256": "71daa113f8633c003e66a95683e028f7a930737b6d5382d6d62c7fdb6f418527",
+      "group": "11_TESTS"
+    },
+    {
+      "path": "training/tests/test_v6_original_interaction.py",
+      "bytes": 5127,
+      "lines": 86,
+      "sha256": "294a100596c75bee82008682c3585b9ac366d44593052a5f3cf3676d3d9902cf",
+      "group": "11_TESTS"
+    },
+    {
+      "path": "training/tests/test_v6_oxygen_device.py",
+      "bytes": 3636,
+      "lines": 64,
+      "sha256": "bf91c312ceb3d92072632167c3223e77efec9af38b18ba04e7b0e7c20690b1db",
+      "group": "11_TESTS"
+    },
+    {
+      "path": "training/tests/test_v6_oxygen_device_model.py",
+      "bytes": 2360,
+      "lines": 45,
+      "sha256": "564dfd670382ce9cb846d692628f64271314015fc68c5453be9e2ae5b175d793",
+      "group": "11_TESTS"
+    },
+    {
+      "path": "training/tests/test_v6_patient_balance_guard.py",
+      "bytes": 721,
+      "lines": 18,
+      "sha256": "46c3b92bdcf36cc77c9621f1d302fd6855f51c6c98e01ff1c79c9aa197367c0b",
+      "group": "11_TESTS"
+    },
+    {
+      "path": "training/tests/test_v6_patient_weights.py",
+      "bytes": 2491,
+      "lines": 46,
+      "sha256": "1e467b640d904518d36ae4d3a49db34405d94aae49755cfb97df95c7eee180c4",
+      "group": "11_TESTS"
+    },
+    {
+      "path": "training/tests/test_v6_pft_evidence.py",
+      "bytes": 2995,
+      "lines": 65,
+      "sha256": "e57f91f663e892552b5b1bee12e5d781a58a63745dcee720ee852d26e6e7fbf9",
+      "group": "11_TESTS"
+    },
+    {
+      "path": "training/tests/test_v6_pft_fact_ledger.py",
+      "bytes": 1884,
+      "lines": 40,
+      "sha256": "c11bbeb0406b7f27e9c873c7c67053e012d8d3fec08a1e02f40a8a1d41bc0692",
+      "group": "11_TESTS"
+    },
+    {
+      "path": "training/tests/test_v6_pft_inventory.py",
+      "bytes": 1264,
+      "lines": 33,
+      "sha256": "d9b8030b1efcaf9db9531add4d5112c077568ed2bdeb84d60f9ac5a6e4f80dcb",
+      "group": "11_TESTS"
+    },
+    {
+      "path": "training/tests/test_v6_pft_set_experiment.py",
+      "bytes": 1149,
+      "lines": 29,
+      "sha256": "6c56e83d08c1f7631ab061775fd5abf55baae967a9e617d715fc80b9d3adb4ec",
+      "group": "11_TESTS"
+    },
+    {
+      "path": "training/tests/test_v6_pft_set_interface.py",
+      "bytes": 1813,
+      "lines": 36,
+      "sha256": "7cd70e1a26ed0a5145dab293d4730205f618fcd7570895241f475c10cc04877f",
+      "group": "11_TESTS"
+    },
+    {
+      "path": "training/tests/test_v6_pft_set_model.py",
+      "bytes": 2433,
+      "lines": 45,
+      "sha256": "9964e723033d772b9bb90e792a98e1cba98dba558b04bac41955778e4e6c72da",
+      "group": "11_TESTS"
+    },
+    {
+      "path": "training/tests/test_v6_pft_table_binding.py",
+      "bytes": 2494,
+      "lines": 53,
+      "sha256": "a443b30e962da9171d9da859a43f3514b1249d03734e59f0ebab8876dabe9254",
+      "group": "11_TESTS"
+    },
+    {
+      "path": "training/tests/test_v6_public_tabular.py",
+      "bytes": 4003,
+      "lines": 68,
+      "sha256": "f758eda7d1e0ad177a3d4107411ff0d58dbac6cad876f23425376c40e399b93e",
+      "group": "11_TESTS"
+    },
+    {
+      "path": "training/tests/test_v6_public_tabular_corrected.py",
+      "bytes": 2171,
+      "lines": 40,
+      "sha256": "5b80e9225aa58f8b467b687630932759c8d8a89daecad9928de09019d954b49f",
+      "group": "11_TESTS"
+    },
+    {
+      "path": "training/tests/test_v6_radiology_comparison.py",
+      "bytes": 2932,
+      "lines": 55,
+      "sha256": "6ce77715abf276b0979941bc8f201755744f8fa66ec92fbfb6cd66362926c19e",
+      "group": "11_TESTS"
+    },
+    {
+      "path": "training/tests/test_v6_regimen_joint_fusion.py",
+      "bytes": 5799,
+      "lines": 124,
+      "sha256": "9d75dc40213af03adba92657c9fbb7f326bc1326de68e56554dbb5c1f0936e29",
+      "group": "11_TESTS"
+    },
+    {
+      "path": "training/tests/test_v6_regularization.py",
+      "bytes": 3352,
+      "lines": 66,
+      "sha256": "a404f5961633a1d0f2c274f0ca5c7b3bb63db13b6cb02bed6cc9f25b9b38e734",
+      "group": "11_TESTS"
+    },
+    {
+      "path": "training/tests/test_v6_regularization_diagnostics.py",
+      "bytes": 817,
+      "lines": 21,
+      "sha256": "9887525bdb52ba630a41415cb7ad66ad6c913ee37334cba82329e4e5200a5c6e",
+      "group": "11_TESTS"
+    },
+    {
+      "path": "training/tests/test_v6_regularization_gate.py",
+      "bytes": 2163,
+      "lines": 48,
+      "sha256": "3a83c1567a89fc707d808d0cec1fbeb1d83ab2e75c885644aef6cdcd0d5c5242",
+      "group": "11_TESTS"
+    },
+    {
+      "path": "training/tests/test_v6_regularization_multiseed.py",
+      "bytes": 2648,
+      "lines": 52,
+      "sha256": "8da20c53ae8e3a6e279d11d528d49cbd450c512f0cec89ccf42ecdf62356bb46",
+      "group": "11_TESTS"
+    },
+    {
+      "path": "training/tests/test_v6_regularization_search.py",
+      "bytes": 1579,
+      "lines": 36,
+      "sha256": "33281451657f782e2b98d888d1e01a534ee10385519b748a8e6154f4eec48366",
+      "group": "11_TESTS"
+    },
+    {
+      "path": "training/tests/test_v6_research_prediction.py",
+      "bytes": 631,
+      "lines": 16,
+      "sha256": "46fd6749d4856e619baae34695a180d1e2a6a2bcb6df9d73fec2d90c1548268f",
+      "group": "11_TESTS"
+    },
+    {
+      "path": "training/tests/test_v6_resp_fact_set_experiment.py",
+      "bytes": 1163,
+      "lines": 29,
+      "sha256": "70f2ccd2efa2cc4ce059f18495999abdfcdabea30f60fb1085abcd4c9454ce2f",
+      "group": "11_TESTS"
+    },
+    {
+      "path": "training/tests/test_v6_resp_fact_set_interface.py",
+      "bytes": 4281,
+      "lines": 88,
+      "sha256": "aced21b923332d5c557ab849ae3540700ad11a3457e23f0c75b83fc022a5e89e",
+      "group": "11_TESTS"
+    },
+    {
+      "path": "training/tests/test_v6_resp_fact_set_model.py",
+      "bytes": 4236,
+      "lines": 71,
+      "sha256": "9abbc01419ac4ee81ad913fea658eda87a6ec563b9528a0007989ace7f0c8ea2",
+      "group": "11_TESTS"
+    },
+    {
+      "path": "training/tests/test_v6_respiratory_transition.py",
+      "bytes": 3195,
+      "lines": 59,
+      "sha256": "7eb5a5e3ac6dac5b5b06be393f285e621ae79ba5d6214f7d7763b2338846ac65",
+      "group": "11_TESTS"
+    },
+    {
+      "path": "training/tests/test_v6_respiratory_transition_model.py",
+      "bytes": 2356,
+      "lines": 43,
+      "sha256": "cb729c9b646e117bd9d1377ce60c7af79592db4ccf76901b0ade9dee7382aa87",
+      "group": "11_TESTS"
+    },
+    {
+      "path": "training/tests/test_v6_saved_sections.py",
+      "bytes": 2164,
+      "lines": 39,
+      "sha256": "a581fea775cf53e0d91c6990a9c5e2ce931de615118f50641c2251b3784082fc",
+      "group": "11_TESTS"
+    },
+    {
+      "path": "training/tests/test_v6_source_context.py",
+      "bytes": 2555,
+      "lines": 42,
+      "sha256": "a7d6ca026e7066ae52b8fde0b7406aaa8ceadc4b5b021068a2543ef936faa53c",
+      "group": "11_TESTS"
+    },
+    {
+      "path": "training/tests/test_v6_symmetric_context.py",
+      "bytes": 1602,
+      "lines": 34,
+      "sha256": "f90148200306fbe9130024d8f3d71cbff205fcb6f84a9e50f5d701f6957c7c9f",
+      "group": "11_TESTS"
+    },
+    {
+      "path": "training/tests/test_v6_task_continuation.py",
+      "bytes": 1581,
+      "lines": 27,
+      "sha256": "2779718426557ddab54de1b68e8e33c2f04f5532904d59314cd3e1e723206394",
+      "group": "11_TESTS"
+    },
+    {
+      "path": "training/tests/test_v6_task_gradient.py",
+      "bytes": 1086,
+      "lines": 23,
+      "sha256": "c77b35fb69f07d2b67c797a48ac745fc5f16dc78a6c1471a6e6b8f6cb7d67713",
+      "group": "11_TESTS"
+    },
+    {
+      "path": "training/tests/test_v6_task_optimization.py",
+      "bytes": 3385,
+      "lines": 58,
+      "sha256": "896b5b3291135f876147ff96c73b45225c18266c5b267ba0b9c447ecc82bf525",
+      "group": "11_TESTS"
+    },
+    {
+      "path": "training/tests/test_v6_task_optimization_audit.py",
+      "bytes": 1825,
+      "lines": 42,
+      "sha256": "8bdc87e908f3379f7f994ab685e73479ba94af730b8168f114d1828a833fa14e",
+      "group": "11_TESTS"
+    },
+    {
+      "path": "training/tests/test_v6_task_optimization_report.py",
+      "bytes": 2444,
+      "lines": 40,
+      "sha256": "707fd86450be3b93f8f21daa08b1252256b8fee3a7eb3aa2cf9b6e6b847ad33b",
+      "group": "11_TESTS"
+    },
+    {
+      "path": "training/tests/test_v6_text_concept.py",
+      "bytes": 3310,
+      "lines": 47,
+      "sha256": "4520d6bca0f1081f5d5291e072b12186b0f530aad5ebd942380f5927d18e1c92",
+      "group": "11_TESTS"
+    },
+    {
+      "path": "training/tests/test_v6_text_encoder_comparison.py",
+      "bytes": 3368,
+      "lines": 59,
+      "sha256": "5ae5031909ff0c73d6666ae111931e05da0360650e97236b6c3b41459aa25ac5",
+      "group": "11_TESTS"
+    },
+    {
+      "path": "training/tests/test_v6_text_time_coverage.py",
+      "bytes": 2074,
+      "lines": 41,
+      "sha256": "44c606e8aec10723c257064efe94a6bd926d1f12cd96c211cea0b912a301644e",
+      "group": "11_TESTS"
+    },
+    {
+      "path": "training/tests/test_v6_token_research.py",
+      "bytes": 4307,
+      "lines": 75,
+      "sha256": "e681d7f32bb84257c0968c54eb83f62d9d4c20a7c6989853db921c5adf98206c",
+      "group": "11_TESTS"
+    },
+    {
+      "path": "training/tests/test_v6_unassigned_lab_audit.py",
+      "bytes": 1956,
+      "lines": 29,
+      "sha256": "0751befd0a73840acd677125095c6ba5f406c31d8cdbccaefe02ea55b800296a",
+      "group": "11_TESTS"
+    },
+    {
+      "path": "training/tests/test_v6_unified_longitudinal.py",
+      "bytes": 1972,
+      "lines": 50,
+      "sha256": "bebca4b0fcedc8580a666d9391bfe8d4b24134b51743679412062cbd6664ed20",
+      "group": "11_TESTS"
+    },
+    {
+      "path": "training/tests/test_v6_warm_residual.py",
+      "bytes": 2481,
+      "lines": 45,
+      "sha256": "7be5fd3a2b68169f4f9333182ddeb3831ee3097679955a1da5678b2986eb37dc",
+      "group": "11_TESTS"
+    },
+    {
+      "path": "training/tests/test_v7_cached_research.py",
+      "bytes": 1656,
+      "lines": 33,
+      "sha256": "5930310da03745f63c1885d223c0ee96fd7f9b9d81cbc7d022376c1efafcba6c",
+      "group": "11_TESTS"
+    },
+    {
+      "path": "training/tests/test_v7_drug_context.py",
+      "bytes": 1130,
+      "lines": 26,
+      "sha256": "7d844f2b92ae12ffcda5cf0824fc3892f475b69c29a382a4dbef669f122caa59",
+      "group": "11_TESTS"
+    },
+    {
+      "path": "training/tests/test_v7_loss_comparison.py",
+      "bytes": 3325,
+      "lines": 57,
+      "sha256": "76fca339f95f84a3abc585fa5cb62c90196d069faf58155308aa9b9b38a54996",
+      "group": "11_TESTS"
+    },
+    {
+      "path": "training/tests/test_v7_losses.py",
+      "bytes": 2685,
+      "lines": 54,
+      "sha256": "bb815a5467e1118fd1561d1d61fa1a6a32abed2c4b79ab3a90995930cef3aee2",
+      "group": "11_TESTS"
+    },
+    {
+      "path": "training/tests/test_v7_model.py",
+      "bytes": 5750,
+      "lines": 112,
+      "sha256": "70b25b24ed91b85e1cdeb10fb675b8f49151f4771a8d07618931ddbc4db0319d",
+      "group": "11_TESTS"
+    },
+    {
+      "path": "training/tests/test_v7_projected_strong.py",
+      "bytes": 3951,
+      "lines": 78,
+      "sha256": "874da4444a74540b7beb8b75adbf5a4742eb3a4951a35d6e2ec1b4475c71b196",
+      "group": "11_TESTS"
+    },
+    {
+      "path": "training/tests/test_v7_research_features.py",
+      "bytes": 1914,
+      "lines": 35,
+      "sha256": "3dc5fdd5ccad5ce67b45160ea60198914dd7f1a4470fad74ddde676ab6755a08",
+      "group": "11_TESTS"
+    },
+    {
+      "path": "training/tests/test_v7_residual_controls.py",
+      "bytes": 1085,
+      "lines": 22,
+      "sha256": "32226e5bbb56d2b3b43f0a4885194307b24d5def206cf9b43cb946f9df804c15",
+      "group": "11_TESTS"
+    },
+    {
+      "path": "training/tests/test_v7_sequential.py",
+      "bytes": 3011,
+      "lines": 55,
+      "sha256": "87ad194e16975c44ea4fe503332a8eadd4ac6a542a4056e30a4fbb22c4feaed0",
+      "group": "11_TESTS"
+    },
+    {
+      "path": "training/tests/test_v7_strong_anchor.py",
+      "bytes": 1094,
+      "lines": 20,
+      "sha256": "f3019d99f48d7aa4ba5ccf42ab17ac7e4f51d75e8a40601767c2d0abb13123b4",
+      "group": "11_TESTS"
+    },
+    {
+      "path": "training/tests/test_v7_strong_no_cross.py",
+      "bytes": 3411,
+      "lines": 64,
+      "sha256": "55c8dc6a4ad741c4f99d7c1048687e002716454281df4e6c74b8155b13f07cc8",
+      "group": "11_TESTS"
+    },
+    {
+      "path": "training/tests/test_v7_two_fold.py",
+      "bytes": 1652,
+      "lines": 29,
+      "sha256": "0a290d4aa629f780f94c4b6385198c3c6aa2a49c330316396320ccf086bdd997",
+      "group": "11_TESTS"
+    },
+    {
+      "path": "training/text_embedding_memory_test.py",
+      "bytes": 5910,
+      "lines": 139,
+      "sha256": "2e0b2561e887fc74ec7bebe748d33373e00f087bad4b03ba38bc36263c4cff87",
+      "group": "07_BASELINES_AND_COMMON"
+    },
+    {
+      "path": "training/tokenize_section_documents.py",
+      "bytes": 2007,
+      "lines": 56,
+      "sha256": "ce0405246be3e0a69f4205fb12aaafcb233d6206a79b2597404fcfd4df969ff5",
+      "group": "07_BASELINES_AND_COMMON"
+    },
+    {
+      "path": "training/train_conditional_longitudinal.py",
+      "bytes": 29793,
+      "lines": 675,
+      "sha256": "0e9647e1db15dc1640f0c8fe31247d3244e365dd5f8a72cdb5a7b41760a25733",
+      "group": "07_BASELINES_AND_COMMON"
+    },
+    {
+      "path": "training/v5/__init__.py",
+      "bytes": 52,
+      "lines": 1,
+      "sha256": "7aec948e3755d99acd7832668426c170f0f61a6f8cab78f6e660a963dd2d7b36",
+      "group": "08_TRAINING_V5"
+    },
+    {
+      "path": "training/v5/abnormality_model.py",
+      "bytes": 2860,
+      "lines": 54,
+      "sha256": "b333e05ad92b0a5214e4e3f57c8600d714161183de655fc58906dfb31dc1bac9",
+      "group": "08_TRAINING_V5"
+    },
+    {
+      "path": "training/v5/aggregate_group_ablations.py",
+      "bytes": 5054,
+      "lines": 88,
+      "sha256": "5d8382fe40bf04b8d2e4b32e95baba02a274cc3b6b57dd9d740cbaf72992eef1",
+      "group": "08_TRAINING_V5"
+    },
+    {
+      "path": "training/v5/analyze_incremental_evidence.py",
+      "bytes": 11624,
+      "lines": 199,
+      "sha256": "0c98dd013f5934bf9a59977f925f3f6f98da4a655ac8c1f9f5c16ee8f1f4960d",
+      "group": "08_TRAINING_V5"
+    },
+    {
+      "path": "training/v5/audit_embedded_labels.py",
+      "bytes": 1910,
+      "lines": 35,
+      "sha256": "b4340790933732b2e78e3c1140718b7edba44e71ebe90d653ad6e086071fba39",
+      "group": "08_TRAINING_V5"
+    },
+    {
+      "path": "training/v5/audit_medication_effect_features.py",
+      "bytes": 2721,
+      "lines": 61,
+      "sha256": "dffc47af044d54f8d618b90971e8d2588017828118b722ddee60436ee4adfb7c",
+      "group": "08_TRAINING_V5"
+    },
+    {
+      "path": "training/v5/audit_outcome_auc_shift.py",
+      "bytes": 4867,
+      "lines": 99,
+      "sha256": "de4c0f3015d6e20ac379b1237139f2360ad54f404146a75ca4bb18544e33f325",
+      "group": "08_TRAINING_V5"
+    },
+    {
+      "path": "training/v5/audit_revised_group_coverage.py",
+      "bytes": 5664,
+      "lines": 122,
+      "sha256": "31120493048689f799f195cda278d2a6c16451adb338e826034c9b613d7943d5",
+      "group": "08_TRAINING_V5"
+    },
+    {
+      "path": "training/v5/audit_section_incremental.py",
+      "bytes": 2908,
+      "lines": 70,
+      "sha256": "23ce804d627a01502815e0534d46003a87d897c93e351777a49e4dc762671caf",
+      "group": "08_TRAINING_V5"
+    },
+    {
+      "path": "training/v5/broad_fragment_data.py",
+      "bytes": 6400,
+      "lines": 118,
+      "sha256": "6b84f36f0dd74a360153faaae70dfb5ea225b60be602ac6668d9d0fbb0a2a383",
+      "group": "08_TRAINING_V5"
+    },
+    {
+      "path": "training/v5/clinical_concepts.py",
+      "bytes": 7738,
+      "lines": 148,
+      "sha256": "c05e2ec100ac2c12ff23410d878fa57cc77cc5aa390f7eac95d0434322dab80d",
+      "group": "08_TRAINING_V5"
+    },
+    {
+      "path": "training/v5/compare_abnormality_controls.ps1",
+      "bytes": 1198,
+      "lines": 24,
+      "sha256": "609664131ccc5fca6bf288a5b6bc94377848a7b18b811483b6b0caa155f3be09",
+      "group": "08_TRAINING_V5"
+    },
+    {
+      "path": "training/v5/compare_all_lab_axes.py",
+      "bytes": 10355,
+      "lines": 177,
+      "sha256": "d4215e3611cb2b9518f6e509939c6bcab370acb01cad3be0e11a62592eea2b73",
+      "group": "08_TRAINING_V5"
+    },
+    {
+      "path": "training/v5/compare_broad_fragments.py",
+      "bytes": 8103,
+      "lines": 126,
+      "sha256": "ce22501910519cf00f1d66e4608161433f769286f0a72afcab3baa54e232151f",
+      "group": "08_TRAINING_V5"
+    },
+    {
+      "path": "training/v5/compare_endpoint_experiment.py",
+      "bytes": 6794,
+      "lines": 98,
+      "sha256": "e84b6c806badacc712a5d2dd62f1fdd51016d69d3ec837efaa1e5a411cd0d8a4",
+      "group": "08_TRAINING_V5"
+    },
+    {
+      "path": "training/v5/compare_independent_text.py",
+      "bytes": 5928,
+      "lines": 115,
+      "sha256": "5100d20cf2332be3b5d844f2358f617e4719d0ce87a966e53f9251c5919d81cb",
+      "group": "08_TRAINING_V5"
+    },
+    {
+      "path": "training/v5/compare_lab_recovery_pilot.py",
+      "bytes": 5074,
+      "lines": 88,
+      "sha256": "11a7f1d0711bf80e4a21ad536dddd0e138fb6530553dc980b77f05e930509cac",
+      "group": "08_TRAINING_V5"
+    },
+    {
+      "path": "training/v5/compare_medication_effect_ablations.py",
+      "bytes": 4972,
+      "lines": 83,
+      "sha256": "6254f1448efe3724aa04326f7b1f2706fcc4d0c579aa193a7b4fd54e9c1e84af",
+      "group": "08_TRAINING_V5"
+    },
+    {
+      "path": "training/v5/compare_prior_count_ablation.py",
+      "bytes": 10176,
+      "lines": 153,
+      "sha256": "923273d35a2fc15a837e70ce35ce70d2d8a43d310a3e7a3b1f102394fc8c0f5f",
+      "group": "08_TRAINING_V5"
+    },
+    {
+      "path": "training/v5/compare_revised_group_ablations.py",
+      "bytes": 9578,
+      "lines": 167,
+      "sha256": "e9cef6f16ad9f1de5692c41c499bafdbb22a3ca551814bc11ec974cb53a54224",
+      "group": "08_TRAINING_V5"
+    },
+    {
+      "path": "training/v5/compare_revised_labs_meds.py",
+      "bytes": 5433,
+      "lines": 99,
+      "sha256": "dfcc9931601ba70ac4b269019dc1373c2b18f9f2dd88de34fc0305a797d53922",
+      "group": "08_TRAINING_V5"
+    },
+    {
+      "path": "training/v5/compare_screened_group_ablations.py",
+      "bytes": 12657,
+      "lines": 218,
+      "sha256": "0ba4acf8c1dfd10f612f33d65a27fceb73330b886cfad8fc559fd71e82144d99",
+      "group": "08_TRAINING_V5"
+    },
+    {
+      "path": "training/v5/compare_strict_ablations.py",
+      "bytes": 4902,
+      "lines": 92,
+      "sha256": "53e422a876bd85ea8cd28313772f696ae6f85d79dee6bf313e3c79592ffad550",
+      "group": "08_TRAINING_V5"
+    },
+    {
+      "path": "training/v5/compare_strict_axis_screen.py",
+      "bytes": 8859,
+      "lines": 157,
+      "sha256": "9d8b73ba179dfda143cfd78c1ee09bd85f33566777a6b1d53e9ad2539d77c20d",
+      "group": "08_TRAINING_V5"
+    },
+    {
+      "path": "training/v5/compare_summary_temporal.py",
+      "bytes": 9128,
+      "lines": 170,
+      "sha256": "930f3bbc9b66a290dfff7641d08e6c406ba2c61192b2058ca080a7e81977ec1e",
+      "group": "08_TRAINING_V5"
+    },
+    {
+      "path": "training/v5/compare_text_encoders.py",
+      "bytes": 7295,
+      "lines": 141,
+      "sha256": "dedabd647829b2725544dea2b88b9af8f58ba39dd185197ad937549e9088d4b1",
+      "group": "08_TRAINING_V5"
+    },
+    {
+      "path": "training/v5/competing_concordance.py",
+      "bytes": 2090,
+      "lines": 41,
+      "sha256": "1c1764227f44e39692acc1fdabe15482fc6a817951ece6c9e4764f086bd33d5b",
+      "group": "08_TRAINING_V5"
+    },
+    {
+      "path": "training/v5/complete_c_index_addendum.py",
+      "bytes": 5051,
+      "lines": 89,
+      "sha256": "536bef15b11f446294157ab24e684019dac05d347cad5fb641aa336035797027",
+      "group": "08_TRAINING_V5"
+    },
+    {
+      "path": "training/v5/data.py",
+      "bytes": 13882,
+      "lines": 272,
+      "sha256": "cb5f32751f59cf7ad6cfb32769bfb9b2ffa376ad20a1ce5a87ec18a0c9ace4fa",
+      "group": "08_TRAINING_V5"
+    },
+    {
+      "path": "training/v5/evaluate_broad_temporal.py",
+      "bytes": 6830,
+      "lines": 126,
+      "sha256": "12ef5bf4afd8db874425b910ee55d6589afab804ee862f1ae261f6bb6d8d35d1",
+      "group": "08_TRAINING_V5"
+    },
+    {
+      "path": "training/v5/evaluate_completed_event_run.py",
+      "bytes": 13871,
+      "lines": 260,
+      "sha256": "1356157075753cb5b863263fa3787a769c3c357e69b95121da01591eadecf240",
+      "group": "08_TRAINING_V5"
+    },
+    {
+      "path": "training/v5/evaluate_medication_documentation.py",
+      "bytes": 5180,
+      "lines": 95,
+      "sha256": "f3c7dca7ccd32258d628fbf9d82f9489ff3b07e1c671dd3b876748c0cf69a348",
+      "group": "08_TRAINING_V5"
+    },
+    {
+      "path": "training/v5/event_data.py",
+      "bytes": 12214,
+      "lines": 236,
+      "sha256": "59a4da0121c4620243574c7112000297c0a01ed40ec1b2dc9d81008944f8bd59",
+      "group": "08_TRAINING_V5"
+    },
+    {
+      "path": "training/v5/event_model.py",
+      "bytes": 4979,
+      "lines": 90,
+      "sha256": "364d9d3919192aeb5f1412f4ef5af84c1559372ff9027bc0a4d6bcba67212f75",
+      "group": "08_TRAINING_V5"
+    },
+    {
+      "path": "training/v5/event_set_model.py",
+      "bytes": 6766,
+      "lines": 110,
+      "sha256": "025577831f44139263aeab5826b1fa971e19800549eb2175756b9387f29bc279",
+      "group": "08_TRAINING_V5"
+    },
+    {
+      "path": "training/v5/explain_endpoint_shift.py",
+      "bytes": 5120,
+      "lines": 93,
+      "sha256": "bafaba8652f4b5d77bd0e797950d63a6dac3ccc2ed377d319c8b157ad1bd8b34",
+      "group": "08_TRAINING_V5"
+    },
+    {
+      "path": "training/v5/export_broad_labels.py",
+      "bytes": 4581,
+      "lines": 109,
+      "sha256": "2c42ddd61ac07a79a20781019bae9414917a5b93bede2be944d18e66fe6f07fc",
+      "group": "08_TRAINING_V5"
+    },
+    {
+      "path": "training/v5/export_qualified_labels.py",
+      "bytes": 1431,
+      "lines": 40,
+      "sha256": "676af0ce8127e461b390b304fc91f6b795491c930ede43c2b94bfc10d1f814c2",
+      "group": "08_TRAINING_V5"
+    },
+    {
+      "path": "training/v5/extend_field_manifest.py",
+      "bytes": 9608,
+      "lines": 184,
+      "sha256": "ba0f93565f9acc116b048e855b9e7e578088799118d1281da3ffb1da7d07cd56",
+      "group": "08_TRAINING_V5"
+    },
+    {
+      "path": "training/v5/field_text_baseline.py",
+      "bytes": 8338,
+      "lines": 185,
+      "sha256": "1a94f14cdab0d851e626b539c0ce9bc798c0ebd2ae07e7c3d264e3e38181f86c",
+      "group": "08_TRAINING_V5"
+    },
+    {
+      "path": "training/v5/finish_all_lab_axes.ps1",
+      "bytes": 1241,
+      "lines": 21,
+      "sha256": "79bf17b6f7fd9c375262c6631fc7e3ffcbe664e77569420b5582920f55c35fe8",
+      "group": "08_TRAINING_V5"
+    },
+    {
+      "path": "training/v5/independent_data.py",
+      "bytes": 17114,
+      "lines": 327,
+      "sha256": "0d8a711690d40ff6e3d7e1918300cdf5dfec93fbf36ff439a5ea6e009bfd20c7",
+      "group": "08_TRAINING_V5"
+    },
+    {
+      "path": "training/v5/independent_fusion.py",
+      "bytes": 7081,
+      "lines": 131,
+      "sha256": "83128642af2b2e52c9f6d0eb057edeba02928d70039ba7873870a3b5c1d40eb7",
+      "group": "08_TRAINING_V5"
+    },
+    {
+      "path": "training/v5/lab_recovery_data.py",
+      "bytes": 8489,
+      "lines": 153,
+      "sha256": "ca615c5305addbe3a918b2c701374b175dd517c9db38d9f71d710ee1ae183227",
+      "group": "08_TRAINING_V5"
+    },
+    {
+      "path": "training/v5/medication_effect_data.py",
+      "bytes": 5472,
+      "lines": 110,
+      "sha256": "2ee73a351b5a5cf113dde226af60507e598fcc1b20eca22ddf0a7bbfedb1b449",
+      "group": "08_TRAINING_V5"
+    },
+    {
+      "path": "training/v5/medication_effect_model.py",
+      "bytes": 2829,
+      "lines": 48,
+      "sha256": "6e558f6e11feba33e105229f2f7a27159151dce6cffa2516225b3c4e1163ce77",
+      "group": "08_TRAINING_V5"
+    },
+    {
+      "path": "training/v5/model.py",
+      "bytes": 9378,
+      "lines": 177,
+      "sha256": "0c467c8a883ad14811613180ccdbf50ae3fe3b96876ec448d70bb89be5115b97",
+      "group": "08_TRAINING_V5"
+    },
+    {
+      "path": "training/v5/numeric_preprocessing.py",
+      "bytes": 896,
+      "lines": 21,
+      "sha256": "fc128e8c6b439dcd32b6e0761faf004b2cfc19a20ccc874e4ca9c56c52f09d38",
+      "group": "08_TRAINING_V5"
+    },
+    {
+      "path": "training/v5/permute_added_section.py",
+      "bytes": 6962,
+      "lines": 132,
+      "sha256": "5a8dd010092c6235f550158914bfa9d0bb42545094affef793366965e3e32058",
+      "group": "08_TRAINING_V5"
+    },
+    {
+      "path": "training/v5/permute_field_content.py",
+      "bytes": 5026,
+      "lines": 108,
+      "sha256": "230236046897beaf6ccb2e68785c924beefe1df95b33771cd4d65fa15d9afd70",
+      "group": "08_TRAINING_V5"
+    },
+    {
+      "path": "training/v5/permute_history_matched_text.py",
+      "bytes": 10206,
+      "lines": 183,
+      "sha256": "9d118acd46d75f3eaed6a383297e32e190250630b18de6cc2e40c2cb1f7f89e3",
+      "group": "08_TRAINING_V5"
+    },
+    {
+      "path": "training/v5/plot_abnormality_multiseed_deltas.py",
+      "bytes": 3828,
+      "lines": 82,
+      "sha256": "12b604705a67c15fa026270371a1f07348efa1cdd753b78457f4424a4a6a563e",
+      "group": "08_TRAINING_V5"
+    },
+    {
+      "path": "training/v5/plot_broad_training.py",
+      "bytes": 2073,
+      "lines": 52,
+      "sha256": "8b97111323d545a42c7f3966f8bf584256b77deb6d5359d92064a345182cfad9",
+      "group": "08_TRAINING_V5"
+    },
+    {
+      "path": "training/v5/plot_incremental_evidence.py",
+      "bytes": 2379,
+      "lines": 59,
+      "sha256": "bca3cdb918df94250c19deb2932eb995336ed0bef0ea1a1cc6395f2d0e377059",
+      "group": "08_TRAINING_V5"
+    },
+    {
+      "path": "training/v5/plot_population_competing_curves.py",
+      "bytes": 4487,
+      "lines": 85,
+      "sha256": "6b5787f63af6e07b8191ed65e164acd4b0e153df7d0ce84c27d1bfec39c6efdd",
+      "group": "08_TRAINING_V5"
+    },
+    {
+      "path": "training/v5/plot_revised_group_ablations.py",
+      "bytes": 2492,
+      "lines": 54,
+      "sha256": "bb33da2bf8f260524ab0c244a67779602c3f60ff0ba19da8fcc5149651889651",
+      "group": "08_TRAINING_V5"
+    },
+    {
+      "path": "training/v5/plot_revised_labs_meds.py",
+      "bytes": 2789,
+      "lines": 59,
+      "sha256": "ae8957d30f3ec2d47d04628b35838febf2d2081fe6bbc624719969b793f68491",
+      "group": "08_TRAINING_V5"
+    },
+    {
+      "path": "training/v5/plot_strict_axis_screen.py",
+      "bytes": 4916,
+      "lines": 109,
+      "sha256": "2c8521a707168592b2ee8b66fc513d83ea6f1f7d3d2c53214e09722e2ab73bfe",
+      "group": "08_TRAINING_V5"
+    },
+    {
+      "path": "training/v5/plot_summary_temporal_comparison.py",
+      "bytes": 2954,
+      "lines": 65,
+      "sha256": "1c595168f81404e25a413b72dd14cd36c06df888be62114ae536f36acaa49a56",
+      "group": "08_TRAINING_V5"
+    },
+    {
+      "path": "training/v5/processed_event_data.py",
+      "bytes": 13330,
+      "lines": 202,
+      "sha256": "d0913a8075764a8bd6341b2d3d28a921e18aa975a1cb0e76ea1183a5f97d940a",
+      "group": "08_TRAINING_V5"
+    },
+    {
+      "path": "training/v5/run_abnormality_only.ps1",
+      "bytes": 3632,
+      "lines": 59,
+      "sha256": "7447fb0c430e5f0b3dba6f013c811c7a4e85639ad6f226650e2b85a8ed15d416",
+      "group": "08_TRAINING_V5"
+    },
+    {
+      "path": "training/v5/run_all_lab_axes.py",
+      "bytes": 5889,
+      "lines": 100,
+      "sha256": "d77a980f7c4f88be1c7e524d3a022a7bb59e300b7a2f34273f3121e7c9b8469e",
+      "group": "08_TRAINING_V5"
+    },
+    {
+      "path": "training/v5/run_broad_fragment_comparison.py",
+      "bytes": 13456,
+      "lines": 206,
+      "sha256": "4771f29a479397088c235428fa6b647c6abc568a1d4a0a73982022386654c2cc",
+      "group": "08_TRAINING_V5"
+    },
+    {
+      "path": "training/v5/run_incremental_analysis.ps1",
+      "bytes": 3084,
+      "lines": 52,
+      "sha256": "5ac5a1bebccc0f054050e02c7e39843812c5471016dbac312402600422890e18",
+      "group": "08_TRAINING_V5"
+    },
+    {
+      "path": "training/v5/run_incremental_evidence.ps1",
+      "bytes": 3981,
+      "lines": 68,
+      "sha256": "1bd56e04e33c39b195500126d32bac41ba26f383213235a0927248570759a52f",
+      "group": "08_TRAINING_V5"
+    },
+    {
+      "path": "training/v5/run_lab_recovery_pilot.ps1",
+      "bytes": 3039,
+      "lines": 49,
+      "sha256": "7c1f93e196d97a5f42ec2c28fb8a6772f0b41352746f276ee27eb31e216afaef",
+      "group": "08_TRAINING_V5"
+    },
+    {
+      "path": "training/v5/run_medication_effect_ablations.ps1",
+      "bytes": 3751,
+      "lines": 64,
+      "sha256": "c7f97db0be19fcf8dfa1b06f1069cb5138928b4f08bc0649f23b1e02121dd0aa",
+      "group": "08_TRAINING_V5"
+    },
+    {
+      "path": "training/v5/run_medication_exposure_only.ps1",
+      "bytes": 1236,
+      "lines": 21,
+      "sha256": "2c7335299bcf9fca50df3440ac66e7213b064e93eec887de4d39bc2f0a930e9b",
+      "group": "08_TRAINING_V5"
+    },
+    {
+      "path": "training/v5/run_medication_group_ablations.ps1",
+      "bytes": 1527,
+      "lines": 30,
+      "sha256": "4f41f52c997ddb2b2dec45e3464b9c661bd195df41ebcf76f87b4e5cf8ff8b5e",
+      "group": "08_TRAINING_V5"
+    },
+    {
+      "path": "training/v5/run_parallel_all_lab_axes.ps1",
+      "bytes": 2446,
+      "lines": 33,
+      "sha256": "2b6823bec5bb1aa6e6ce4ac6890f86cae605e723afb3fffaca9aa7b1e9dca4ba",
+      "group": "08_TRAINING_V5"
+    },
+    {
+      "path": "training/v5/run_revised_group_ablations.ps1",
+      "bytes": 4959,
+      "lines": 85,
+      "sha256": "1304686c61fc66063026a54a0f69ec07fedd442a222c7e4be5da0a747f43e9c3",
+      "group": "08_TRAINING_V5"
+    },
+    {
+      "path": "training/v5/run_revised_labs_meds.ps1",
+      "bytes": 3739,
+      "lines": 69,
+      "sha256": "055f952a37462ef291912a41b59b907ae3871ee49a361ebac3accbfa7ca6fc5c",
+      "group": "08_TRAINING_V5"
+    },
+    {
+      "path": "training/v5/run_revised_lean_candidate.ps1",
+      "bytes": 3043,
+      "lines": 51,
+      "sha256": "5c767d147b31f82e001eaa7964928f2dbed193959f28292a1a4fbd25b65ac6c1",
+      "group": "08_TRAINING_V5"
+    },
+    {
+      "path": "training/v5/run_screened_group_ablations.ps1",
+      "bytes": 5122,
+      "lines": 81,
+      "sha256": "de796c691a900cb4831f0192cb3c5d65461d5fa5ddf4b512a6f87b1632e40366",
+      "group": "08_TRAINING_V5"
+    },
+    {
+      "path": "training/v5/run_section_incremental.py",
+      "bytes": 3872,
+      "lines": 72,
+      "sha256": "93764a3cd92ecbfcf3b4e6f25eba3ba7d7e4068bcf54c95059f55cc2a6914e23",
+      "group": "08_TRAINING_V5"
+    },
+    {
+      "path": "training/v5/run_selected_group_removal.ps1",
+      "bytes": 3343,
+      "lines": 55,
+      "sha256": "dc8a79cf3d8495165c01642cd262da2102dff0b441491d5a3171995809be36db",
+      "group": "08_TRAINING_V5"
+    },
+    {
+      "path": "training/v5/run_strict_axis_screen.ps1",
+      "bytes": 4498,
+      "lines": 73,
+      "sha256": "c0f18d556f41e54d991cbcf578dc6a85e3c8cb6172bb27ea2752f70b842b9926",
+      "group": "08_TRAINING_V5"
+    },
+    {
+      "path": "training/v5/run_strict_qwen_bert_comparison.ps1",
+      "bytes": 4798,
+      "lines": 68,
+      "sha256": "2ba27ad07317c133f773b0d226dbf3957a7d9a0ecc43741bdfdae8b62e9bd1bb",
+      "group": "08_TRAINING_V5"
+    },
+    {
+      "path": "training/v5/section_alignment_data/__init__.py",
+      "bytes": 70,
+      "lines": 1,
+      "sha256": "e9e6b2fedcf43fbde84c752e42320e4352bce7b4f618a3f213af36bdd1db8225",
+      "group": "08_TRAINING_V5"
+    },
+    {
+      "path": "training/v5/section_alignment_data/audit_old_export_parity.py",
+      "bytes": 6636,
+      "lines": 163,
+      "sha256": "2b8793d3eb467c5dac5f94836a5588b068d7b9676897d5dc086bf67ed0aea2ca",
+      "group": "08_TRAINING_V5"
+    },
+    {
+      "path": "training/v5/section_alignment_data/audit_section_text_pilot.py",
+      "bytes": 2745,
+      "lines": 63,
+      "sha256": "a4ec7f5778f2b6a58fb739deeb99c3a44063b7fea55e6d3f3094790407f6d364",
+      "group": "08_TRAINING_V5"
+    },
+    {
+      "path": "training/v5/section_alignment_data/build_dataset.py",
+      "bytes": 12711,
+      "lines": 256,
+      "sha256": "5b66c2b521f879ab042722518b2c388b31df631856761c78874a094521722ce3",
+      "group": "08_TRAINING_V5"
+    },
+    {
+      "path": "training/v5/section_alignment_data/build_section_inputs.py",
+      "bytes": 14219,
+      "lines": 292,
+      "sha256": "e6ef56bae1d69345a1b59f9c9edcef3fd9513e098ea137938b0e0d0512e400f6",
+      "group": "08_TRAINING_V5"
+    },
+    {
+      "path": "training/v5/section_alignment_data/export_raw_sources.py",
+      "bytes": 5845,
+      "lines": 140,
+      "sha256": "f9454e7632ff648ab92361cf284e4ba9fb3cc87f4c82368eec8c98b4c4bdefb8",
+      "group": "08_TRAINING_V5"
+    },
+    {
+      "path": "training/v5/section_alignment_data/prepare_section_text.py",
+      "bytes": 9663,
+      "lines": 198,
+      "sha256": "87adcca9a6bf7c162fd81a40641b667f53138d7198e158505e47564e2abb064d",
+      "group": "08_TRAINING_V5"
+    },
+    {
+      "path": "training/v5/section_alignment_data/screen_section_content.py",
+      "bytes": 5456,
+      "lines": 118,
+      "sha256": "9f0662c9e6bfab859df5d570ee4d2911339b1d735715016f8d826adef9bfbf09",
+      "group": "08_TRAINING_V5"
+    },
+    {
+      "path": "training/v5/section_alignment_data/section_parser.py",
+      "bytes": 4607,
+      "lines": 120,
+      "sha256": "b3038f2bef67824dfb399a278ae038d899162030076092c9b983a3a01c720251",
+      "group": "08_TRAINING_V5"
+    },
+    {
+      "path": "training/v5/section_alignment_data/source_inventory.sql",
+      "bytes": 2838,
+      "lines": 59,
+      "sha256": "6e6bd9634f934722f6c3c0f9d2f01a9ce75d879c95e0bcdc3b30aed457e44a07",
+      "group": "08_TRAINING_V5"
+    },
+    {
+      "path": "training/v5/section_alignment_data/validate_dataset.py",
+      "bytes": 8747,
+      "lines": 181,
+      "sha256": "ba8c03450bad1c9247bad65423a19b226ac0a86194a94a3b8e69164b0114e32b",
+      "group": "08_TRAINING_V5"
+    },
+    {
+      "path": "training/v5/section_alignment_data/validate_section_inputs.py",
+      "bytes": 9941,
+      "lines": 196,
+      "sha256": "c07d9a71a201def802dcb6237b31c5967b2a3b2573cdbeed0f6130a37b286561",
+      "group": "08_TRAINING_V5"
+    },
+    {
+      "path": "training/v5/section_alignment_data/validate_section_text.py",
+      "bytes": 4561,
+      "lines": 96,
+      "sha256": "b283dfb869d5d1060a007c7db99eb293def77b88e5c5a10c9bcb034666f22f3c",
+      "group": "08_TRAINING_V5"
+    },
+    {
+      "path": "training/v5/strict_endpoint_labels.py",
+      "bytes": 7714,
+      "lines": 135,
+      "sha256": "d86b594f9a098fa5a51eb7102f2d4b8910a1325b77c03abdaf9c48d053f1000d",
+      "group": "08_TRAINING_V5"
+    },
+    {
+      "path": "training/v5/summarize_abnormality_experiment.py",
+      "bytes": 3741,
+      "lines": 67,
+      "sha256": "c853a4b814ae16fba0de12a8d14e72d65bb36f24285f6f1f7d0e0de1dbcf9101",
+      "group": "08_TRAINING_V5"
+    },
+    {
+      "path": "training/v5/summarize_medication_effects.py",
+      "bytes": 3488,
+      "lines": 71,
+      "sha256": "c3bf5b78764372dd61a7db9d5cb38359f24a344a5b761dd9114f4167ec11f48f",
+      "group": "08_TRAINING_V5"
+    },
+    {
+      "path": "training/v5/summarize_section_incremental.py",
+      "bytes": 3789,
+      "lines": 71,
+      "sha256": "00d132ed66cfd23ff1f5ff48dfd333da67e81efe2dde97608d185ad7c0c2efce",
+      "group": "08_TRAINING_V5"
+    },
+    {
+      "path": "training/v5/text_content_permutation.py",
+      "bytes": 12561,
+      "lines": 233,
+      "sha256": "b4acb4df54bcaddbb64fb4216a75f602c10ac4f623e929335076f86ee34792b9",
+      "group": "08_TRAINING_V5"
+    },
+    {
+      "path": "training/v5/train.py",
+      "bytes": 19814,
+      "lines": 384,
+      "sha256": "52ad18690e310427ea7aa01c2c514d814a0e9a7ed0905117c2b26125c64da754",
+      "group": "08_TRAINING_V5"
+    },
+    {
+      "path": "training/v5/train_event_sequence.py",
+      "bytes": 34883,
+      "lines": 568,
+      "sha256": "469711a01842b60f77e9e4abd8b3d169f8132020c90ade8ec8ec117284acde86",
+      "group": "08_TRAINING_V5"
+    },
+    {
+      "path": "training/v5/train_independent.py",
+      "bytes": 13948,
+      "lines": 264,
+      "sha256": "68a705efa4f5551dc9262ed3ebd0df079540149496954b58f92807787e0aac21",
+      "group": "08_TRAINING_V5"
+    },
+    {
+      "path": "training/v5/validate_field_text_baseline.py",
+      "bytes": 7267,
+      "lines": 146,
+      "sha256": "798bc6ff1025e8030f4b5b8e54d012630a72a05281877581e65e3061b4f23786",
+      "group": "08_TRAINING_V5"
+    },
+    {
+      "path": "training/v5/validate_strict_candidate.py",
+      "bytes": 12267,
+      "lines": 225,
+      "sha256": "9725b32450a9f5f7eda22acbece47f02cd2f1109d456c6ddc2281c11c0ca7d21",
+      "group": "08_TRAINING_V5"
+    },
+    {
+      "path": "training/v5/validate_vectors.py",
+      "bytes": 3361,
+      "lines": 73,
+      "sha256": "1d2e908a7cf0fc342583ec1a33cf9fd0dfffeab0f37f349912a62543d2075bec",
+      "group": "08_TRAINING_V5"
+    },
+    {
+      "path": "training/v5/verify_completed_event_run.py",
+      "bytes": 4709,
+      "lines": 77,
+      "sha256": "0f97875a51ea95f78044de657c15b6f260015f7467adbc672b227683bc4fb65d",
+      "group": "08_TRAINING_V5"
+    },
+    {
+      "path": "training/v5/visualize.py",
+      "bytes": 9706,
+      "lines": 189,
+      "sha256": "d989b5d2e452fed49fb21f852f9404869322dee90ad9aa09419a1fd0f1150cb7",
+      "group": "08_TRAINING_V5"
+    },
+    {
+      "path": "training/v5_export.py",
+      "bytes": 5874,
+      "lines": 126,
+      "sha256": "edb2f54e7a22864ad1a0bbc3f6800b5f2f0c0d97959ee1966739c51d91293a2f",
+      "group": "07_BASELINES_AND_COMMON"
+    },
+    {
+      "path": "training/v6/__init__.py",
+      "bytes": 71,
+      "lines": 1,
+      "sha256": "7ef0ae260e8adf444e8447d43e011955144d3dbf70d292ba8c327703df9a4468",
+      "group": "09_TRAINING_V6"
+    },
+    {
+      "path": "training/v6/acquire_chexbert.py",
+      "bytes": 5722,
+      "lines": 98,
+      "sha256": "73c28cb504d8e914bbe90479c665f1e7d4711387412d506fd1bec3096d350e39",
+      "group": "09_TRAINING_V6"
+    },
+    {
+      "path": "training/v6/acquire_radiology.py",
+      "bytes": 4202,
+      "lines": 79,
+      "sha256": "1d139ee2f774611b76b3bac36346ea7db882c1d60760cc8723a4cd4c298dcf42",
+      "group": "09_TRAINING_V6"
+    },
+    {
+      "path": "training/v6/admission_context.py",
+      "bytes": 13717,
+      "lines": 194,
+      "sha256": "0fd565d94eb48fc919050ec8a2679480ae77c8d068c70dcbf30921e3ead5e5db",
+      "group": "09_TRAINING_V6"
+    },
+    {
+      "path": "training/v6/admission_context_audit.py",
+      "bytes": 4561,
+      "lines": 65,
+      "sha256": "89614ff609343b33233d53087bca912fb143699cdf208c8d339ade1adf4e9ef1",
+      "group": "09_TRAINING_V6"
+    },
+    {
+      "path": "training/v6/admission_cox_diagnostic.py",
+      "bytes": 12680,
+      "lines": 225,
+      "sha256": "042db1540ba7507223e26f74c99e6497aa036407af94f1eeb672b66275b3f56d",
+      "group": "09_TRAINING_V6"
+    },
+    {
+      "path": "training/v6/admission_cox_report.py",
+      "bytes": 3547,
+      "lines": 62,
+      "sha256": "e384331f9816f0a86f50dca0166a391fc60b8c0139d6daa4975ac8ab888b53d5",
+      "group": "09_TRAINING_V6"
+    },
+    {
+      "path": "training/v6/anchored_clock.py",
+      "bytes": 4618,
+      "lines": 77,
+      "sha256": "525f85efc09309bd59fe6ffb8253d444f168c88352ae2d88930bcf954e0b68bb",
+      "group": "09_TRAINING_V6"
+    },
+    {
+      "path": "training/v6/architecture_experiment.py",
+      "bytes": 21848,
+      "lines": 306,
+      "sha256": "b50b423143ef75b13bccdc2fcc42147ba109c62b40a14bfb21338a68c02df274",
+      "group": "09_TRAINING_V6"
+    },
+    {
+      "path": "training/v6/audited_experiment.py",
+      "bytes": 12465,
+      "lines": 179,
+      "sha256": "7644a09d5a955e0adc195c8780695ae342089f648e181dcee04a8f4149df9536",
+      "group": "09_TRAINING_V6"
+    },
+    {
+      "path": "training/v6/audited_model.py",
+      "bytes": 6192,
+      "lines": 111,
+      "sha256": "6b301a331677cced15b66796155879e147e6b8e9f8ff23080904273ca433b4f5",
+      "group": "09_TRAINING_V6"
+    },
+    {
+      "path": "training/v6/audited_report.py",
+      "bytes": 15962,
+      "lines": 149,
+      "sha256": "e27211b7c3540ef19ed664d2888fefc7043a4eba82926437e29b587e0e2f7046",
+      "group": "09_TRAINING_V6"
+    },
+    {
+      "path": "training/v6/audited_simple_controls.py",
+      "bytes": 8991,
+      "lines": 123,
+      "sha256": "d35dfc55a873b616ebdbc4e04c2d452b7beb3a95360edfe0012dd8212e0b8d03",
+      "group": "09_TRAINING_V6"
+    },
+    {
+      "path": "training/v6/baseline_content_diagnostic.py",
+      "bytes": 4961,
+      "lines": 75,
+      "sha256": "aa29f7d7dabdf69242ebec62d7629aee519ba514da2a88e507820fe22d1e780d",
+      "group": "09_TRAINING_V6"
+    },
+    {
+      "path": "training/v6/chexbert_inference.py",
+      "bytes": 10220,
+      "lines": 151,
+      "sha256": "4e404824059aa48a24a287fc12c1cdad12ca5f0dc0da1a982022704d93eeb95c",
+      "group": "09_TRAINING_V6"
+    },
+    {
+      "path": "training/v6/clinical_facts_context.py",
+      "bytes": 6322,
+      "lines": 117,
+      "sha256": "b95bf9f9ea4984ded4a34fb34bb7213cae03ca2ce47851de6ee6a445a1e512e6",
+      "group": "09_TRAINING_V6"
+    },
+    {
+      "path": "training/v6/clinical_history_audit.py",
+      "bytes": 4107,
+      "lines": 69,
+      "sha256": "f6be1d00c6760548d2655cceaba3c4646ab39fa11378927de856b9001d6e82f3",
+      "group": "09_TRAINING_V6"
+    },
+    {
+      "path": "training/v6/clinical_history_experiment.py",
+      "bytes": 11775,
+      "lines": 184,
+      "sha256": "58129698466b0cd6e44ea5dfd203055bf6e70e0cda32eda74848bc8ad70e0b42",
+      "group": "09_TRAINING_V6"
+    },
+    {
+      "path": "training/v6/clinical_history_finish.py",
+      "bytes": 1901,
+      "lines": 35,
+      "sha256": "10dcada29982c051411781f0fc546461c7a9322b0e0c56210d442e4ab1ea2f45",
+      "group": "09_TRAINING_V6"
+    },
+    {
+      "path": "training/v6/clinical_history_model.py",
+      "bytes": 2792,
+      "lines": 49,
+      "sha256": "2369fec48f393fe7b359154894b5044b224b8673e5d0abb56424f1069a56571c",
+      "group": "09_TRAINING_V6"
+    },
+    {
+      "path": "training/v6/clinical_history_report.py",
+      "bytes": 2450,
+      "lines": 37,
+      "sha256": "79190807310234bad31875e90c44df6ab0174516e1a4ec0dc7caf558e814cd6e",
+      "group": "09_TRAINING_V6"
+    },
+    {
+      "path": "training/v6/clinical_history_verify.py",
+      "bytes": 6670,
+      "lines": 98,
+      "sha256": "eccebce393f29b6f41cf897ae87031eed4377255a1a42434198242fa62768e29",
+      "group": "09_TRAINING_V6"
+    },
+    {
+      "path": "training/v6/clinical_increment_evidence.py",
+      "bytes": 7333,
+      "lines": 104,
+      "sha256": "874ae306b19fc4e020c16fb19dcb9c33fc2900235e7971e3a28c43747c3853d2",
+      "group": "09_TRAINING_V6"
+    },
+    {
+      "path": "training/v6/clock_audit.py",
+      "bytes": 15163,
+      "lines": 240,
+      "sha256": "dbcf86aecb84d78fb36350b5fd9c6233312f7f39f3d52d54c6c1849449fa0398",
+      "group": "09_TRAINING_V6"
+    },
+    {
+      "path": "training/v6/clock_experiment.py",
+      "bytes": 10421,
+      "lines": 173,
+      "sha256": "01750b5aac7b0d1e3d342f076f6bf0984129fedadb72a0126465a4caaf30eb51",
+      "group": "09_TRAINING_V6"
+    },
+    {
+      "path": "training/v6/clock_finish.py",
+      "bytes": 1262,
+      "lines": 29,
+      "sha256": "d273ff2f6432ab97061470e0eb05b06792fbd080915ce6b5437aaec1d05ba305",
+      "group": "09_TRAINING_V6"
+    },
+    {
+      "path": "training/v6/clock_grid_diagnostic.py",
+      "bytes": 2333,
+      "lines": 43,
+      "sha256": "826f3aa3e07b24510b0f79c83e40309a51eed0dc77554c7ceb53b455bd53452b",
+      "group": "09_TRAINING_V6"
+    },
+    {
+      "path": "training/v6/clock_report.py",
+      "bytes": 3785,
+      "lines": 59,
+      "sha256": "47f14189b76624fcb57409a522326f488bc76cc9a4a4814c741953e0ce8bc98d",
+      "group": "09_TRAINING_V6"
+    },
+    {
+      "path": "training/v6/compact_ablation.py",
+      "bytes": 15734,
+      "lines": 246,
+      "sha256": "684339f024ce43a7e0fad5ad3859e49b3dfc7c7dec1ffce3cc1f0bba405371cc",
+      "group": "09_TRAINING_V6"
+    },
+    {
+      "path": "training/v6/compact_context_data.py",
+      "bytes": 3235,
+      "lines": 60,
+      "sha256": "06938687b20ded9b66a229caff7080eec0d57805c72b5fdd38d3d82609d0fe7b",
+      "group": "09_TRAINING_V6"
+    },
+    {
+      "path": "training/v6/compact_context_smoke.py",
+      "bytes": 2943,
+      "lines": 50,
+      "sha256": "ddcf86e071be86fcbfafd95d2f90b32d195bb6a313f45d5731b9ea61d80c37ee",
+      "group": "09_TRAINING_V6"
+    },
+    {
+      "path": "training/v6/compact_model.py",
+      "bytes": 6780,
+      "lines": 107,
+      "sha256": "be10cbbdf2791df353a14b56fa674852fdfb29154e5d8eb76cfa948ea7b4bf92",
+      "group": "09_TRAINING_V6"
+    },
+    {
+      "path": "training/v6/contextual_control_replay.py",
+      "bytes": 2223,
+      "lines": 36,
+      "sha256": "9b4551e34d66cf58cb5644e10431bce4a9162b0f5f1abb75c1a7b9ae7219cd44",
+      "group": "09_TRAINING_V6"
+    },
+    {
+      "path": "training/v6/contextual_residual.py",
+      "bytes": 2917,
+      "lines": 60,
+      "sha256": "f2ebeadc71c01698b128542681035a540b6c5055fedbaf484f0475b8cbcf02b5",
+      "group": "09_TRAINING_V6"
+    },
+    {
+      "path": "training/v6/contextual_residual_experiment.py",
+      "bytes": 14996,
+      "lines": 214,
+      "sha256": "bffdff5bac4791d3acb461c328730a9f9722bf1beacc6856a9720b2c4ee0637b",
+      "group": "09_TRAINING_V6"
+    },
+    {
+      "path": "training/v6/contextual_residual_finish.py",
+      "bytes": 3107,
+      "lines": 50,
+      "sha256": "3c8e7529476da97141460a27fdefa7d9d21493505e2b67d39a3e01dac1f69523",
+      "group": "09_TRAINING_V6"
+    },
+    {
+      "path": "training/v6/contextual_residual_report.py",
+      "bytes": 7878,
+      "lines": 106,
+      "sha256": "26874b546e58f566484c06179248bd050033f721cee33649ef7decaea665c908",
+      "group": "09_TRAINING_V6"
+    },
+    {
+      "path": "training/v6/core_lab_continuous.py",
+      "bytes": 12353,
+      "lines": 181,
+      "sha256": "3f0dcbb1c3789c9259d0db928b2fcc46e7549e379ad9a32b3ae6a3d525ca18cf",
+      "group": "09_TRAINING_V6"
+    },
+    {
+      "path": "training/v6/core_lab_continuous_report.py",
+      "bytes": 2456,
+      "lines": 37,
+      "sha256": "947eff247e7d64a20aef9595567fd72c604087a66d417962eefcf11cd93a2fd5",
+      "group": "09_TRAINING_V6"
+    },
+    {
+      "path": "training/v6/core_lab_cox_diagnostic.py",
+      "bytes": 11717,
+      "lines": 179,
+      "sha256": "9e89a5598c6680dacdc532687097d08cdc14f278c2c00517a3ef8ff0f0a7ed8a",
+      "group": "09_TRAINING_V6"
+    },
+    {
+      "path": "training/v6/curve_adaptation.py",
+      "bytes": 11463,
+      "lines": 231,
+      "sha256": "82e1203331b36a6165b3a941ccfc4ebdf88002bfb7b86239f53a1d07ddfd42b4",
+      "group": "09_TRAINING_V6"
+    },
+    {
+      "path": "training/v6/curve_adaptation_audit.py",
+      "bytes": 9120,
+      "lines": 155,
+      "sha256": "7bf2ed4dec457be28275a006e4c41da8c15210017b680f5af77f3f05dd251630",
+      "group": "09_TRAINING_V6"
+    },
+    {
+      "path": "training/v6/curve_adaptation_report.py",
+      "bytes": 4368,
+      "lines": 69,
+      "sha256": "c24d6ddfc1148b1fb6dce7e805f12378903bae27827fa911012abaf1e1662a27",
+      "group": "09_TRAINING_V6"
+    },
+    {
+      "path": "training/v6/curve_score.py",
+      "bytes": 2312,
+      "lines": 41,
+      "sha256": "0eb290a9de6b60644b84407b205ca7088d74323f3ad0ec739db252bb42b5f4c3",
+      "group": "09_TRAINING_V6"
+    },
+    {
+      "path": "training/v6/cxr_context.py",
+      "bytes": 5501,
+      "lines": 105,
+      "sha256": "fe918cd3ce2a337a7a82145a2b4149fc6fa206da2913a2086ef9412e0930a8e2",
+      "group": "09_TRAINING_V6"
+    },
+    {
+      "path": "training/v6/cxr_experiment.py",
+      "bytes": 12967,
+      "lines": 180,
+      "sha256": "7cc33fd206a4fa7b6155dc20384c3a6258ca8a29ced855b9e1064e341e2f1789",
+      "group": "09_TRAINING_V6"
+    },
+    {
+      "path": "training/v6/data.py",
+      "bytes": 14429,
+      "lines": 239,
+      "sha256": "724cc0b2d554a8a93edee0483a1c182d26cd93f3843db239fa6554eda15f53de",
+      "group": "09_TRAINING_V6"
+    },
+    {
+      "path": "training/v6/data_geometry_audit.py",
+      "bytes": 5516,
+      "lines": 83,
+      "sha256": "025d3453469662000916f5926e1c7e8e61ea51f181af7fc4a29170986d35881c",
+      "group": "09_TRAINING_V6"
+    },
+    {
+      "path": "training/v6/data_geometry_experiment.py",
+      "bytes": 14723,
+      "lines": 234,
+      "sha256": "5bdb38d5dcf93c899fca0bd18a44460170d2c6cd78518638bcc26d8bec6a406b",
+      "group": "09_TRAINING_V6"
+    },
+    {
+      "path": "training/v6/data_geometry_metrics.py",
+      "bytes": 2613,
+      "lines": 49,
+      "sha256": "2e8414e12192de74461262135ec535373d39b4810fe23959b0c628e9814bf8ea",
+      "group": "09_TRAINING_V6"
+    },
+    {
+      "path": "training/v6/data_geometry_report.py",
+      "bytes": 3436,
+      "lines": 52,
+      "sha256": "a8aac4960d79729105160dc34c93216eac36338bdde1976fc7de40a03c42d3e9",
+      "group": "09_TRAINING_V6"
+    },
+    {
+      "path": "training/v6/deep_interaction.py",
+      "bytes": 8745,
+      "lines": 169,
+      "sha256": "cff99497c7c72df2c257b4f892dabeee56cbc549dc01ab3caf4367a6e5c9592f",
+      "group": "09_TRAINING_V6"
+    },
+    {
+      "path": "training/v6/deep_interaction_experiment.py",
+      "bytes": 15093,
+      "lines": 251,
+      "sha256": "daf17306661d96d7efb2e6d75c9c11c30b5b063c9f57c56df22495ae700890b7",
+      "group": "09_TRAINING_V6"
+    },
+    {
+      "path": "training/v6/deep_interaction_report.py",
+      "bytes": 14191,
+      "lines": 188,
+      "sha256": "d40400becd7875afa1352f0f6342ff2cdd106781079fa736d32f8040c1dc343e",
+      "group": "09_TRAINING_V6"
+    },
+    {
+      "path": "training/v6/detail_extension_experiment.py",
+      "bytes": 10854,
+      "lines": 183,
+      "sha256": "37bcfa2b8d9030e38175c37b1f716e0f078b76b42df67818f86a7269a8e4e7bb",
+      "group": "09_TRAINING_V6"
+    },
+    {
+      "path": "training/v6/detail_extension_learning_plot.py",
+      "bytes": 1300,
+      "lines": 25,
+      "sha256": "b409f631759db2c7aed0ffc21ad6d0dcff50a0f62208534a0fd369e716d84708",
+      "group": "09_TRAINING_V6"
+    },
+    {
+      "path": "training/v6/discharge_regimen_cox.py",
+      "bytes": 12139,
+      "lines": 166,
+      "sha256": "4eb0617eb7efcf533fdac928d53e0a07edbdb7ba71202159897bd99f6981645b",
+      "group": "09_TRAINING_V6"
+    },
+    {
+      "path": "training/v6/discharge_regimen_cox_report.py",
+      "bytes": 1423,
+      "lines": 28,
+      "sha256": "06fd38d08cc6c423899836b48ca322780ac57f4579482f413b5d8c43596c2054",
+      "group": "09_TRAINING_V6"
+    },
+    {
+      "path": "training/v6/discharge_regimen_report.py",
+      "bytes": 1306,
+      "lines": 25,
+      "sha256": "0a6d8f64f380934976b6436a68a28badedff3032002b4df3afd5afe15a2edeb2",
+      "group": "09_TRAINING_V6"
+    },
+    {
+      "path": "training/v6/discharge_regimen_screen.py",
+      "bytes": 13074,
+      "lines": 193,
+      "sha256": "7f3c38cdabb316cf969aee1db74385cae88577c93bb72e60db7b7681a4437d64",
+      "group": "09_TRAINING_V6"
+    },
+    {
+      "path": "training/v6/discharge_template_audit.py",
+      "bytes": 3069,
+      "lines": 47,
+      "sha256": "3d99861863f90f7f3ebe2f1dba3a48545cfc2385373dda84e4c20c5a70478d9d",
+      "group": "09_TRAINING_V6"
+    },
+    {
+      "path": "training/v6/disposition_context.py",
+      "bytes": 11496,
+      "lines": 175,
+      "sha256": "ab030e4454bd64f99d0b991c7bae92c25e65613da3c619b8c9a5a5352e31fa5d",
+      "group": "09_TRAINING_V6"
+    },
+    {
+      "path": "training/v6/disposition_report.py",
+      "bytes": 1501,
+      "lines": 27,
+      "sha256": "320cb075f6cf573aff216d1f83bcec28dc3b3f41f7cbd5a992d0dc333018f282",
+      "group": "09_TRAINING_V6"
+    },
+    {
+      "path": "training/v6/early_stopping.py",
+      "bytes": 1036,
+      "lines": 27,
+      "sha256": "2d3b63247a6e07098c0cc07a287277e4aa6f1678f6be3c4d20f74af83e70be55",
+      "group": "09_TRAINING_V6"
+    },
+    {
+      "path": "training/v6/encode_screen_candidates.py",
+      "bytes": 8131,
+      "lines": 123,
+      "sha256": "abb38bcdab88032376b201c4e4ffc6236e350cd33e5674be05cbb7363c069140",
+      "group": "09_TRAINING_V6"
+    },
+    {
+      "path": "training/v6/evaluation.py",
+      "bytes": 5301,
+      "lines": 89,
+      "sha256": "e51d7ef9504ea601a12000fa0bca6645b2ad131ca508bdf048e71d619c01406f",
+      "group": "09_TRAINING_V6"
+    },
+    {
+      "path": "training/v6/expanded_original_experiment.py",
+      "bytes": 15560,
+      "lines": 211,
+      "sha256": "e6621f914d9cceaf5921f88db66d5ebc9e653ecc38c96ea072f2743a73413a65",
+      "group": "09_TRAINING_V6"
+    },
+    {
+      "path": "training/v6/exploration_model.py",
+      "bytes": 8965,
+      "lines": 149,
+      "sha256": "a93a60bb8356f9d2f05bbf701b13f3845f154d1648bbee6cc5eff8087d7e0b39",
+      "group": "09_TRAINING_V6"
+    },
+    {
+      "path": "training/v6/export_daily_token_risk.py",
+      "bytes": 2269,
+      "lines": 33,
+      "sha256": "e9afc10963be0d933ec4e73749a8cfb226346ba3e5773ba131fc36b4fa2e41e7",
+      "group": "09_TRAINING_V6"
+    },
+    {
+      "path": "training/v6/facts_coverage.py",
+      "bytes": 2241,
+      "lines": 34,
+      "sha256": "c18eacaf14896e7bfd4985f0eb01a53678604bcb8db9d36e96fa5856c3bedd52",
+      "group": "09_TRAINING_V6"
+    },
+    {
+      "path": "training/v6/facts_experiment.py",
+      "bytes": 12299,
+      "lines": 155,
+      "sha256": "fc27d27a29930475d8ad87f4614e3f53054b99fb2d91f564de7f5224ea5e4e89",
+      "group": "09_TRAINING_V6"
+    },
+    {
+      "path": "training/v6/facts_smoke.py",
+      "bytes": 5213,
+      "lines": 68,
+      "sha256": "a95d5f207e890d4ef41186909e965b28b3d1151eada72c7c5f35646f9ab9bf36",
+      "group": "09_TRAINING_V6"
+    },
+    {
+      "path": "training/v6/fast_multiview.py",
+      "bytes": 16031,
+      "lines": 236,
+      "sha256": "0aed3b99587e2f0d9113698836c6fd08df1bc46bc9e322771d94e96bff37ff3c",
+      "group": "09_TRAINING_V6"
+    },
+    {
+      "path": "training/v6/finalize_audited_controls.py",
+      "bytes": 8276,
+      "lines": 106,
+      "sha256": "31043f2644c2f0247782eadbb3aa85c64d587ae3678c6557fe9d90cb0bb26af8",
+      "group": "09_TRAINING_V6"
+    },
+    {
+      "path": "training/v6/finalize_original_expansion.py",
+      "bytes": 7328,
+      "lines": 82,
+      "sha256": "ecb493b4ed0c999fa829f194f6bc6ea6b60c3ee9eadd0aa32aaa241d53d5b176",
+      "group": "09_TRAINING_V6"
+    },
+    {
+      "path": "training/v6/fixed_threshold_readout.py",
+      "bytes": 13235,
+      "lines": 240,
+      "sha256": "4c2c047b2a97a3cc803d1494b2d678fe0da2a924191c3da8fba6d0cb1179ee13",
+      "group": "09_TRAINING_V6"
+    },
+    {
+      "path": "training/v6/frozen_augmentation.py",
+      "bytes": 15211,
+      "lines": 259,
+      "sha256": "48e9a6edd560e3021cd07fe1e3464fc718244546a3d241c37bcfeb6d4a9a025d",
+      "group": "09_TRAINING_V6"
+    },
+    {
+      "path": "training/v6/generalization_direction.py",
+      "bytes": 12267,
+      "lines": 192,
+      "sha256": "925d4bbdfd75295e8c9a5c08100224b1140888456ddd2e4161835f9d48eb3214",
+      "group": "09_TRAINING_V6"
+    },
+    {
+      "path": "training/v6/generalization_direction_report.py",
+      "bytes": 3762,
+      "lines": 59,
+      "sha256": "71bdcfbd1b9f23275a9823d1397dc44db5d752c948b6c2a808a4cd6aaa70bcbe",
+      "group": "09_TRAINING_V6"
+    },
+    {
+      "path": "training/v6/gradient_calibration_decomposition.py",
+      "bytes": 6252,
+      "lines": 104,
+      "sha256": "330f3b36401ac517270e431a4143ef153ce49fdf1b80dffa83d816db19928f64",
+      "group": "09_TRAINING_V6"
+    },
+    {
+      "path": "training/v6/group_ablation.py",
+      "bytes": 12450,
+      "lines": 206,
+      "sha256": "14accac6f8e7a7c86499e787faf46c166fa465a03a3a579c491360ae1aff390b",
+      "group": "09_TRAINING_V6"
+    },
+    {
+      "path": "training/v6/horizon_objective.py",
+      "bytes": 30556,
+      "lines": 537,
+      "sha256": "4d0a96a2a9d77ac54d70db853af89a9811d682983f8080e260f27ce7b6cef7fd",
+      "group": "09_TRAINING_V6"
+    },
+    {
+      "path": "training/v6/horizon_optimization_check.py",
+      "bytes": 13803,
+      "lines": 193,
+      "sha256": "c35745cf7f2b92e2cbf9a828b34d188dc11b6e33902082c7233bb08278e04a5d",
+      "group": "09_TRAINING_V6"
+    },
+    {
+      "path": "training/v6/local_text_encoding_verify.py",
+      "bytes": 3568,
+      "lines": 49,
+      "sha256": "2f001ebd3ef9d51c58e72cf7587bb2d85070fb63264b49663c79db8b1b292d8c",
+      "group": "09_TRAINING_V6"
+    },
+    {
+      "path": "training/v6/local_text_experiment.py",
+      "bytes": 16936,
+      "lines": 257,
+      "sha256": "d5e4a48738b249a499f6a43bee90785fa07e5c3a55bb099215d93f9b2987f9f0",
+      "group": "09_TRAINING_V6"
+    },
+    {
+      "path": "training/v6/local_text_model.py",
+      "bytes": 2521,
+      "lines": 49,
+      "sha256": "fb1d3515fa93991f0c8fac8feacc763a6d8758072b402a8fd159249b4232d3a8",
+      "group": "09_TRAINING_V6"
+    },
+    {
+      "path": "training/v6/local_text_report.py",
+      "bytes": 6207,
+      "lines": 81,
+      "sha256": "52bdedd54ab4b552588ae92448de1a78fdd73923f5fdd2e2a12335e1c12001d3",
+      "group": "09_TRAINING_V6"
+    },
+    {
+      "path": "training/v6/medication_width_control.py",
+      "bytes": 4584,
+      "lines": 62,
+      "sha256": "8814fb65b7801c6a12ccbdff5a782db534dcda536996b4ac9cd3bb81cb67bbf4",
+      "group": "09_TRAINING_V6"
+    },
+    {
+      "path": "training/v6/model.py",
+      "bytes": 9292,
+      "lines": 169,
+      "sha256": "b589bf9a5753100f8e4b84ce873bf61a369fffa225bfc8e4944ed07b739482e2",
+      "group": "09_TRAINING_V6"
+    },
+    {
+      "path": "training/v6/module_surgery.py",
+      "bytes": 10199,
+      "lines": 212,
+      "sha256": "c898bbe9731914549640c3f8373e891a3dbeb1e302e8e730b47c77cfdd1c87ec",
+      "group": "09_TRAINING_V6"
+    },
+    {
+      "path": "training/v6/module_surgery_experiment.py",
+      "bytes": 22100,
+      "lines": 352,
+      "sha256": "368cfce1302186286b290e106e63b953249b05e28ad9bc37153e9841604ac5de",
+      "group": "09_TRAINING_V6"
+    },
+    {
+      "path": "training/v6/module_surgery_finalize.py",
+      "bytes": 7763,
+      "lines": 118,
+      "sha256": "b626bc8f1fdebf0e3c4cb9b9bcc745637e7c01ea443bb5bf65f17b49c3c0c24d",
+      "group": "09_TRAINING_V6"
+    },
+    {
+      "path": "training/v6/module_surgery_report.py",
+      "bytes": 14315,
+      "lines": 177,
+      "sha256": "d53772f3fb7dfc1e75112b2fdc1204560c36c77114158472d2be1ce5be1d0ab0",
+      "group": "09_TRAINING_V6"
+    },
+    {
+      "path": "training/v6/multihorizon_readout.py",
+      "bytes": 8038,
+      "lines": 151,
+      "sha256": "04dc75a37dc726cc514bccca9e4f49cb4ae27b51396c4566a278e7bd364ecb34",
+      "group": "09_TRAINING_V6"
+    },
+    {
+      "path": "training/v6/nonlinear_baseline_probe.py",
+      "bytes": 2869,
+      "lines": 56,
+      "sha256": "910e4c1832d5a42521d5ea6a9eb5ff95434fe0f6d53432b98ac5c567bd225e4d",
+      "group": "09_TRAINING_V6"
+    },
+    {
+      "path": "training/v6/objective_direction_diagnostic.py",
+      "bytes": 7593,
+      "lines": 137,
+      "sha256": "943f3fcd2d246da1fbc6ea1a04efee2f66069076f310ed0e1b22359e211dbcb0",
+      "group": "09_TRAINING_V6"
+    },
+    {
+      "path": "training/v6/objective_direction_report.py",
+      "bytes": 3283,
+      "lines": 50,
+      "sha256": "23b706ce8b52531b60dc49f196ee412e4019a4fa84dda3055e7cd465e55016cd",
+      "group": "09_TRAINING_V6"
+    },
+    {
+      "path": "training/v6/objective_gradient_precision.py",
+      "bytes": 2127,
+      "lines": 41,
+      "sha256": "bce240fec88904947f1fafa866d8d9467a61710f92c65d8eb6a569ea70ca2fbe",
+      "group": "09_TRAINING_V6"
+    },
+    {
+      "path": "training/v6/objective_network_diagnostic.py",
+      "bytes": 5568,
+      "lines": 86,
+      "sha256": "429f3b8f29c0e6e0a2ea0840ca0cb98e6bc164a0c7b0bcded8b7ee3411ad08e0",
+      "group": "09_TRAINING_V6"
+    },
+    {
+      "path": "training/v6/oof_baseline_diagnostic.py",
+      "bytes": 18802,
+      "lines": 317,
+      "sha256": "2a2bad70d70cc4a4fd0ffcbf0957dad62f53bdbdda40b7e307fdaa2cb5c5327f",
+      "group": "09_TRAINING_V6"
+    },
+    {
+      "path": "training/v6/oof_baseline_report.py",
+      "bytes": 2736,
+      "lines": 49,
+      "sha256": "8af01c31d7c7e71545ce33d19f1fcc033c30b42949a29eb142ec6f10e594b469",
+      "group": "09_TRAINING_V6"
+    },
+    {
+      "path": "training/v6/original_expansion_figures.py",
+      "bytes": 6105,
+      "lines": 82,
+      "sha256": "b276f4d4a186b56ffb8441b5fb26414d5c7a7aa0f2db934a85574abd01e94b29",
+      "group": "09_TRAINING_V6"
+    },
+    {
+      "path": "training/v6/original_interaction.py",
+      "bytes": 7258,
+      "lines": 102,
+      "sha256": "53de0ae0eea98d0d95af09b1646d93ab376a6594abe831dc778b940e15759c56",
+      "group": "09_TRAINING_V6"
+    },
+    {
+      "path": "training/v6/oxygen_device_experiment.py",
+      "bytes": 15172,
+      "lines": 231,
+      "sha256": "cd1e8973863fdeda6f5ad0a9649afe00871afe9b18ff9dff0188974dbf42b5ab",
+      "group": "09_TRAINING_V6"
+    },
+    {
+      "path": "training/v6/oxygen_device_model.py",
+      "bytes": 2010,
+      "lines": 53,
+      "sha256": "48b72293463f71e8927fd101effffb9587bbd15e1b7488b866dce35500f49b8c",
+      "group": "09_TRAINING_V6"
+    },
+    {
+      "path": "training/v6/oxygen_device_report.py",
+      "bytes": 6140,
+      "lines": 77,
+      "sha256": "e3bc4b21cab96f4b346d9dfde77c29680b6e9d7fdf20154fedf8832e544374e9",
+      "group": "09_TRAINING_V6"
+    },
+    {
+      "path": "training/v6/patient_balance_audit.py",
+      "bytes": 10439,
+      "lines": 150,
+      "sha256": "44be885302a29daa403b34eda3a15345932ff33e88e33fc556350995e572d80d",
+      "group": "09_TRAINING_V6"
+    },
+    {
+      "path": "training/v6/patient_balance_experiment.py",
+      "bytes": 9499,
+      "lines": 144,
+      "sha256": "4a6b355948c9dfc4a97ac155b09e9258129ecf71ade04aedbd50289e64834eca",
+      "group": "09_TRAINING_V6"
+    },
+    {
+      "path": "training/v6/patient_balance_finish.py",
+      "bytes": 2082,
+      "lines": 37,
+      "sha256": "b9eff4d3f8f4b9a2ed2d24d01a8b0b294549c1e5170682b22a732ddd472ee2df",
+      "group": "09_TRAINING_V6"
+    },
+    {
+      "path": "training/v6/patient_balance_model.py",
+      "bytes": 2775,
+      "lines": 50,
+      "sha256": "2e9efceec1d0e0f0b8b1753bdcd1addcc3110144b0eb19847f14b227466c1f4e",
+      "group": "09_TRAINING_V6"
+    },
+    {
+      "path": "training/v6/patient_balance_preflight.py",
+      "bytes": 2961,
+      "lines": 51,
+      "sha256": "37dd05944f05f68561b7b8c9610b47c8c4a3d6113d3f6a49b6824749c2ee6d8b",
+      "group": "09_TRAINING_V6"
+    },
+    {
+      "path": "training/v6/patient_balance_report.py",
+      "bytes": 4275,
+      "lines": 59,
+      "sha256": "9c0aea5acc2f43aed8f5627724cbbbd6a160bf697d91ca721098a39fea851b34",
+      "group": "09_TRAINING_V6"
+    },
+    {
+      "path": "training/v6/patient_gradient_diagnostic.py",
+      "bytes": 4905,
+      "lines": 80,
+      "sha256": "3af9152a92d1737ad2b62908f555ff1ed606706c992318f58832300bb5069ce4",
+      "group": "09_TRAINING_V6"
+    },
+    {
+      "path": "training/v6/patient_weight_diagnostic.py",
+      "bytes": 1624,
+      "lines": 34,
+      "sha256": "a7f0d64ee7d3b13e536f8d9c65254ed6863c1c27e7c318910f88c78819adbee0",
+      "group": "09_TRAINING_V6"
+    },
+    {
+      "path": "training/v6/patient_weight_loss.py",
+      "bytes": 1481,
+      "lines": 32,
+      "sha256": "90c9749ffa38f76bf135c30809c2b8ad524786d70142a6f72d8140414092b3d4",
+      "group": "09_TRAINING_V6"
+    },
+    {
+      "path": "training/v6/pft_set_experiment.py",
+      "bytes": 15722,
+      "lines": 246,
+      "sha256": "3831173c5a0178d0f3805c79a68b5032beb1f0fea3fa2bb9e44816e1237994ea",
+      "group": "09_TRAINING_V6"
+    },
+    {
+      "path": "training/v6/pft_set_model.py",
+      "bytes": 3141,
+      "lines": 61,
+      "sha256": "5ed40b49aad7e9cac33c2fe906687b6c77ad1a75746cccfbadcccf65d5e8f9eb",
+      "group": "09_TRAINING_V6"
+    },
+    {
+      "path": "training/v6/pft_set_report.py",
+      "bytes": 7701,
+      "lines": 103,
+      "sha256": "fe6b124b2a052d81cd2a2c1a7bf4d2ca60baa8031dc4e12eb55849151091cfcc",
+      "group": "09_TRAINING_V6"
+    },
+    {
+      "path": "training/v6/plot.py",
+      "bytes": 9190,
+      "lines": 141,
+      "sha256": "e64296c8db08b384315019653f4de1dcf6c06ac92216db2b20200d3dc67bbd3c",
+      "group": "09_TRAINING_V6"
+    },
+    {
+      "path": "training/v6/predict_research.py",
+      "bytes": 8920,
+      "lines": 134,
+      "sha256": "fb424ea6662a97c3b740aa23d3caeda2dce31211983dabd08cfd495fb3bb2837",
+      "group": "09_TRAINING_V6"
+    },
+    {
+      "path": "training/v6/public_tabular_corrected.py",
+      "bytes": 6865,
+      "lines": 122,
+      "sha256": "df9ea4593a5716a11168979c572a883ef66d2dfc00e39068ee63cb27d1c7eb79",
+      "group": "09_TRAINING_V6"
+    },
+    {
+      "path": "training/v6/public_tabular_data.py",
+      "bytes": 6568,
+      "lines": 123,
+      "sha256": "2e9dadc643b222485a8b293e5e49c8e32f20e91375b292738d7acebd34487562",
+      "group": "09_TRAINING_V6"
+    },
+    {
+      "path": "training/v6/public_tabular_experiment.py",
+      "bytes": 13671,
+      "lines": 231,
+      "sha256": "0d9621490c95d6cd226a56355ba886735d95dd3876f27991a24842b2c6a66aab",
+      "group": "09_TRAINING_V6"
+    },
+    {
+      "path": "training/v6/public_tabular_model.py",
+      "bytes": 5105,
+      "lines": 104,
+      "sha256": "36e33a07ed77aec3ae53a64becde19dfe60a85d47e235998d3fb5664e42e8f66",
+      "group": "09_TRAINING_V6"
+    },
+    {
+      "path": "training/v6/public_tabular_report.py",
+      "bytes": 16974,
+      "lines": 196,
+      "sha256": "028dd086c5259268bd3f3214ff8348c1248a929052c0ef78a3500e0754863bfa",
+      "group": "09_TRAINING_V6"
+    },
+    {
+      "path": "training/v6/public_tabular_verify.py",
+      "bytes": 3229,
+      "lines": 52,
+      "sha256": "00833817560bf060f23c97178eab6296c8a839a5c69f03417fd22ccc0c22e54b",
+      "group": "09_TRAINING_V6"
+    },
+    {
+      "path": "training/v6/radiology_experiment.py",
+      "bytes": 13478,
+      "lines": 190,
+      "sha256": "98b27ffc9417375b1d604856f83200250a66146a396e7e88cfe8ec5801ff5be9",
+      "group": "09_TRAINING_V6"
+    },
+    {
+      "path": "training/v6/radiology_plot.py",
+      "bytes": 2301,
+      "lines": 47,
+      "sha256": "b83b5cf83e96feeae4c2f433843f0ffce02365fd74cd67897e9d114016ee9168",
+      "group": "09_TRAINING_V6"
+    },
+    {
+      "path": "training/v6/reconstruction_controls.py",
+      "bytes": 1971,
+      "lines": 31,
+      "sha256": "72a1374431bc8a920d6767c72906d4743d449c70ee80d53aa7874d4069601bfe",
+      "group": "09_TRAINING_V6"
+    },
+    {
+      "path": "training/v6/regimen_joint_experiment.py",
+      "bytes": 18335,
+      "lines": 334,
+      "sha256": "fe7083d958a961a703a394aa2b309ccd3bedeca243232e07f89eccf24cfad720",
+      "group": "09_TRAINING_V6"
+    },
+    {
+      "path": "training/v6/regimen_joint_fusion.py",
+      "bytes": 5107,
+      "lines": 112,
+      "sha256": "805c66f9de36e602a8d446a5e1d60ed401d6b06c79dd886e7106aacd62f8337d",
+      "group": "09_TRAINING_V6"
+    },
+    {
+      "path": "training/v6/regimen_joint_report.py",
+      "bytes": 4798,
+      "lines": 77,
+      "sha256": "600ac3c751ae49c3b92cb162cf3e7d948a8bade7c45d26a5ec0b7528fa35c9e3",
+      "group": "09_TRAINING_V6"
+    },
+    {
+      "path": "training/v6/regularization_audit.py",
+      "bytes": 9357,
+      "lines": 149,
+      "sha256": "c65f3e0a799e0ca798bba2f18630700ed6cac6b2888c2583e09fcb42a2f7e0c7",
+      "group": "09_TRAINING_V6"
+    },
+    {
+      "path": "training/v6/regularization_confirmation_plot.py",
+      "bytes": 2380,
+      "lines": 38,
+      "sha256": "63949ad0137498d47d998ef89429689a0e2bcfa964c5546aa7c1a0d1135055b8",
+      "group": "09_TRAINING_V6"
+    },
+    {
+      "path": "training/v6/regularization_confirmation_verify.py",
+      "bytes": 2900,
+      "lines": 45,
+      "sha256": "ff01f939082753367d056a9c832c727d3f3848914795575bb552589a6f807f32",
+      "group": "09_TRAINING_V6"
+    },
+    {
+      "path": "training/v6/regularization_diagnostics.py",
+      "bytes": 4365,
+      "lines": 75,
+      "sha256": "28d6854c3dde936b2f1ae6f500129769de3b551eea10968a6ef867e6f0280f6d",
+      "group": "09_TRAINING_V6"
+    },
+    {
+      "path": "training/v6/regularization_model.py",
+      "bytes": 6159,
+      "lines": 135,
+      "sha256": "6c5fcdf94f5267341546ad26bca2096c6ebd6b4e7992df19ee51c4546c986db8",
+      "group": "09_TRAINING_V6"
+    },
+    {
+      "path": "training/v6/regularization_multiseed.py",
+      "bytes": 10936,
+      "lines": 166,
+      "sha256": "8530d2a776f7e9ee726319d74fdf75448b9034343ff67d4588d6e58d56ac2195",
+      "group": "09_TRAINING_V6"
+    },
+    {
+      "path": "training/v6/regularization_multiseed_verify.py",
+      "bytes": 7391,
+      "lines": 102,
+      "sha256": "36f11dfc9ba9bc56850a4b850a7bf8f21fa26ffd2d2e3921bf42dfdb1e8590a4",
+      "group": "09_TRAINING_V6"
+    },
+    {
+      "path": "training/v6/regularization_screen_report.py",
+      "bytes": 5245,
+      "lines": 71,
+      "sha256": "41eb8d642c549d7bde43619fee056f3404d605b0263e8dcf3b125baa7962f39a",
+      "group": "09_TRAINING_V6"
+    },
+    {
+      "path": "training/v6/regularization_search.py",
+      "bytes": 10130,
+      "lines": 169,
+      "sha256": "644129e27404b70dc47beee80e85ec4596cd7a87964500444ae6b17d60235173",
+      "group": "09_TRAINING_V6"
+    },
+    {
+      "path": "training/v6/repair_expanded_medication.py",
+      "bytes": 3981,
+      "lines": 57,
+      "sha256": "dde77696ce35124b63a14104f0464ec98db276c0d9ccefe3cb0a721f6796392f",
+      "group": "09_TRAINING_V6"
+    },
+    {
+      "path": "training/v6/repeat_architecture.py",
+      "bytes": 3106,
+      "lines": 45,
+      "sha256": "865f7b5fdcdd5ee55b26fce6bfdf77084230b8ed98e5966a9a41f215679d358a",
+      "group": "09_TRAINING_V6"
+    },
+    {
+      "path": "training/v6/report_horizon_roc.py",
+      "bytes": 3118,
+      "lines": 55,
+      "sha256": "856ae1e40cca0ff148928483f59e7c2fa05c156d91ccc8aeebda77839343f128",
+      "group": "09_TRAINING_V6"
+    },
+    {
+      "path": "training/v6/resp_fact_set_experiment.py",
+      "bytes": 17615,
+      "lines": 261,
+      "sha256": "6567e6b8165bc7d27a1a3ef3a5ec789bc7549fd4afe486af24f50efaac0df0b9",
+      "group": "09_TRAINING_V6"
+    },
+    {
+      "path": "training/v6/resp_fact_set_model.py",
+      "bytes": 3638,
+      "lines": 64,
+      "sha256": "c7c57696ebf95ebf7197bfcf74eaa07091525fe3e90f91761b69d828e2caca54",
+      "group": "09_TRAINING_V6"
+    },
+    {
+      "path": "training/v6/resp_fact_set_report.py",
+      "bytes": 7754,
+      "lines": 105,
+      "sha256": "913276a5a570e63894accec6576ab8832f58d27d8e06747d50674853b8e70e88",
+      "group": "09_TRAINING_V6"
+    },
+    {
+      "path": "training/v6/respiratory_transition_experiment.py",
+      "bytes": 15237,
+      "lines": 229,
+      "sha256": "e72d463c3614608c10375fde99e12c2788e9e0243090a30fcff3170ed6d09425",
+      "group": "09_TRAINING_V6"
+    },
+    {
+      "path": "training/v6/respiratory_transition_model.py",
+      "bytes": 2063,
+      "lines": 51,
+      "sha256": "4efd553c4b9977d41ca97607279f540a23120feadd50f239eb84b314ad364dd1",
+      "group": "09_TRAINING_V6"
+    },
+    {
+      "path": "training/v6/respiratory_transition_report.py",
+      "bytes": 5854,
+      "lines": 72,
+      "sha256": "88f766f1065a88fbeeb1922165f561d3c74141afac34f0a61497cc4b17521721",
+      "group": "09_TRAINING_V6"
+    },
+    {
+      "path": "training/v6/risk.py",
+      "bytes": 3706,
+      "lines": 68,
+      "sha256": "1c959ea10cd6ac633bf95f202734441a28c5d7fed6178427aa7688ef77916368",
+      "group": "09_TRAINING_V6"
+    },
+    {
+      "path": "training/v6/run_token_suite.py",
+      "bytes": 3598,
+      "lines": 54,
+      "sha256": "30ebb9da9fbbe252b556395511c14a57d92916ea6f7f2a4d3fbf4e362ba26a66",
+      "group": "09_TRAINING_V6"
+    },
+    {
+      "path": "training/v6/saved_section_experiment.py",
+      "bytes": 17087,
+      "lines": 268,
+      "sha256": "41f442025a838350a42da97ed4db55b0c4ad0966d2e5e43ea5862ca723f56d03",
+      "group": "09_TRAINING_V6"
+    },
+    {
+      "path": "training/v6/smoke.py",
+      "bytes": 5478,
+      "lines": 87,
+      "sha256": "98497fdd7460abd9be6227f21d11b16372b804dcf6016c99489b5c62370c5145",
+      "group": "09_TRAINING_V6"
+    },
+    {
+      "path": "training/v6/source_context_data.py",
+      "bytes": 4423,
+      "lines": 75,
+      "sha256": "7ed766e2ef7d4aa47aa9955e5b5f61d1ea279c7c613f19a2c98cef74d16b5560",
+      "group": "09_TRAINING_V6"
+    },
+    {
+      "path": "training/v6/source_context_smoke.py",
+      "bytes": 2897,
+      "lines": 49,
+      "sha256": "de0072664b0fa5bebb92151c52f29bb965e2d202a1bc987551ff4d439156cc56",
+      "group": "09_TRAINING_V6"
+    },
+    {
+      "path": "training/v6/summarize_exploration.py",
+      "bytes": 6754,
+      "lines": 90,
+      "sha256": "d627e211abcaf25766159efe8f9f5b02515bea6adb7ba2d6489f58322a45cfac",
+      "group": "09_TRAINING_V6"
+    },
+    {
+      "path": "training/v6/symmetric_context.py",
+      "bytes": 2107,
+      "lines": 39,
+      "sha256": "c8fe1dc6116f9167695151d06e1151c07be5afddf91752fc2dc8a875a331f74b",
+      "group": "09_TRAINING_V6"
+    },
+    {
+      "path": "training/v6/symmetric_context_experiment.py",
+      "bytes": 12004,
+      "lines": 182,
+      "sha256": "81d5d751abff46fc39151ab08039d645196ab57bb914fc4ffdd0965033bbd15a",
+      "group": "09_TRAINING_V6"
+    },
+    {
+      "path": "training/v6/task_gradient_diagnostic.py",
+      "bytes": 4212,
+      "lines": 72,
+      "sha256": "49c6a6ddb4cf98bff937f33606713283b40017170f3235e377d45b93bf189a10",
+      "group": "09_TRAINING_V6"
+    },
+    {
+      "path": "training/v6/task_mortality_evidence.py",
+      "bytes": 5282,
+      "lines": 73,
+      "sha256": "574ee8733247352862a73aabd05f8bde6e52cf8d228f02ac7753237015e273b6",
+      "group": "09_TRAINING_V6"
+    },
+    {
+      "path": "training/v6/task_optimization.py",
+      "bytes": 4462,
+      "lines": 99,
+      "sha256": "5ab36b988ef5d18f080baf04ea69815a3b236e2dffc65efcf7b0cb5b12ebaf43",
+      "group": "09_TRAINING_V6"
+    },
+    {
+      "path": "training/v6/task_optimization_audit.py",
+      "bytes": 13458,
+      "lines": 203,
+      "sha256": "bf42ec7df6b744ea2364403a569d5b8cafca08df49dadd86279604d6b9595671",
+      "group": "09_TRAINING_V6"
+    },
+    {
+      "path": "training/v6/task_optimization_diagnostics.py",
+      "bytes": 3682,
+      "lines": 60,
+      "sha256": "dd2a79fc9b8923dce48a0b796275d3d3218b3a21019cdee4f9d028c0a65ceaa4",
+      "group": "09_TRAINING_V6"
+    },
+    {
+      "path": "training/v6/task_optimization_experiment.py",
+      "bytes": 5206,
+      "lines": 83,
+      "sha256": "20d3c92bf61c8eb18de7bd352e2b807b1ec962460d18d70777cfb7a8f1251fc5",
+      "group": "09_TRAINING_V6"
+    },
+    {
+      "path": "training/v6/task_optimization_finish.py",
+      "bytes": 4405,
+      "lines": 70,
+      "sha256": "99b2ca3e9f479f7dcc8d00bf108a18c322092d5bdaa3b2a9c07f421638cd643c",
+      "group": "09_TRAINING_V6"
+    },
+    {
+      "path": "training/v6/task_optimization_report.py",
+      "bytes": 8991,
+      "lines": 136,
+      "sha256": "10654280c82982f64f43755b003ea7ba3f20df19a67ec3b345ecdd621024bedb",
+      "group": "09_TRAINING_V6"
+    },
+    {
+      "path": "training/v6/text_concept.py",
+      "bytes": 15706,
+      "lines": 220,
+      "sha256": "b6fe2394badba15314be1aa37863d2787a98d42e72e4439faf81e6f5f76665c8",
+      "group": "09_TRAINING_V6"
+    },
+    {
+      "path": "training/v6/text_encoder_comparison.py",
+      "bytes": 17889,
+      "lines": 268,
+      "sha256": "8319a4c1af6fc6e5886a38ecbab06873eb139c737d48882f52e26be2ba6d7ec5",
+      "group": "09_TRAINING_V6"
+    },
+    {
+      "path": "training/v6/text_geometry.py",
+      "bytes": 2177,
+      "lines": 40,
+      "sha256": "0f247dae5252b98849d55933c23d4cbc380fff6cb83d705d9c618b232a2be0c8",
+      "group": "09_TRAINING_V6"
+    },
+    {
+      "path": "training/v6/text_time_attention_audit.py",
+      "bytes": 5044,
+      "lines": 68,
+      "sha256": "276ccd801ae73bb3e11aeed805fe50115772f84a977753440db59367a38afe33",
+      "group": "09_TRAINING_V6"
+    },
+    {
+      "path": "training/v6/text_time_coverage_report.py",
+      "bytes": 3422,
+      "lines": 42,
+      "sha256": "16345bdb4e76c8492a208c3a1a6dd13df33457e1f9ba89efda70ffe04bdebfc6",
+      "group": "09_TRAINING_V6"
+    },
+    {
+      "path": "training/v6/text_time_encoding_check.py",
+      "bytes": 4381,
+      "lines": 60,
+      "sha256": "a8185f9651a6e4814a780e83aa0b9354ff736298f40d7e035e8f070db8c08a27",
+      "group": "09_TRAINING_V6"
+    },
+    {
+      "path": "training/v6/token_choose_reference.py",
+      "bytes": 1654,
+      "lines": 24,
+      "sha256": "fd922c7c4511b2498cb672b03f02336a3924e5d29291bf7e4aaae60ed309500c",
+      "group": "09_TRAINING_V6"
+    },
+    {
+      "path": "training/v6/token_cox_control.py",
+      "bytes": 6290,
+      "lines": 79,
+      "sha256": "84e1d923c4c6fac9cfee11e344319da0c062f30f656457676ebd4fe8679e6d84",
+      "group": "09_TRAINING_V6"
+    },
+    {
+      "path": "training/v6/token_cox_verify.py",
+      "bytes": 3020,
+      "lines": 42,
+      "sha256": "257076cd532c09d71b556e1e7a6568bc999902fe6564398a0792ffc700c04aa1",
+      "group": "09_TRAINING_V6"
+    },
+    {
+      "path": "training/v6/token_data.py",
+      "bytes": 3074,
+      "lines": 51,
+      "sha256": "85dacd5122007d76d059dd9addd480735a803305b6009d6941bd2a402c315e22",
+      "group": "09_TRAINING_V6"
+    },
+    {
+      "path": "training/v6/token_experiment.py",
+      "bytes": 18428,
+      "lines": 267,
+      "sha256": "bf4db93f8933f0c5a00129d7b031e778a4a0d05238eb580874961b0c47af0a7a",
+      "group": "09_TRAINING_V6"
+    },
+    {
+      "path": "training/v6/token_finalize.py",
+      "bytes": 6938,
+      "lines": 85,
+      "sha256": "98ce140ba7f1ff05d8dc7582740e88ab3498699d564793157f7ef2c8c845f055",
+      "group": "09_TRAINING_V6"
+    },
+    {
+      "path": "training/v6/token_model.py",
+      "bytes": 7271,
+      "lines": 128,
+      "sha256": "ea51c37987b25e199978efa070d058caff0ff3afd95e364efa7ebe51ef994922",
+      "group": "09_TRAINING_V6"
+    },
+    {
+      "path": "training/v6/token_result_figures.py",
+      "bytes": 2849,
+      "lines": 43,
+      "sha256": "0801051de960aabc022438cf0102d519437b026bf29a86178f7c5fd13077d031",
+      "group": "09_TRAINING_V6"
+    },
+    {
+      "path": "training/v6/token_verify.py",
+      "bytes": 5181,
+      "lines": 65,
+      "sha256": "91d715a0d77c8ac43d3b65dfbe7026ec5102a25d85df0f840f51ec0c4e04de8a",
+      "group": "09_TRAINING_V6"
+    },
+    {
+      "path": "training/v6/train.py",
+      "bytes": 15799,
+      "lines": 272,
+      "sha256": "a9397e187b93a25d5d6dd92ae9b57188955b07fb5c1dbe8148137594a83a3165",
+      "group": "09_TRAINING_V6"
+    },
+    {
+      "path": "training/v6/training_history_audit.py",
+      "bytes": 5297,
+      "lines": 96,
+      "sha256": "d758a38220214dee14a1ae22f005641f36292ac29f39ebbfed9bf48f9b114e25",
+      "group": "09_TRAINING_V6"
+    },
+    {
+      "path": "training/v6/unified_longitudinal.py",
+      "bytes": 9593,
+      "lines": 152,
+      "sha256": "2f616b2df8a70d817f6b2df4ead08cdeca90e32e416a403cef17c07dc1e7676e",
+      "group": "09_TRAINING_V6"
+    },
+    {
+      "path": "training/v6/unified_longitudinal_experiment.py",
+      "bytes": 21872,
+      "lines": 311,
+      "sha256": "09b549fcffd57e3fffde5f56228449ea897aa09e986f95109b461c423cf74c73",
+      "group": "09_TRAINING_V6"
+    },
+    {
+      "path": "training/v6/unified_longitudinal_report.py",
+      "bytes": 4943,
+      "lines": 70,
+      "sha256": "9f3b7f11277ea2ce56352a327824eeecdbcf1193e0a495d32a4e4a028f5ec9bf",
+      "group": "09_TRAINING_V6"
+    },
+    {
+      "path": "training/v6/verify_audited_experiment.py",
+      "bytes": 5302,
+      "lines": 70,
+      "sha256": "ff5bc7f34b1cce0e553d2d419574a86f0f76f1519c272fd3a114911964487e59",
+      "group": "09_TRAINING_V6"
+    },
+    {
+      "path": "training/v6/verify_detail_extension.py",
+      "bytes": 3655,
+      "lines": 57,
+      "sha256": "e25b592a5c1959dd6f14952d64ec573b47bc4fde1889c08bb3f5fa0245ff0891",
+      "group": "09_TRAINING_V6"
+    },
+    {
+      "path": "training/v6/verify_group_run.py",
+      "bytes": 3775,
+      "lines": 72,
+      "sha256": "a5b2ce6dc7b93ea50733c4e08d99893f0b799fb7527051f3b3a40452672b8de8",
+      "group": "09_TRAINING_V6"
+    },
+    {
+      "path": "training/v6/verify_original_expansion.py",
+      "bytes": 7614,
+      "lines": 93,
+      "sha256": "2d9be01e25b89bf2978daa431a18e70efa3e4d29144adae6e353f43a5dcb9e96",
+      "group": "09_TRAINING_V6"
+    },
+    {
+      "path": "training/v6/verify_progress_artifacts.py",
+      "bytes": 3713,
+      "lines": 62,
+      "sha256": "763a75af1c94c209e4ea7ad0fbceec1da21bd7ad645c0861ca5102fcd6153eaa",
+      "group": "09_TRAINING_V6"
+    },
+    {
+      "path": "training/v6/verify_run.py",
+      "bytes": 4785,
+      "lines": 78,
+      "sha256": "e652aeead60f991e820459135b040d73d70efd0bbeb736ea88059778f2f0a318",
+      "group": "09_TRAINING_V6"
+    },
+    {
+      "path": "training/v6/verify_screen_encoding.py",
+      "bytes": 4825,
+      "lines": 74,
+      "sha256": "263c772d59deebb6d32594d795ae12c9d2e61ea32bd27e94c5addbb1c709457a",
+      "group": "09_TRAINING_V6"
+    },
+    {
+      "path": "training/v6/verify_text_encoder_comparison.py",
+      "bytes": 5586,
+      "lines": 87,
+      "sha256": "9637adcbfcb4a93dc77ed97af7e8e7e6fd8e6ffcc322905c3b614e8ba937dff4",
+      "group": "09_TRAINING_V6"
+    },
+    {
+      "path": "training/v6/warm_residual.py",
+      "bytes": 2649,
+      "lines": 60,
+      "sha256": "c9e8fd813db0511305ce30457ef38ba6a45a2384a5acfaee1465b434675283c0",
+      "group": "09_TRAINING_V6"
+    },
+    {
+      "path": "training/v6/warm_residual_audit.py",
+      "bytes": 8599,
+      "lines": 127,
+      "sha256": "62c7fe81098a737894b628288db3cd7eee5eeab979d4dfcbdcba020b3ea302ba",
+      "group": "09_TRAINING_V6"
+    },
+    {
+      "path": "training/v6/warm_residual_experiment.py",
+      "bytes": 6803,
+      "lines": 101,
+      "sha256": "f118b94d25aeb9871fab960d3b99c61fda2afd3654eb7e6327f415886eac44aa",
+      "group": "09_TRAINING_V6"
+    },
+    {
+      "path": "training/v7/__init__.py",
+      "bytes": 65,
+      "lines": 1,
+      "sha256": "6511eb3e0927a0605aa0d51c57eb8e4d3aa937d43469818e38621eb9b054194b",
+      "group": "10_TRAINING_V7"
+    },
+    {
+      "path": "training/v7/audit_encoder.py",
+      "bytes": 1495,
+      "lines": 25,
+      "sha256": "54a10820a35c8e0e84b0c60af26e3a23baf1317350f6a2dbc35b80201f4cd39e",
+      "group": "10_TRAINING_V7"
+    },
+    {
+      "path": "training/v7/cached_followup.py",
+      "bytes": 6532,
+      "lines": 102,
+      "sha256": "b473064b24edbd4c79431d579b73f93a45042984b9b3ca65148924464a67bf15",
+      "group": "10_TRAINING_V7"
+    },
+    {
+      "path": "training/v7/cached_research.py",
+      "bytes": 14987,
+      "lines": 239,
+      "sha256": "abab9787fbc2b3aafb4602c995ae2da57af81e007d8c02e3b5dd7a6a0c55c6a3",
+      "group": "10_TRAINING_V7"
+    },
+    {
+      "path": "training/v7/data.py",
+      "bytes": 3627,
+      "lines": 68,
+      "sha256": "69129c82c0f60edc5fd26a2fab4eafb35683783fbc9b652b5ee68f84fa7a793f",
+      "group": "10_TRAINING_V7"
+    },
+    {
+      "path": "training/v7/diagnostics.py",
+      "bytes": 4188,
+      "lines": 79,
+      "sha256": "c0b373e319ca890b4b161b6ef1e5343fa3ce4c3a6ff22328daa5a0ffc93c6c63",
+      "group": "10_TRAINING_V7"
+    },
+    {
+      "path": "training/v7/drug_context_experiment.py",
+      "bytes": 7041,
+      "lines": 103,
+      "sha256": "a090d5ee5817b60189dada1347c854b6eab81940093f22ad51867be1c32e79e9",
+      "group": "10_TRAINING_V7"
+    },
+    {
+      "path": "training/v7/drug_context_features.py",
+      "bytes": 8648,
+      "lines": 149,
+      "sha256": "372db9434ba47f240a5fac1467897a882f393b94d7898595f5d98ce05aa0720f",
+      "group": "10_TRAINING_V7"
+    },
+    {
+      "path": "training/v7/drug_name_encoding.py",
+      "bytes": 2046,
+      "lines": 35,
+      "sha256": "5ed0560703db807358d05d8b80def592db65ba30654f4cf57c5cfc0b9901ec5d",
+      "group": "10_TRAINING_V7"
+    },
+    {
+      "path": "training/v7/experiment.py",
+      "bytes": 23985,
+      "lines": 393,
+      "sha256": "e1a9551d087fc45c41b0cfd2b2a02a61aa4e19d3909456f5b9ff208ca57c849f",
+      "group": "10_TRAINING_V7"
+    },
+    {
+      "path": "training/v7/fixed_v6_cox_blend.py",
+      "bytes": 6461,
+      "lines": 104,
+      "sha256": "2bbb09ed4daeaf5a995535fb94fde9e8ee9cc16c6857be4a2414aefd1c1e34f6",
+      "group": "10_TRAINING_V7"
+    },
+    {
+      "path": "training/v7/loss_comparison.py",
+      "bytes": 19395,
+      "lines": 290,
+      "sha256": "9a3fa6b0c33386542cf526d5f9cf5ab0939006e18057cb820053356a296f7f0d",
+      "group": "10_TRAINING_V7"
+    },
+    {
+      "path": "training/v7/loss_comparison_readout.py",
+      "bytes": 15206,
+      "lines": 204,
+      "sha256": "89fa75290e409a0801d940f45361423bfd533e6b4e19ecedfd2296ef08429cae",
+      "group": "10_TRAINING_V7"
+    },
+    {
+      "path": "training/v7/loss_probability_probe.py",
+      "bytes": 2401,
+      "lines": 51,
+      "sha256": "2fec5b7d2b93b050723e2c5abd03d53bd2cdd35e31e5337d60aeb9696aa4d7a4",
+      "group": "10_TRAINING_V7"
+    },
+    {
+      "path": "training/v7/losses.py",
+      "bytes": 3014,
+      "lines": 60,
+      "sha256": "60f1e306015898108f6c43ecb8c88aeb8d7f8c36f79ba94c97472cc612015cdd",
+      "group": "10_TRAINING_V7"
+    },
+    {
+      "path": "training/v7/model.py",
+      "bytes": 13643,
+      "lines": 239,
+      "sha256": "0215cc2c6427b63aa35da5e990a66c28ed4d6d47e0fd8d03c9117210020a313f",
+      "group": "10_TRAINING_V7"
+    },
+    {
+      "path": "training/v7/projected_strong.py",
+      "bytes": 3486,
+      "lines": 81,
+      "sha256": "6c7c5bd0d72ca572b6a7280cb81c561024f6810b655226e664ad4bae542f8793",
+      "group": "10_TRAINING_V7"
+    },
+    {
+      "path": "training/v7/projected_strong_diagnostics.py",
+      "bytes": 2416,
+      "lines": 43,
+      "sha256": "7241928c99309a5296244019d27f0db96059889e52200ddc152497068b6ea10b",
+      "group": "10_TRAINING_V7"
+    },
+    {
+      "path": "training/v7/projected_strong_experiment.py",
+      "bytes": 11594,
+      "lines": 177,
+      "sha256": "bfa3935947bbedb62146c2d9f06551fb3682474cb756740174ca00346a38b7a2",
+      "group": "10_TRAINING_V7"
+    },
+    {
+      "path": "training/v7/projected_strong_report.py",
+      "bytes": 8380,
+      "lines": 96,
+      "sha256": "1c8d976737cfdd79cf644efc352cf8ffa9fc6b8fc4318ff00220d8cab533bfda",
+      "group": "10_TRAINING_V7"
+    },
+    {
+      "path": "training/v7/publish_report.py",
+      "bytes": 13040,
+      "lines": 150,
+      "sha256": "a855006ec15ad778710e887b8fe4c11e7b50175e5208381de72164aa43ff41bb",
+      "group": "10_TRAINING_V7"
+    },
+    {
+      "path": "training/v7/query_replication.py",
+      "bytes": 6672,
+      "lines": 104,
+      "sha256": "0f17d04bbded60d373c2734913674d88d9368a987498498c642b9569c1bd01fd",
+      "group": "10_TRAINING_V7"
+    },
+    {
+      "path": "training/v7/README.md",
+      "bytes": 10810,
+      "lines": 91,
+      "sha256": "300c0fe7f557e927b4e06f898d423760616f9452dd117e26d4e71f3ef75019b9",
+      "group": "10_TRAINING_V7"
+    },
+    {
+      "path": "training/v7/readout.py",
+      "bytes": 5005,
+      "lines": 88,
+      "sha256": "36bfb2958e546fb1f44f4afe6fa3fb3a58e8096da40261370bafa705f7f55085",
+      "group": "10_TRAINING_V7"
+    },
+    {
+      "path": "training/v7/research_features.py",
+      "bytes": 10480,
+      "lines": 185,
+      "sha256": "12e88bc3003bec23e384b62522d6fb1feecea4f33b80bb4a2819d146998fdb19",
+      "group": "10_TRAINING_V7"
+    },
+    {
+      "path": "training/v7/residual_controls.py",
+      "bytes": 5186,
+      "lines": 107,
+      "sha256": "68c347536366033556e3ce06c160589f2589b28f5c6f8ceceebd81c2b1b1beae",
+      "group": "10_TRAINING_V7"
+    },
+    {
+      "path": "training/v7/residual_followup.py",
+      "bytes": 3496,
+      "lines": 73,
+      "sha256": "d60f965678de5ea1347abe6628ec62db82db5278f8eded0911df20d28e9bb445",
+      "group": "10_TRAINING_V7"
+    },
+    {
+      "path": "training/v7/sequential_experiment.py",
+      "bytes": 10554,
+      "lines": 174,
+      "sha256": "98f0349a8f4ed5438c06543c3d24e1787c398aa6e307f16227a4f8be54b0a308",
+      "group": "10_TRAINING_V7"
+    },
+    {
+      "path": "training/v7/sequential_readout.py",
+      "bytes": 14454,
+      "lines": 237,
+      "sha256": "28993724ef3918892831e562f0cd20222ef3295bdc1b519a08ed9d6abe1cc944",
+      "group": "10_TRAINING_V7"
+    },
+    {
+      "path": "training/v7/sequential_report.py",
+      "bytes": 16288,
+      "lines": 160,
+      "sha256": "f6774d3b2cf41e417804a2ad2c132bcf78cdabe9530607fd4dccf5e0c0a5bf43",
+      "group": "10_TRAINING_V7"
+    },
+    {
+      "path": "training/v7/sequential_variants.py",
+      "bytes": 5178,
+      "lines": 100,
+      "sha256": "4ab775145ccd561a8b7ddbf702cc59d5a783a0dd6cea9344a07c8f82c3efa4a2",
+      "group": "10_TRAINING_V7"
+    },
+    {
+      "path": "training/v7/strong_anchor_experiment.py",
+      "bytes": 7578,
+      "lines": 123,
+      "sha256": "202788acdf39827b48ae909cc45a191c0d2ba5753a994cbcc80aec372e7cfbb6",
+      "group": "10_TRAINING_V7"
+    },
+    {
+      "path": "training/v7/strong_no_cross.py",
+      "bytes": 609,
+      "lines": 12,
+      "sha256": "d121c18275aefc0655109ae6b89ae7a7323d7f9436bbcbedcd0985acf4ba46c6",
+      "group": "10_TRAINING_V7"
+    },
+    {
+      "path": "training/v7/strong_no_cross_experiment.py",
+      "bytes": 16220,
+      "lines": 261,
+      "sha256": "3ea4952fadecf1fb4d282978659477d1b0468a5fc209912d4a524731e2fe5712",
+      "group": "10_TRAINING_V7"
+    },
+    {
+      "path": "training/v7/strong_replication.py",
+      "bytes": 2898,
+      "lines": 48,
+      "sha256": "159567d4c99e48cb4f8152786be35d92ec96a40638e739815f80b8b021c29a7e",
+      "group": "10_TRAINING_V7"
+    },
+    {
+      "path": "training/v7/two_fold_ensemble.py",
+      "bytes": 16726,
+      "lines": 265,
+      "sha256": "41d05df2eb82f25b92aa842a18f25ba4c0790f8671df7a5ba0e75330344dfbee",
+      "group": "10_TRAINING_V7"
+    },
+    {
+      "path": "training/v7/two_fold_full_refit.py",
+      "bytes": 5703,
+      "lines": 81,
+      "sha256": "1a79040ebf7351bcdd7b2096024b09a99cee2034a474f82a67a0e2fcc59068db",
+      "group": "10_TRAINING_V7"
+    },
+    {
+      "path": "training/v7/two_fold_replay.py",
+      "bytes": 4007,
+      "lines": 61,
+      "sha256": "1e4834d7c13b1be278bb869b3ea206375bcf404cc1e10450535a7c92289bf441",
+      "group": "10_TRAINING_V7"
+    },
+    {
+      "path": "training/v7/verify_last.py",
+      "bytes": 3912,
+      "lines": 73,
+      "sha256": "6ac773344516cf07443ca2130a1e3df28b35d9c947d918ec980b559f13f90043",
+      "group": "10_TRAINING_V7"
+    },
+    {
+      "path": "training/validate_batching.py",
+      "bytes": 4266,
+      "lines": 119,
+      "sha256": "3fc116f4640446c5b4cbf267ea26a9419f955a195601ded7b816656531e3d7f1",
+      "group": "07_BASELINES_AND_COMMON"
+    },
+    {
+      "path": "training/validate_broad_fragment_vectors.py",
+      "bytes": 2478,
+      "lines": 51,
+      "sha256": "a3fbc4d915a15112ea31919156ab6c508d0bb61b9049045d6c6403a41360646b",
+      "group": "07_BASELINES_AND_COMMON"
+    },
+    {
+      "path": "training/validate_text_embeddings.py",
+      "bytes": 3282,
+      "lines": 80,
+      "sha256": "3f4fd8ea09f20f301f3ad06212e38fa8191ba7292b9df5286fb6ec07a4d76074",
+      "group": "07_BASELINES_AND_COMMON"
+    },
+    {
+      "path": "work/prepare_public_snapshot.py",
+      "bytes": 5261,
+      "lines": 98,
+      "sha256": "e72b8b002f4791936f39109d004f398c0845536c3529da520c8f1358748118e2",
+      "group": "12_TOOLS_AND_CONFIGURATION"
+    }
+  ],
+  "binary_assets": [
+    {
+      "path": "docs/figures/v7_first_experiment_2026-10-15.png",
+      "bytes": 211933,
+      "sha256": "0521301c349040ca83af28db0dc8a32f8419257770ca209852e82712dfd4440e"
+    },
+    {
+      "path": "docs/figures/v7_loss_comparison_2026-10-15.png",
+      "bytes": 229131,
+      "sha256": "2b6988c587908b49328019c45f07394b58b4b5e14d498fbd587e1f188069e554"
+    },
+    {
+      "path": "docs/figures/v7_sequential_research_2026-10-15.png",
+      "bytes": 185662,
+      "sha256": "bf7cf23f46f917f5140da880f143099a80f24b4abd344a040be402473b0e508a"
+    }
+  ],
+  "withheld_code": [
+    "training/audit_bonsai2_samples.py",
+    "training/bonsai_broad_fragments.py",
+    "training/bonsai_candidate_probe.py",
+    "training/bonsai_catalog16.py",
+    "training/bonsai_clinical_evidence_pilot.py",
+    "training/bonsai_simple_extraction.py",
+    "training/broad_fragment_batch.py",
+    "training/gemini_semantic_extract.py",
+    "training/test_broad_fragment_batch.py"
+  ],
+  "scope": "all inherited reviewed public text files plus explicit current additions and safe aggregate metadata"
+}

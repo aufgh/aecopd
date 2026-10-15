@@ -1,0 +1,99 @@
+{
+  "base_public_commit": "f7b37800a73f43eef08b73e2d97c5b826b1314ed",
+  "source_catalog_sha256": "4de843f4561a19e8ef16756d5bc4156c40db2c65f4f17504e8c4fc919fa25e44",
+  "source_count": 825,
+  "markdown_files": 22,
+  "outputs": {
+    "01_DATA_SNAPSHOT_01.md": {
+      "bytes": 137629,
+      "sha256": "44d90dac22a4e7e98efbd5754081ac4abb11280ab1180787109ffe767eb929bc"
+    },
+    "02_AGGREGATE_RESULTS_01.md": {
+      "bytes": 796438,
+      "sha256": "2f356f1fd3b833416decffa8453b17a2e2c6c5d1e935a32f48d813137ce150cc"
+    },
+    "02_AGGREGATE_RESULTS_02.md": {
+      "bytes": 796333,
+      "sha256": "044002fe34b724136f6de42465030d484e11be01e86808392673b32d04688d13"
+    },
+    "02_AGGREGATE_RESULTS_03.md": {
+      "bytes": 796388,
+      "sha256": "e8a3870699237b99acc778cc8f48d98f4ed12f43daae2f11445e0b90290e0ea3"
+    },
+    "02_AGGREGATE_RESULTS_04.md": {
+      "bytes": 796361,
+      "sha256": "c9db468ba1260010941d0a73e943a18c533cff23d1dbb8d1c61a85776d1c5859"
+    },
+    "02_AGGREGATE_RESULTS_05.md": {
+      "bytes": 796343,
+      "sha256": "3865c8c8576571becd7890459f107554b71f8b02578c309b02ea2bc1577ea341"
+    },
+    "02_AGGREGATE_RESULTS_06.md": {
+      "bytes": 796356,
+      "sha256": "6f9a2167f2af701e665341abcf4e3bd7ae47895d0b4e179a0925afd8c27c5edc"
+    },
+    "02_AGGREGATE_RESULTS_07.md": {
+      "bytes": 796342,
+      "sha256": "3e3d611df522495565fe8566b9b0c87ba19ca0b680763d5fbf48a7cca3ab90c3"
+    },
+    "02_AGGREGATE_RESULTS_08.md": {
+      "bytes": 796355,
+      "sha256": "718c21226ded471754c510c4a117e87703dc45d9c51cf69a41d57e82067d38b6"
+    },
+    "02_AGGREGATE_RESULTS_09.md": {
+      "bytes": 220684,
+      "sha256": "3b3c86d02b241cab0780b0974306a0ca7e6e2866288f3da4c90ac8b0b2ae306f"
+    },
+    "03_PROTOCOLS_AND_REPORTS_01.md": {
+      "bytes": 288522,
+      "sha256": "f6c48aa3ebf62974852564f442d232ed66596aeed6e8499b5665e85892bbc0e1"
+    },
+    "04_COHORT_SQL_01.md": {
+      "bytes": 268590,
+      "sha256": "19fd20605df73ab4856fd89986baded3e7fb79ffee1b0aed4b886d4fde5bf640"
+    },
+    "05_PATIENT_DATA_CODE_01.md": {
+      "bytes": 735884,
+      "sha256": "2f07826a660342a142076c6c56b247c3229e9f4f9939a14765a65e7dde1de113"
+    },
+    "06_LOADER_AND_CONTRACTS_01.md": {
+      "bytes": 120795,
+      "sha256": "7b2481c14c16ba0f6cb6d7f0d4b7e952923bdd8741b5d5dcb752dc69152826ac"
+    },
+    "07_BASELINES_AND_COMMON_01.md": {
+      "bytes": 730127,
+      "sha256": "b2b640db68340c88c267687f981d51d3bc159fbf88f086f3a94935bebd05e220"
+    },
+    "08_TRAINING_V5_01.md": {
+      "bytes": 720990,
+      "sha256": "67eb0ebe5453e45d33eeb4621efb973af99921afae659946ca6d144af337da4a"
+    },
+    "09_TRAINING_V6_01.md": {
+      "bytes": 794451,
+      "sha256": "1e0c6099733ad8b4b19179bbcef5e4f717fcd1256878fda36c85e08d06195438"
+    },
+    "09_TRAINING_V6_02.md": {
+      "bytes": 776230,
+      "sha256": "681bb2c1075a2b85c8a0f597e8f4e69600c9670cdb9f01120e4f0485cba505c3"
+    },
+    "10_TRAINING_V7_01.md": {
+      "bytes": 333329,
+      "sha256": "afc7b50519af9f659c5f8ed4eccefc7cd7eb9f08b9063bea2c7aaaec6ef0cf41"
+    },
+    "11_TESTS_01.md": {
+      "bytes": 709997,
+      "sha256": "8e2b0eaac4a413f04b37fdeb3001c2a11fdd3e982f1612e90037da7bd77ea6dc"
+    },
+    "12_TOOLS_AND_CONFIGURATION_01.md": {
+      "bytes": 17201,
+      "sha256": "8e3881b67a235a842ada00ff6eaae03319621693f3fd5d80506e9efb17dafd07"
+    },
+    "00_READ_FIRST.md": {
+      "bytes": 83825,
+      "sha256": "aeedf6ee84b5d2c5e59bc8bd476194a8f6cd394d0793df7154c47454d042cdb6"
+    }
+  },
+  "payload_bytes": 11871744,
+  "all_source_bytes_reconstructible": true,
+  "contains_patient_values": false
+}

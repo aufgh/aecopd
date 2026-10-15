@@ -85,3 +85,7 @@ docker run -d --name aecopd-v7-first-20261015-r2 --network none --gpus all --shm
 正式输出 `training_runs/v7_first_2026-10-15_r2/`：来源合同、输入覆盖、GPU预检、稀疏CPU缓存、两条件逐轮时间/损失/早停、best/last、每日双原因概率、完整指标和独立重放证明。该目录含患者派生数据及权重，沿用项目本地保存边界。初次运行发现字段压缩结果被丢弃，已保留源码/日志/权重现场于不带r2目录，详情见其`IMPLEMENTATION_AUDIT.md`；不作为正式性能结论。
 
 相关测试：`python -m unittest training.tests.test_v7_model training.tests.test_v7_losses training.tests.test_v6_unified_longitudinal -v`。GPU预检另外验证实际三步更新、历史内容梯度、共同初始风险和冻结H34。
+
+2026-10-15追加：`python -m training.v7.strong_no_cross_experiment --mode train --seed 42` 在完整V6冻结风险上仅关闭两个跨源Query；相同环境执行 `--mode verify --seed 42` 独立重载，seed7同理。主F1选择与旧StrongV7一致，额外保存最低再入院IBS和IBS约束检查点，仅作辅助读出；BERT/RadBERT及全部输入保持。两个种子已完成，[配对结果与完整划分说明](../../docs/V7_STRONG_NO_CROSS_RESULTS_2026-10-15.md)记录一次改善、一次退步，不替换默认模型。相关新增测试：`python -m unittest training.tests.test_v7_strong_no_cross -v`。
+
+`python -m training.v7.fixed_v6_cox_blend` 只计算事前固定90%完整V6＋10%Cox的概率曲线，再次执行仅核验。没有模型重训或权重搜索；[单比例结果](../../docs/V7_FIXED_V6_COX_BLEND_RESULTS_2026-10-15.md)显示概率误差改善、F1略降，与严格OOF学权重分开报告。两项追加实验的患者级产物均保留本地，不改历史结果。
